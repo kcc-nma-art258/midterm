@@ -7,11 +7,12 @@
   }
 }
 .row {
-  @include cf;
   margin-left: -1em;
   margin-right: -1em;
+  @include cf;
 }
 [class^='col-'] {
+  width: 100%;
   float: left;
   min-height: 1px;
   padding: 0 1em;
@@ -19,6 +20,8 @@
 
 @for $i from 1 through 12 {
   .col-#{$i} {
-    width: 100% / $i;
+    @media screen and (min-width: 600px){
+     width: 100% / $i;
+    }
   }
 }
