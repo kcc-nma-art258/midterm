@@ -19,12 +19,21 @@ $gutter: 1em;
 
 [class^='col-'] {
   float: left;
-  min-height: 1px;
+  min-height: 50px;
   padding: 0 $gutter;
+  > div {
+    text-align: center;
+  background-color: #ccc;
+  }
+
 }
 
 @for $i from 1 through 12 {
   .col-#{$i} {
-    width: 100% / $i;
+    width: $i / 12 * 100%;
   }
+}
+
+body {
+  background-color: #000;
 }
