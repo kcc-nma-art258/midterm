@@ -30,13 +30,14 @@
 
 [class^='col-'] {
   float: left;
-  min-height: 50px;
+  min-height: 80px;
   padding: 0 1em;
 }
 
 [class^='col-'] > div {
   text-align: center;
   background-color: #ccc;
+  min-height: 50px;
 }
 
 .col-1 {
