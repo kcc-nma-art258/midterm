@@ -1,3 +1,6 @@
+// Variables
+$gutter: 1em;
+
 .container {
   width: 100%;
   max-width: 960px;
@@ -10,11 +13,14 @@
 
 .row {
   @include cf;
+  margin-left: -$gutter;
+  margin-right: -$gutter;
 }
 
 [class^='col-'] {
   float: left;
   min-height: 1px;
+  padding: 0 $gutter;
 }
 
 @for $i from 1 through 12 {
