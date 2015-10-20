@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+.row {
+  @include cf;
+}
+[class^='col-'] {
+  float: left;
+  min-height: 1px;
+}
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: 100% / $i;
+  }
+}
