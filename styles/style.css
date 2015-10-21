@@ -1,14 +1,115 @@
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/*
+ * Variables
+ */
+/*
+ * Mixins
+ */
+/**
+ * @section Functions
+ */
+/**
+ * rem/em Calculator
+ *
+ * target / context = result
+ * @param {$target}  Target size in pixels (ie. 32px)
+ * @param {$context} Font size providing context for proportion, defaults to $base-font)
+ * @param {$unit} unit for rem/em output, defaults to 'em'
+ */
+/**
+ * Exponent Calculator
+ *
+ * https://gist.github.com/scottkellum/1160816
+ * @param {$base} base number
+ * @param {$exponent} exponent/power number
+ */
+/**
+ * Type Scale Calculator
+ *
+ * Create typographic scales
+ * @param {$i} increment of scale; 0 is base
+ * @param {$scale} scale ratio; defaults to 1.25
+ */
+/**
+ * Typography
+ */
 .header-style, .main-header .logo, .main-header .search, .main-header .account {
   height: 100%;
   width: 10%;
   text-align: center;
+}
+
+/**
+ * Typography
+ */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.5;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 1.618em;
+  }
+}
+
+/**
+ * @section Headings
+ */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Baskerville", Georgia, Palatino, serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 6.85353em;
+}
+
+h2 {
+  font-size: 4.2358em;
+}
+
+h3 {
+  font-size: 2.61792em;
+}
+
+h4 {
+  font-size: 1.618em;
+}
+
+/**
+ * @section Inline
+ */
+p {
+  margin-bottom: 0 0 1em;
+  text-align: justify;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .main-header {
@@ -79,6 +180,100 @@ body {
   box-sizing: border-box;
 }
 
+.row {
+  margin-left: -1em;
+  margin-right: -1em;
+}
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+[class^="col-"] {
+  width: 100%;
+  float: left;
+  min-height: 1px;
+  padding: 0 1em;
+}
+
+@media screen and (min-width: 600px) {
+  .col-1 {
+    width: 8.33333%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .col-2 {
+    width: 16.66667%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .col-3 {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .col-4 {
+    width: 33.33333%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .col-5 {
+    width: 41.66667%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .col-6 {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .col-7 {
+    width: 58.33333%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .col-8 {
+    width: 66.66667%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .col-9 {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .col-10 {
+    width: 83.33333%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .col-11 {
+    width: 91.66667%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .col-12 {
+    width: 100%;
+  }
+}
+
 .hero {
   height: 50%;
   background-color: #A3792C;
@@ -133,6 +328,13 @@ body {
 
 .site-info .info-04 {
   background-color: #cb9bd3;
+}
+
+.black-quote {
+  background-color: white;
+  text-align: center;
+  color: red;
+  height: 10%;
 }
 
 /*# sourceMappingURL=style.css.map */

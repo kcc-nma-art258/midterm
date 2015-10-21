@@ -1,6 +1,8 @@
 // Base
 @import "base/reset";
 @import "base/utilities";
+@import "base/typography";
+@import "base/forms";
 
 // Layout
 @import "layout/header";
@@ -12,6 +14,7 @@
 @import "modules/hero";
 @import "modules/black-quote";
 @import "modules/site-info";
+@import "modules/buttons";
 
 // Pages
 @import "pages/home";
