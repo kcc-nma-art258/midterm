@@ -6,15 +6,9 @@
 @import "layout/header";
 @import "layout/footer";
 @import "layout/grid";
-// ...
+//
 
 // Modules
 @import "modules/hero";
 @import "modules/search-bar";
 @import "modules/site-info";
-
-.container {
-  width: 100%;
-  max-width: 940px;
-  margin: 0 auto;
-}
