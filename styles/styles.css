@@ -28,9 +28,7 @@
  * @param {$i} increment of scale; 0 is base
  * @param {$scale} scale ratio; defaults to 1.25
  */
-/**
- * Typography
- */
+/*** Typography */
 html {
   font-size: 16px;
 }
@@ -51,9 +49,7 @@ body {
   }
 }
 
-/**
- * @section Headings
- */
+/*** @section Headings */
 h1,
 h2,
 h3,
@@ -78,9 +74,7 @@ h4 {
   font-size: 1.618em;
 }
 
-/**
- * @section Inline
- */
+/*** @section Inline */
 p {
   margin-bottom: 0 0 1em;
   text-align: justify;

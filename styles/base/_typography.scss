@@ -1,6 +1,4 @@
-/**
- * Typography
- */
+/*** Typography */
 
 html {
   font-size: $base-font;
@@ -22,9 +20,7 @@ body{
   }
 }
 
-/**
- * @section Headings
- */
+/*** @section Headings */
 h1,
 h2,
 h3,
@@ -49,9 +45,7 @@ h4 {
   font-size: type-scale(1);
 }
 
-/**
- * @section Inline
- */
+/*** @section Inline */
 p {
   margin-bottom: 0 0 em-calc($base-font);
   text-align: justify;
