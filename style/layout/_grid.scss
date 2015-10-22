@@ -11,6 +11,10 @@ $gutter: 1em;
   }
 }
 
+.grid {
+  padding: $section-padding;
+}
+
 .row {
   @include cf;
   margin-left: -$gutter;
@@ -23,18 +27,20 @@ $gutter: 1em;
   padding: 1em;
   > div {
   text-align: center;
-  background-color: #333;
+  background-color: #339999;
   min-height: 50px;
+  border-radius: .35em;
   }
 
 }
 
 [class^='col-']>div {
   text-align:center;
-  background-color:#333;
+  background-color:#339999;
   min-height:50px;
   color: #fff;
   padding-top: 1em;
+  border-radius: .35em;
 
 }
 
