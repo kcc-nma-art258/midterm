@@ -12,13 +12,12 @@ input[type="button"] {
   color: inherit;        // Inherit the default color (ie. black)
   padding: 0.5em 1em;
   margin-bottom: 0.5em;
-  background-color: #343232;
+  background-color: #DEDEDE;
   border-radius: 2px;
 
   &:hover {
     background-color: #CACACA;
   }
-
   &:focus,
   &:active {
     outline: none;
@@ -27,8 +26,8 @@ input[type="button"] {
 }
 // Links //
 .wrapper{
-  margin:7em 0;
-  padding: 5em 2em;
+  margin:5em 0;
+  padding: 3em 2em;
 }
 .square {
   margin: 2em;
@@ -41,7 +40,6 @@ a,a:visited,a:hover,a:active{
   transition:0.5s color ease;
 	text-decoration:none;
 	color:#81b3d2;
-	font-size:2.5em;
 }
 
 a.before:before,a.after:after{
@@ -59,21 +57,16 @@ a.after:after{
 }
 a.before:before,a.after:after{
   height:5px;
-  height:0.35rem;
   width:0;
   background:#d73444;
 }
-
 .square{
-  box-sizing:border-box;
   margin-left:-0.4em;
   position:relative;
-  font-size:2.5em;
   overflow:hidden;
 }
 .square a{
   position:static;
-  font-size:100%;
   padding:0.2em 0.4em;
 }
 .square:before,.square:after{
@@ -92,12 +85,10 @@ a.before:before,a.after:after{
   left:0;
   bottom:-0.2em;
 }
-
 .square:after{
   right:0;
   top:-0.2em;
 }
-
 .square a:before{
   left:0;
   transition:0.25s all ease;
@@ -106,7 +97,6 @@ a.before:before,a.after:after{
   right:0;
   transition:0.25s all ease;
 }
-
 .square:hover:before,.square:hover:after{
   height:calc(100% + 0.4em);
 }

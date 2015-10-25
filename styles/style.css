@@ -52,7 +52,6 @@ body {
   font-size: 1em;
   line-height: 1.5;
   font-family: "Roboto", Helvetica, sans-serif;
-  background-color: #343232;
 }
 
 @media screen and (min-width: 600px) {
@@ -103,8 +102,9 @@ form {
 
 form input,
 form textarea {
-  display: block;
   width: 100%;
+  display: block;
+  max-height: 50px;
 }
 
 input[type="email"],
@@ -232,27 +232,6 @@ input:focus ~ .highlight {
   animation: inputHighlighter 0.3s ease;
 }
 
-/* ANIMATIONS */
-@-webkit-keyframes inputHighlighter {
-  from {
-    background: #c9eab5;
-  }
-  to {
-    width: 0;
-    background: transparent;
-  }
-}
-
-@keyframes inputHighlighter {
-  from {
-    background: #c9eab5;
-  }
-  to {
-    width: 0;
-    background: transparent;
-  }
-}
-
 input[type="checkbox"],
 input[type="radio"] {
   border: 1px solid green;
@@ -285,6 +264,27 @@ input[type="checkbox"]:checked::after {
   position: absolute;
   top: -1px;
   left: 1px;
+}
+
+/* ANIMATIONS */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #c9eab5;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: #c9eab5;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
 }
 
 /*
@@ -408,7 +408,7 @@ input[type="button"] {
   color: inherit;
   padding: 0.5em 1em;
   margin-bottom: 0.5em;
-  background-color: #343232;
+  background-color: #DEDEDE;
   border-radius: 2px;
 }
 
@@ -435,8 +435,8 @@ input[type="button"]:active {
 }
 
 .wrapper {
-  margin: 7em 0;
-  padding: 5em 2em;
+  margin: 5em 0;
+  padding: 3em 2em;
 }
 
 .square {
@@ -452,7 +452,6 @@ a, a:visited, a:hover, a:active {
           transition: 0.5s color ease;
   text-decoration: none;
   color: #81b3d2;
-  font-size: 2.5em;
 }
 
 a.before:before, a.after:after {
@@ -474,22 +473,18 @@ a.after:after {
 
 a.before:before, a.after:after {
   height: 5px;
-  height: 0.35rem;
   width: 0;
   background: #d73444;
 }
 
 .square {
-  box-sizing: border-box;
   margin-left: -0.4em;
   position: relative;
-  font-size: 2.5em;
   overflow: hidden;
 }
 
 .square a {
   position: static;
-  font-size: 100%;
   padding: 0.2em 0.4em;
 }
 
@@ -538,6 +533,10 @@ a.before:before, a.after:after {
   width: 100%;
 }
 
+pre {
+  background: #1a1a1a;
+}
+
 /*
  * Pages
  */
@@ -557,13 +556,13 @@ body {
   border-radius: 5px;
 }
 
-.form-example form {
+.form-ex form {
   margin: 2em auto 0;
   padding: 0 1em;
 }
 
-.form-example form input,
-.form-example form textarea {
+.form-ex form input,
+.form-ex form textarea {
   margin: 0 0 0.5em;
 }
 

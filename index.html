@@ -8,12 +8,22 @@
   </head>
   <body>
     <h2>Got Framework?</h2>
-    <button>DOWNLOAD</button>
+    <button>this could be a gooey download button</button>
     <div class="container">
       <p>The grid is a 12-column fluid grid with a max width of 960px, that shrinks with
         the browser/device at smaller sizes. The max width can be changed with one line of
         CSS and all columns will resize accordingly. The syntax is simple and it makes coding
         responsive much easier. Go ahead, resize the browser.</p>
+        <p>here is the formular for the grid:</p>
+        <pre><code>
+          @for $i from 1 through 12 {
+            .col-#{$i} {
+              @media screen and (min-width: 600px){
+                width: (100% / 12) * $i;
+              }
+            }
+          }
+        </code></pre>
       <section class="grid-ex">
         <h3>Got grid?</h3>
         <p>some dummy text about the grid</p>
@@ -73,7 +83,8 @@
         </section>
         <section class="form-ex">
 			<h2>Got Forms?</h2>
-			<p> Simple forms with some simple design. Nothing fancy :)</p>
+			<p> Simple forms with some simple design. For inspiratin huge thanks to  Chris Sevilleja on CODEPEN</p>
+      <a href="http://codepen.io/sevilayha/pen/IdGKH?editors=110">Chris Sevilleja on CODEPEN</a>
 			<form>
         <div class="group">
           <input type="text" required>
@@ -117,12 +128,6 @@
           <span class="bar"></span>
   			  <label>Password</label>
         </div>
-			  <label>Checkbox</label>
-			  <input type="checkbox" />
-			  <label>Radio</label>
-			  <input type="radio" name="radio" />
-			  <input type="radio" name="radio" />
-			  <input type="radio" name="radio" />
         <div class="group">
           <span class="highlight"></span>
           <span class="bar"></span>
@@ -130,13 +135,22 @@
   			  <label>Textarea</label>
         </div>
         <div class="group">
+        <label>Checkbox</label>
+			  <input type="checkbox" />
+      </div>
+			  <label>Radio</label>
+			  <input type="radio" name="radio" />
+			  <input type="radio" name="radio" />
+			  <input type="radio" name="radio" />
+        <div class="group">
   			  <label>Select<label>
   			  <select>
-  				<option value="1">One</option>
-  				<option value="2">Two</option>
-  				<option value="3">Three</option>
-  				<option value="4">Four</option>
-			  </select>
+  				    <option value="1">One</option>
+  				    <option value="2">Two</option>
+  				    <option value="3">Three</option>
+  				    <option value="4">Four</option>
+			     </select>
+        </div>
 			</form>
 		</section>
     <section class="button-ex">
