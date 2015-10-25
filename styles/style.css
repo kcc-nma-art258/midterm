@@ -48,10 +48,10 @@ body {
   font-style: normal;
   font-variant: normal;
   font-weight: 300;
+  color: #bcd8cd;
   font-size: 1em;
   line-height: 1.5;
   font-family: "Roboto", Helvetica, sans-serif;
-  color: #bcd8cd;
   background-color: #343232;
 }
 
@@ -126,7 +126,8 @@ select {
   width: 300px;
   border: none;
   color: white;
-  background-color: #786e6e;
+  font-family: "Roboto", Helvetica, sans-serif;
+  background-color: #343232;
   margin-bottom: 1px;
   padding: 5px 10px 10px 5px;
   border-bottom: 1px solid #757575;
@@ -161,7 +162,7 @@ label {
   left: 5px;
   top: 10px;
   color: #bcd8cd;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   position: absolute;
   pointer-events: none;
@@ -177,8 +178,7 @@ textarea:focus ~ label,
 textarea:valid ~ label {
   top: -20px;
   font-size: 12px;
-  color: #c5dfd5;
-  font-family: "Roboto", Helvetica, sans-serif;
+  color: #619e86;
 }
 
 /* BOTTOM BARS  */
@@ -408,7 +408,7 @@ input[type="button"] {
   color: inherit;
   padding: 0.5em 1em;
   margin-bottom: 0.5em;
-  background-color: #DEDEDE;
+  background-color: #343232;
   border-radius: 2px;
 }
 
@@ -434,9 +434,117 @@ input[type="button"]:active {
   box-shadow: 0 0 1px 3px rgba(76, 130, 246, 0.5);
 }
 
+.wrapper {
+  margin: 7em 0;
+  padding: 5em 2em;
+}
+
+.square {
+  margin: 2em;
+  padding: 1em;
+}
+
+a, a:visited, a:hover, a:active {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  -webkit-transition: 0.5s color ease;
+          transition: 0.5s color ease;
+  text-decoration: none;
+  color: #81b3d2;
+  font-size: 2.5em;
+}
+
+a.before:before, a.after:after {
+  content: "";
+  -webkit-transition: 0.5s all ease;
+          transition: 0.5s all ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+a.before:before {
+  top: -0.25em;
+}
+
+a.after:after {
+  bottom: -0.25em;
+}
+
+a.before:before, a.after:after {
+  height: 5px;
+  height: 0.35rem;
+  width: 0;
+  background: #d73444;
+}
+
+.square {
+  box-sizing: border-box;
+  margin-left: -0.4em;
+  position: relative;
+  font-size: 2.5em;
+  overflow: hidden;
+}
+
+.square a {
+  position: static;
+  font-size: 100%;
+  padding: 0.2em 0.4em;
+}
+
+.square:before, .square:after {
+  content: "";
+  box-sizing: border-box;
+  -webkit-transition: 0.25s all ease;
+          transition: 0.25s all ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  width: 5px;
+  width: 0.35rem;
+  height: 0;
+  background: #d73444;
+}
+
+.square:before {
+  left: 0;
+  bottom: -0.2em;
+}
+
+.square:after {
+  right: 0;
+  top: -0.2em;
+}
+
+.square a:before {
+  left: 0;
+  -webkit-transition: 0.25s all ease;
+          transition: 0.25s all ease;
+}
+
+.square a:after {
+  right: 0;
+  -webkit-transition: 0.25s all ease;
+          transition: 0.25s all ease;
+}
+
+.square:hover:before, .square:hover:after {
+  height: -webkit-calc(100% + 0.4em);
+  height: calc(100% + 0.4em);
+}
+
+.square:hover a:before, .square:hover a:after {
+  width: 100%;
+}
+
 /*
  * Pages
  */
+body {
+  background-color: #343232;
+}
+
 .grid-ex .row {
   margin-bottom: 1em;
 }
