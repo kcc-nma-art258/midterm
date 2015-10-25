@@ -6,27 +6,27 @@ input[type="button"] {
   appearance: none;
   background-color: transparent;
   border: 0 none;
-
   display: inline-block; // Make display properties consistent across the board
   text-decoration: none; // Remove underline for anchor buttons
-  color: inherit;        // Inherit the default color (ie. black)
-  padding: 0.5em 1em;
+  color: white;        // Inherit the default color (ie. black)
+  padding: 2em 3em;
+  font-size: .8em;
   margin-bottom: 0.5em;
-  background-color: #DEDEDE;
+  background-color: #207e75;
   border-radius: 2px;
 
   &:hover {
-    background-color: #CACACA;
+    background-color: #16554f;
   }
   &:focus,
   &:active {
     outline: none;
-    box-shadow: 0 0 1px 3px rgba(76, 130, 246, 0.5);
+    box-shadow: 0 0 1px 3px rgba(94, 218, 206, 0.5);
   }
 }
 // Links //
 .wrapper{
-  margin:5em 0;
+  margin:2em 0;
   padding: 3em 2em;
 }
 .square {

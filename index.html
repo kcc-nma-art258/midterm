@@ -7,27 +7,23 @@
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <h2>Got Framework?</h2>
-    <button>this could be a gooey download button</button>
+    <center><h2>Got Framework?</h2>
+    <button>this could be a gooey download button</button></center>
     <div class="container">
-      <p>The grid is a 12-column fluid grid with a max width of 960px, that shrinks with
-        the browser/device at smaller sizes. The max width can be changed with one line of
-        CSS and all columns will resize accordingly. The syntax is simple and it makes coding
-        responsive much easier. Go ahead, resize the browser.</p>
-        <p>here is the formular for the grid:</p>
-        <pre><code>
-          @for $i from 1 through 12 {
-            .col-#{$i} {
-              @media screen and (min-width: 600px){
-                width: (100% / 12) * $i;
-              }
-            }
-          }
-        </code></pre>
       <section class="grid-ex">
         <h3>Got grid?</h3>
-        <p>some dummy text about the grid</p>
-        <p>and now let's use some grid</p>
+        <p>The grid is a 12-column fluid grid with a max width of 960px, that shrinks with
+          the browser/device at smaller sizes. Here is the formular for the grid. What it does is it let's you devide the page in a number of colums (here currently it is 12)
+          and you could create a nice symmetrical or assymetrical grid.</p>
+          <pre><code>
+            @for $i from 1 through 12 {
+              .col-#{$i} {
+                @media screen and (min-width: 600px){
+                  width: (100% / 12) * $i;
+                }
+              }
+            }
+          </code></pre>
         <div class="row">
   		        <div class="col-1">1</div>
   		        <div class="col-11">11</div>
@@ -83,8 +79,10 @@
         </section>
         <section class="form-ex">
 			<h2>Got Forms?</h2>
-			<p> Simple forms with some simple design. For inspiratin huge thanks to  Chris Sevilleja on CODEPEN</p>
-      <a href="http://codepen.io/sevilayha/pen/IdGKH?editors=110">Chris Sevilleja on CODEPEN</a>
+			<p> Simple forms with some simple design. For inspiration <em>HUGE</em> thanks to  Chris Sevilleja on CODEPEN.</p>
+      <a href="http://codepen.io/sevilayha/pen/IdGKH?editors=110">Check out Chris Sevilleja</a>
+
+      </article>
 			<form>
         <div class="group">
           <input type="text" required>
@@ -155,7 +153,6 @@
 		</section>
     <section class="button-ex">
       <h2>Got Buttons?</h2>
-      <p>some dummy text about the buttons</p>
       <button>Button</button>
       <input type="button" value="Button">
       <input type="submit" value="Submit">
@@ -163,8 +160,8 @@
     </section>
     <h2>Got Links?</h2>
       <div class="wrapper">
-        <span class="square">
-          <a class="before after" href="#0">Link</a></span>
+      <span class="square">
+        <a class="before after" href="#0">Link</a></span>
       </div>
     <section class="utilities-ex">
     </section>

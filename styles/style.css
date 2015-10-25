@@ -114,8 +114,6 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
-input[type="checkbox"],
-input[type="radio"],
 textarea,
 select {
   -webkit-appearance: none;
@@ -147,10 +145,6 @@ input[type="url"]:focus,
 input[type="url"]:active,
 input[type="password"]:focus,
 input[type="password"]:active,
-input[type="checkbox"]:focus,
-input[type="checkbox"]:active,
-input[type="radio"]:focus,
-input[type="radio"]:active,
 textarea:focus,
 textarea:active,
 select:focus,
@@ -405,10 +399,11 @@ input[type="button"] {
   border: 0 none;
   display: inline-block;
   text-decoration: none;
-  color: inherit;
-  padding: 0.5em 1em;
+  color: white;
+  padding: 2em 3em;
+  font-size: .8em;
   margin-bottom: 0.5em;
-  background-color: #DEDEDE;
+  background-color: #207e75;
   border-radius: 2px;
 }
 
@@ -417,7 +412,7 @@ button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
-  background-color: #CACACA;
+  background-color: #16554f;
 }
 
 .button:focus,
@@ -431,11 +426,11 @@ input[type="reset"]:active,
 input[type="button"]:focus,
 input[type="button"]:active {
   outline: none;
-  box-shadow: 0 0 1px 3px rgba(76, 130, 246, 0.5);
+  box-shadow: 0 0 1px 3px rgba(94, 218, 206, 0.5);
 }
 
 .wrapper {
-  margin: 5em 0;
+  margin: 2em 0;
   padding: 3em 2em;
 }
 
@@ -542,6 +537,7 @@ pre {
  */
 body {
   background-color: #343232;
+  padding: 0 1em;
 }
 
 .grid-ex .row {
