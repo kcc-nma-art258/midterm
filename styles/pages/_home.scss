@@ -1,0 +1,52 @@
+
+	.row {
+		margin-bottom: 1em;
+	}
+
+	[class^="col-"] {
+		min-height: 3em;
+		text-align: center;
+		background-color: #B8E986;
+		padding: .75em 0;
+	}
+
+	.grid {
+		padding-bottom: 3em;
+	}
+
+
+.form-example {
+	form {
+	  margin: 2em auto 0;
+	  padding: 0 1em;
+
+	  input,
+	  textarea{
+		margin: 0 0 0.5em;
+	  }
+	}
+}
+
+.container h1 {
+	text-align: center;
+	font-size: 2.25em;
+	font-weight: bold;
+	color: #9013FE;
+	padding: 3em 0;
+}
+
+h2 {
+	text-align: center;
+	color: #417505;
+	font-size: 1.5em;
+	font-weight: 300;
+	padding-bottom: 1em;
+
+}
+p {
+	font-size: .8em;
+}
+small {
+	font-style: italic;
+	font-size: .6em;
+}
