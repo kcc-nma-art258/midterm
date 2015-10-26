@@ -9,7 +9,7 @@ body {
   // font: normal normal 300 #{type-scale(0)} $sans-serif;
   font-style: normal;
   font-variant: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: type-scale(0);
   line-height: $line-height;
   font-family: $sans-serif;
@@ -50,10 +50,26 @@ h6 {
   font-size: type-scale(-1);
 }
 
+.info-intro, .info-grid, .info-button, .info-form {
+  h4 {
+    font-family: $sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+.title {
+  font-family: $sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .header, .footer {
   h3 {
     color: #ffff99;
     font-family: $sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
   }
 }
 
