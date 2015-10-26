@@ -8,19 +8,20 @@ form {
   }
 }
 
-input[type="email"],
+input[type="name"],
 input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
+input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="checkbox"],
 input[type="radio"],
-textarea,
-select {
+textarea, {
   -webkit-appearance: none;
   appearance: none;
+
+  border-radius: 6px;
+  height: 35px;
+  padding: 6px;
 
   &:focus,
   &:active {
@@ -28,11 +29,12 @@ select {
   }
 }
 
+textarea {min-height: 90px;}
+
 input[type="checkbox"],
 input[type="radio"] {
 
   border: 1px solid #333333;
-  display: inline-block;
   width: 1em;
   height: 1em;
   border-radius: 100%;
