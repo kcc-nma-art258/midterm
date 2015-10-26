@@ -12,7 +12,9 @@
   }
 
   .logo {
-    @extend .header-style;
+    height: $header-height;
+    width: $header-width;
+    text-align: center;
     background-color: transparentize(#D9A9A9, .3);
   }
 
@@ -23,12 +25,16 @@
   }
 
   .search {
-    @extend .header-style;
+    height: $header-height;
+    width: $header-width;
+    text-align: center;
     background-color: orange;
   }
 
   .account {
-    @extend .header-style;
+    height: $header-height;
+    width: $header-width;
+    text-align: center;
     background-color: #D2A450;
   }
 }

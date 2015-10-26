@@ -9,16 +9,10 @@ body {
   background-color: #FFCC00;
 }
 
-.container {
+.container-full {
   width: 100%;
-  max-width: 960px;
   margin: 0 auto;
-  background: white;
   height: $header-height;
-
-  * {
-    box-sizing: border-box;
-  }
 }
 
 .row {

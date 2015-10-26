@@ -11,7 +11,7 @@ body{
   // font: normal normal 300 #{type-scale(0)} $sans-serif;
   font-style: normal;
   font-variant: normal;
-  font-weight: 300;
+  font-weight: lighter;
   font-size: type-scale(0);
   line-height: $line-height;
   font-family: $sans-serif;
@@ -28,9 +28,13 @@ body{
 h1,
 h2,
 h3,
-h4 {
-  font-family: $serif;
+h4,
+h5,
+h6 {
+  font-family: $sans-serif;
   font-weight: 400;
+  text-align: center;
+
 }
 
 h1 {

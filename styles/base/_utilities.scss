@@ -5,8 +5,8 @@ $header-width: 10%;
 $height-min: 10%;
 $base-font: 16px;
 $line-height: 1.5;
-$serif: 'Baskerville', Georgia, Palatino, serif;
-$sans-serif: 'Open Sans', Helvetica, Arial, sans-serif;
+$sans-serif: 'Montserrat', Helvetica, Arial, sans-serif;
+$sans-serif-2: 'Roboto Slab', serif;
 
 //mixin
 @mixin cf {
@@ -76,12 +76,4 @@ $sans-serif: 'Open Sans', Helvetica, Arial, sans-serif;
  */
 @function type-scale($i, $scale: 1.618){
   @return exponent($scale, $i) * 1em;
-}
-
-
-//extended
-.header-style {
-  height: $header-height;
-  width: $header-width;
-  text-align: center;
 }
