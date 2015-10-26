@@ -1,12 +1,22 @@
-form {
+
+.form {
+
   width: 100%;
+  float: left;
+  margin:  0;
+  padding: 0;
+
+
 
   input,
   textarea{
     display: block;
     width: 100%;
+
   }
 }
+
+
 
 input[type="email"],
 input[type="number"],

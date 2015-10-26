@@ -1,52 +1,121 @@
-
-	.row {
-		margin-bottom: 1em;
-	}
-
-	[class^="col-"] {
-		min-height: 3em;
-		text-align: center;
-		background-color: #B8E986;
-		padding: .75em 0;
-	}
-
-	.grid {
-		padding-bottom: 3em;
-	}
-
-
-.form-example {
-	form {
-	  margin: 2em auto 0;
-	  padding: 0 1em;
-
-	  input,
-	  textarea{
-		margin: 0 0 0.5em;
-	  }
-	}
-}
-
-.container h1 {
+.container {
 	text-align: center;
-	font-size: 2.25em;
-	font-weight: bold;
-	color: #9013FE;
-	padding: 3em 0;
+	color: #337;
 }
 
-h2 {
-	text-align: center;
-	color: #417505;
-	font-size: 1.5em;
-	font-weight: 300;
-	padding-bottom: 1em;
+.grid {
+	margin-top: 3em;
+		h2 {
+			text-align: center;
+			color: #417505;
+			font-size: 1.5em;
+			font-weight: 300;
+			padding-bottom: 1em;
+		}
 
+		.row {
+			margin-bottom: 1em;
+
+		}
+
+		[class^="col-"] {
+			min-height: 3em;
+			text-align: center;
+			background-color: #B8E986;
+			padding: .75em 0;
+		}
+	}
+
+	.type {
+		p {
+			font-size: .8em;
+		}
+		small {
+			font-style: italic;
+			font-size: .6em;
+		}
+		.sub-heading {
+			text-align: center;
+			color: #417505;
+			font-size: 1.5em;
+			font-weight: 300;
+			padding-bottom: 1em;
+			margin-top: 5em;
+	}
+		.quote {
+			text-align: center;
+			line-height: normal;
+			margin-bottom: 3em;
+		}
+
+		.type-scale {
+			text-align: center;
+			color: black;
+			margin-bottom: 2em;
+		}
 }
-p {
-	font-size: .8em;
-}
-small {
-	font-style: italic;
-	font-size: .6em;
-}
+
+
+
+	.form {
+		margin-top: 3em;
+		h2 {
+			text-align: center;
+			color: #417505;
+			font-size: 1.5em;
+			font-weight: 300;
+			padding-bottom: 1em;
+	}
+
+
+		.form-left, .form-right {
+			display: inline-block;
+		}
+		.form-left {
+			width: 37.25%;
+			margin-bottom: 1em;
+			float:left;
+
+				.form1, .form2 {
+					margin-bottom: 1em;
+				}
+			input,
+		  textarea{
+				margin: 0 0 0.5em;
+				text-align: left;
+				padding-left:.5em;
+				background-color: #dcdcdc;
+				min-height: 5em;
+			}
+	 	}
+		.form-right {
+			width: 60.75%;
+			margin-bottom: 1em;
+			float: right;
+
+			input,
+		  textarea{
+				margin: 0 0 0.5em;
+				text-align: left;
+				padding-left:.5em;
+				background-color: #dcdcdc;
+				min-height: 12.3em;
+			}
+	 	}
+	}
+
+	.buttons {
+		margin-top: 3em;
+		h2 {
+			text-align: center;
+			color: #417505;
+			font-size: 1.5em;
+			font-weight: 300;
+			padding-bottom: 1em;
+	}
+		.link {
+				align-items: center;
+
+			}
+
+		}

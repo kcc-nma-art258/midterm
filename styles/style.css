@@ -52,6 +52,70 @@
  * 2.618em * 1.618 = 4.236em // h2
  * 4.236em * 1.618 = 6.854em // h1
 */
+/* HEADINGS
+	Based on a Traditional Typographic Scale
+	48, 36, 24, 21, 18, 16
+    Target Font Size (px) / Base Font Size (px) = XX.XXXXem
+*/
+h1 {
+  font-size: 3em;
+  /* 48px/16px = 3em */
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 2.25em;
+  /* 36px/16px = 2.25em */
+  line-height: 1.1em;
+}
+
+h3 {
+  font-size: 1.5em;
+  /* 24px/16px = 1.5em */
+  line-height: 1.2em;
+}
+
+h4 {
+  font-size: 1.3125em;
+  /* 21px/16px = 1.3125em */
+  line-height: 1.3em;
+}
+
+h5 {
+  font-size: 1.125em;
+  /* 18px/16px = 1.125em */
+  line-height: 1.4em;
+}
+
+h6 {
+  font-size: 1em;
+  /* 16px/16px = 1em */
+  line-height: 1.5em;
+}
+
+p {
+  font-size: .8em;
+  /* 16px/16px = 1em */
+  line-height: 1em;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin-bottom: .5em;
+}
+
+/**
+ * @section Headings
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Arial", Helvetica, sans-serif;
+  font-weight: 400;
+}
+
 html {
   font-size: 16px;
 }
@@ -73,43 +137,6 @@ body {
 }
 
 /**
- * @section Headings
- */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Arial", Helvetica, sans-serif;
-  font-weight: 400;
-}
-
-h1 {
-  font-size: 17.94201em;
-}
-
-h2 {
-  font-size: 11.08901em;
-}
-
-h3 {
-  font-size: 6.85353em;
-}
-
-h4 {
-  font-size: 4.2358em;
-}
-
-h5 {
-  font-size: 2.61792em;
-}
-
-h6 {
-  font-size: 1.618em;
-}
-
-/**
  * @section Inline
  */
 p {
@@ -117,12 +144,15 @@ p {
   text-align: justify;
 }
 
-form {
+.form {
   width: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
 }
 
-form input,
-form textarea {
+.form input,
+.form textarea {
   display: block;
   width: 100%;
 }
@@ -271,7 +301,7 @@ input[type="button"] {
   color: inherit;
   padding: 0.5em 1em;
   margin-bottom: 0.5em;
-  background-color: #DEDEDE;
+  background-color: orange;
   border-radius: 2px;
 }
 
@@ -280,7 +310,8 @@ button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
-  background-color: #CACACA;
+  background-color: #337;
+  color: #fff;
 }
 
 .button:focus,
@@ -298,40 +329,16 @@ input[type="button"]:active {
 }
 
 /* pages */
-.row {
-  margin-bottom: 1em;
-}
-
-[class^="col-"] {
-  min-height: 3em;
+.container {
   text-align: center;
-  background-color: #B8E986;
-  padding: .75em 0;
+  color: #337;
 }
 
 .grid {
-  padding-bottom: 3em;
+  margin-top: 3em;
 }
 
-.form-example form {
-  margin: 2em auto 0;
-  padding: 0 1em;
-}
-
-.form-example form input,
-.form-example form textarea {
-  margin: 0 0 0.5em;
-}
-
-.container h1 {
-  text-align: center;
-  font-size: 2.25em;
-  font-weight: bold;
-  color: #9013FE;
-  padding: 3em 0;
-}
-
-h2 {
+.grid h2 {
   text-align: center;
   color: #417505;
   font-size: 1.5em;
@@ -339,13 +346,114 @@ h2 {
   padding-bottom: 1em;
 }
 
-p {
+.grid .row {
+  margin-bottom: 1em;
+}
+
+.grid [class^="col-"] {
+  min-height: 3em;
+  text-align: center;
+  background-color: #B8E986;
+  padding: .75em 0;
+}
+
+.type p {
   font-size: .8em;
 }
 
-small {
+.type small {
   font-style: italic;
   font-size: .6em;
+}
+
+.type .sub-heading {
+  text-align: center;
+  color: #417505;
+  font-size: 1.5em;
+  font-weight: 300;
+  padding-bottom: 1em;
+  margin-top: 5em;
+}
+
+.type .quote {
+  text-align: center;
+  line-height: normal;
+  margin-bottom: 3em;
+}
+
+.type .type-scale {
+  text-align: center;
+  color: black;
+  margin-bottom: 2em;
+}
+
+.form {
+  margin-top: 3em;
+}
+
+.form h2 {
+  text-align: center;
+  color: #417505;
+  font-size: 1.5em;
+  font-weight: 300;
+  padding-bottom: 1em;
+}
+
+.form .form-left, .form .form-right {
+  display: inline-block;
+}
+
+.form .form-left {
+  width: 37.25%;
+  margin-bottom: 1em;
+  float: left;
+}
+
+.form .form-left .form1, .form .form-left .form2 {
+  margin-bottom: 1em;
+}
+
+.form .form-left input,
+.form .form-left textarea {
+  margin: 0 0 0.5em;
+  text-align: left;
+  padding-left: .5em;
+  background-color: #dcdcdc;
+  min-height: 5em;
+}
+
+.form .form-right {
+  width: 60.75%;
+  margin-bottom: 1em;
+  float: right;
+}
+
+.form .form-right input,
+.form .form-right textarea {
+  margin: 0 0 0.5em;
+  text-align: left;
+  padding-left: .5em;
+  background-color: #dcdcdc;
+  min-height: 12.3em;
+}
+
+.buttons {
+  margin-top: 3em;
+}
+
+.buttons h2 {
+  text-align: center;
+  color: #417505;
+  font-size: 1.5em;
+  font-weight: 300;
+  padding-bottom: 1em;
+}
+
+.buttons .link {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

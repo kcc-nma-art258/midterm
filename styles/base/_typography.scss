@@ -12,6 +12,57 @@
  * 2.618em * 1.618 = 4.236em // h2
  * 4.236em * 1.618 = 6.854em // h1
 */
+/* HEADINGS
+	Based on a Traditional Typographic Scale
+	48, 36, 24, 21, 18, 16
+    Target Font Size (px) / Base Font Size (px) = XX.XXXXem
+*/
+
+h1 {
+    font-size: 3em; /* 48px/16px = 3em */
+    line-height: 1em;
+}
+h2 {
+    font-size: 2.25em; /* 36px/16px = 2.25em */
+    line-height: 1.1em;
+}
+h3 {
+    font-size: 1.5em; /* 24px/16px = 1.5em */
+    line-height: 1.2em;
+}
+h4 {
+    font-size: 1.3125em; /* 21px/16px = 1.3125em */
+    line-height: 1.3em;
+}
+h5 {
+    font-size: 1.125em; /* 18px/16px = 1.125em */
+    line-height: 1.4em;
+}
+h6 {
+    font-size: 1em; /* 16px/16px = 1em */
+    line-height: 1.5em;
+}
+p{
+  font-size: .8em; /* 16px/16px = 1em */
+  line-height: 1em;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin-bottom: .5em;
+}
+
+/**
+ * @section Headings
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $sans-serif;
+  font-weight: 400;
+}
 
 html {
   font-size: $base-font;
@@ -33,40 +84,9 @@ body{
   }
 }
 
-/**
- * @section Headings
- */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $sans-serif;
-  font-weight: 400;
-}
 
-h1 {
-  font-size: type-scale(6);
-}
 
-h2 {
-  font-size: type-scale(5);
-}
 
-h3 {
-  font-size: type-scale(4);
-}
-
-h4 {
-  font-size: type-scale(3);
-}
-h5 {
-  font-size: type-scale(2);
-}
-h6 {
-  font-size: type-scale(1);
-}
 
 
 /**
