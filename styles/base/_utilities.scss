@@ -1,15 +1,11 @@
-/*
- * Variables
- */
+/* Variables */
 
 $base-font: 16px;
 $line-height: 1.5;
 $serif: 'Baskerville', Georgia, Palatino, serif;
 $sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-/*
- * Mixins
- */
+/* Mixins */
 
 @mixin cf {
 	&:before,
