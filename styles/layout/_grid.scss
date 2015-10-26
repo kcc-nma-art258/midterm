@@ -26,3 +26,60 @@
 }
 
 .info-grid { margin-bottom: 50px; }
+
+.info-grid p {margin-bottom: 1em;}
+
+.column, .columns {
+  border-radius: 6px;
+  margin-left: 4%;
+  float: left;
+  line-height: 3em;
+}
+
+.column:first-child, .columns:first-child{
+  margin-left: 0;
+}
+
+.col-1 {
+  width: 4.66666666667%;
+}
+
+.col-2 {
+  width: 13.3333333333%;
+}
+
+.col-3 {
+  width: 22%;
+}
+
+.col-4 {
+  width: 30.6666666667%;
+}
+
+.col-5 {
+  width: 39.3333333333%;
+}
+
+.col-6 {
+  width: 48%;
+}
+
+.col-7 {
+  width: 56.6666666667%;
+}
+
+.col-8 {
+  width: 65.3333333333%;
+}
+
+.col-9 {
+  width: 74%;
+}
+
+.col-10 {
+  width: 82.6666666667%;
+}
+
+.col-11 {
+  width: 91.3333333333%;
+}
