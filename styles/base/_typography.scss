@@ -27,31 +27,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: type-scale(4);
+  font-size: type-scale(5);
 }
 
 h2 {
-  font-size: type-scale(3);
+  font-size: type-scale(4);
 }
 
 h3 {
-  font-size: type-scale(2);
+  font-size: type-scale(3);
 }
 
 h4 {
-  font-size: type-scale(1);
+  font-size: type-scale(2);
 }
 
 h5 {
-  font-size: type-scale(0);
+  font-size: type-scale(1);
 }
 
 h6 {
-  font-size: type-scale(-1);
+  font-size: type-scale(0);
 }
 
 .info-intro, .info-grid, .info-button, .info-form {
-  h4 {
+  h5 {
     font-family: $sans-serif;
     font-weight: 400;
     text-transform: uppercase;
@@ -65,7 +65,7 @@ h6 {
 }
 
 .header, .footer {
-  h3 {
+  h4, h5 {
     color: #ffff99;
     font-family: $sans-serif;
     font-weight: 400;
