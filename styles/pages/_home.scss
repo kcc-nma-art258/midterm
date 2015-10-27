@@ -1,3 +1,59 @@
+/* BASE CSS from Chris Gargiulo*/
+/* -------------------- */
+/* TABLE OF CONTENTS
+    1. BASE CSS
+        - RESET
+        - HTML5
+        - BASE TYPOGRAPHY
+            - HEADINGS
+            - PARAGRAPHS
+            - LINKS
+            - LISTS
+        - IMAGES
+        - CLEARFIX
+    2. SITE SPECIFIC CSS
+        - LAYOUT
+        - MEDIA QUERIES
+        - @FONTFACE
+*/
+/* -------------------- */
+
+
+//BASE TYPOGRAPHY
+
+h1.sans-mont {
+  font-family: $sans-serif-2;
+  font-weight: 400;
+  text-align: center;
+}
+
+h2.sans-mont {
+  font-family: $sans-serif-2;
+  font-weight: 400;
+  text-align: center;
+}
+h3 {
+  font-family: $sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+h {
+  font-family: $sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+h {
+  font-family: $sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+h {
+  font-family: $sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+/*
 .container-full {
 background: -moz-linear-gradient(top, #42bbff 0%, #ffffff 100%);
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #42bbff), color-stop(100%, #ffffff));
@@ -6,3 +62,4 @@ background: -o-linear-gradient(top, #42bbff 0%, #ffffff 100%);
 background: -ms-linear-gradient(top, #42bbff 0%, #ffffff 100%);
 background: linear-gradient(to bottom, #42bbff 0%, #ffffff 100%);
 }
+*/

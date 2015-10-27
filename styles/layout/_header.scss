@@ -1,40 +1,13 @@
 .main-header {
   height: $height-min;
   width: $full-width;
-  background-color: #96F296;
   @include cf;
-
-  .logo,
-  .main-nav,
-  .search,
-  .account {
-   float: left;
-  }
+  background-color: #fff;
 
   .logo {
     height: $header-height;
     width: $header-width;
     text-align: center;
-    background-color: transparentize(#D9A9A9, .3);
-  }
-
-  .main-nav {
-    height: $header-height;
-    background-color: #8B6D6D;
-    width: 70%;
-  }
-
-  .search {
-    height: $header-height;
-    width: $header-width;
-    text-align: center;
-    background-color: orange;
-  }
-
-  .account {
-    height: $header-height;
-    width: $header-width;
-    text-align: center;
-    background-color: #D2A450;
+    background-color: #fff;
   }
 }

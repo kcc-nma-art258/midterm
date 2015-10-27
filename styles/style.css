@@ -44,7 +44,7 @@ body {
   font-weight: lighter;
   font-size: 1em;
   line-height: 1.5;
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   color: #333;
 }
 
@@ -63,8 +63,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -82,6 +82,14 @@ h3 {
 
 h4 {
   font-size: 1.618em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.61805em;
 }
 
 /**
@@ -180,7 +188,6 @@ input[type="checkbox"]:checked::after {
 .main-header {
   height: 10%;
   width: 100%;
-  background-color: #96F296;
 }
 
 .main-header:before,
@@ -191,13 +198,6 @@ input[type="checkbox"]:checked::after {
 
 .main-header:after {
   clear: both;
-}
-
-.main-header .logo,
-.main-header .main-nav,
-.main-header .search,
-.main-header .account {
-  float: left;
 }
 
 .main-header .logo {
@@ -433,6 +433,61 @@ body {
 .section06 {
   height: auto;
   background-color: #A3792C;
+}
+
+/* BASE CSS from Chris Gargiulo*/
+/* -------------------- */
+/* TABLE OF CONTENTS
+    1. BASE CSS
+        - RESET
+        - HTML5
+        - BASE TYPOGRAPHY
+            - HEADINGS
+            - PARAGRAPHS
+            - LINKS
+            - LISTS
+        - IMAGES
+        - CLEARFIX
+    2. SITE SPECIFIC CSS
+        - LAYOUT
+        - MEDIA QUERIES
+        - @FONTFACE
+*/
+/* -------------------- */
+h1.sans-mont {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+h2.sans-mont {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+h {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+h {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+h {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  text-align: center;
 }
 
 .container-full {
