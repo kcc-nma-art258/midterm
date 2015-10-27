@@ -61,9 +61,12 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   font-family: "Playfair Display", serif;
   font-weight: 400;
+  text-align: center;
 }
 
 h1 {
@@ -315,15 +318,12 @@ input[type="button"]:active {
   padding: 5em 0;
 }
 
-.grid-example .row {
-  margin-bottom: 1em;
+.grid-example .allrows {
+  padding-top: 2em;
 }
 
-.grid-example [class^='col-'] {
-  min-height: 3em;
-  text-align: center;
-  background-color: #EFEFEF;
-  padding: 0.75em 0;
+.grid-example .row {
+  margin-bottom: 10px;
 }
 
 .form-example form {
