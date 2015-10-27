@@ -12,11 +12,11 @@ input[type="button"] {
   color: inherit;        // Inherit the default color (ie. black)
   padding: 0.5em 1em;
   margin-bottom: 0.5em;
-  background-color: #DEDEDE;
+  background-color: #D7D7F6;
   border-radius: 2px;
 
   &:hover {
-    background-color: #CACACA;
+    background-color: #DC9BD9;
   }
 
   &:focus,
@@ -24,4 +24,8 @@ input[type="button"] {
     outline: none;
     box-shadow: 0 0 1px 3px rgba(76, 130, 246, 0.5);
   }
+}
+
+.button-example {
+  padding: $section-padding;
 }
