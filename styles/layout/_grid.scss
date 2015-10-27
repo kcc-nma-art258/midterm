@@ -6,14 +6,15 @@ body {
 }
 
 body {
-  background-color: ;
 }
 
-.container-full {
+.container-1200 {
   width: 100%;
+  max-width: 960px;
   margin: 0 auto;
   height: $header-height;
   background-color: fff;
+
 }
 
 .row {

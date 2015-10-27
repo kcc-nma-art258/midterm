@@ -74,6 +74,6 @@ $sans-serif-2: 'Montserrat', Helvetica, Arial, sans-serif;
  * @param {$i} increment of scale; 0 is base
  * @param {$scale} scale ratio; defaults to 1.25
  */
-@function type-scale($i, $scale: 1.618){
+@function type-scale($i, $scale: 1.500){
   @return exponent($scale, $i) * 1em;
 }

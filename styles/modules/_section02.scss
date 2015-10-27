@@ -1,4 +1,37 @@
 .section02 {
   height: auto;
-
+  [class^="col-"] {
+    padding: 0 1em;
+  }
 }
+  .svg-screen {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 10px auto;
+    border: 1px solid #E0E0E0;
+    padding: 40px;
+    border-radius: 50%;
+  }
+
+  .svg-sass {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 10px auto;
+    border: 1px solid #E0E0E0;
+    padding: 40px;
+    border-radius: 50%;
+
+  }
+
+  .svg-custom {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 10px auto;
+    border: 1px solid #E0E0E0;
+    padding: 40px;
+    border-radius: 50%;
+
+  }

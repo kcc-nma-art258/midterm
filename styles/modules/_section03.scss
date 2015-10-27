@@ -1,4 +1,26 @@
 .section03 {
   height: auto;
 
+  [class^="col-"] {
+    min-height: 1px;
+    padding: 0 1em .5em 0;
+    >div {
+  text-align: center;
+  background-color: #F0F0F0;
+  height: 50px;
+
+  }
+  }
+
+  h6 {
+    text-transform: uppercase;
+padding-top: 14px;
+letter-spacing: 3px;
+color: #9E9E9E;
+font-weight: 600;
+font-size: 12px;
+  }
+  .sub3-padding {
+    padding-bottom: 7em;
+  }
 }
