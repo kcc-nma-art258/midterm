@@ -600,9 +600,42 @@ input[type="reset"]:hover::before {
           appearance: none;
 }
 
-.section06 .row-last {
-  padding-top: 8em;
-  text-align: center;
+.section06 .cd-top {
+  display: inline-block;
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 10px 0 0 6px;
+  border: 2px solid #D9EDFF;
+  height: 40px;
+  width: 80px;
+  position: fixed;
+  bottom: 60px;
+  right: 80px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+
+.section06 .cd-top.cd-is-visible, .section06 .cd-top.cd-fade-out, .section06 .no-touch .cd-top:hover {
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+
+.section06 .cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+.section06 .cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+
+.section06 .no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
 }
 
 /* BASE CSS from Chris Gargiulo*/
