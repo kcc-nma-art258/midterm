@@ -93,7 +93,10 @@ p {
 
 form {
   width: 100%;
-  color: #CACACA;
+  color: #333;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 form input,
@@ -148,9 +151,9 @@ select:active {
 input[type="checkbox"],
 input[type="radio"] {
   border: 1px solid #000;
-  display: inline-block;
-  width: 1em;
-  height: 1em;
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
   border-radius: 100%;
 }
 
@@ -295,8 +298,10 @@ input[type="button"] {
   color: inherit;
   padding: 0.5em 1em;
   margin-bottom: 0.5em;
-  background-color: #9E9E9E;
+  background-color: #ECECEC;
   border-radius: 2px;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
 }
 
 .button:hover,
@@ -343,13 +348,31 @@ input[type="button"]:active {
   margin: 0 0 0.5em;
 }
 
-.header {
-  padding: 5em 0;
-  color: #000;
+/* Header */
+.header h3 {
+  padding: 3em 0 10px 0;
+  color: #333;
 }
 
-.typography-example h2, .typography-example h3, .typography-example h4, .typography-example h5, .typography-example h6 {
-  color: #CFCFCF;
+.header h5 {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+/* Typography */
+.typography-example h1, .typography-example h2, .typography-example h3, .typography-example h4, .typography-example h5, .typography-example h6 {
+  color: #ECECEC;
+}
+
+.typography-example .type-title h3 {
+  color: #333;
+}
+
+/* Buttons */
+.stuff {
+  padding-top: 2em;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

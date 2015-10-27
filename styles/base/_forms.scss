@@ -1,6 +1,9 @@
 form {
   width: 100%;
-  color: #CACACA;
+  color: #333;
+  font-family: $sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
 
   input,
   textarea{
@@ -35,9 +38,9 @@ input[type="checkbox"],
 input[type="radio"] {
 
   border: 1px solid #000;
-  display: inline-block;
-  width: 1em;
-  height: 1em;
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
   border-radius: 100%;
 
   &:checked {

@@ -20,14 +20,36 @@
 	}
 }
 
-.header {
-	padding: $section-padding;
-	color: #000;
-}
+/* Header */
 
-.typography-example {
-	h2,h3,h4,h5,h6 {
-		color: #CFCFCF;
+.header {
+	h3 {
+	padding: 3em 0 10px 0;
+	color: #333;
 	}
 
+	h5 {
+	font-family: $sans-serif;
+	text-transform: uppercase;
+	color: #ccc;
+
+	}
 }
+
+/* Typography */
+
+.typography-example {
+	h1,h2,h3,h4,h5,h6 {
+		color: $color;
+	}
+	.type-title h3{
+		color: #333;
+	}
+}
+
+/* Buttons */
+
+	.stuff {
+		padding-top: 2em;
+		text-align: center;
+	}
