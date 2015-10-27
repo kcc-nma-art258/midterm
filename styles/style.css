@@ -70,19 +70,19 @@ body {
 }
 
 .grid-example{
-  padding: 2em 0 2em 0;
+  padding-top: '$padding';
 }
 
 .type-example {
-  padding-top: 2em;
+  padding-top: '$padding';
 }
 
 .form-example {
-  padding-top: 2em;
+  padding-top: '$padding';
 }
 
 .button-example {
-  padding-top: 2em;
+  padding-top: '$padding';
 }
 
 /**
