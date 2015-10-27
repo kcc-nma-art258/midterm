@@ -2,28 +2,35 @@
   <html>
   <head>
     <meta charset="utf-8" />
-    <title>I <3 FFRAMEWORK </title>
+    <title>i <3 GRID </title>
     <link rel="stylesheet" href="styles/style.css">
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <center><h2>Got Framework?</h2>
-    <button>this could be a gooey download button</button></center>
+    <button>DOWNLOAD</button></center>
     <div class="container">
-      <section class="grid-ex">
-        <h3>Got grid?</h3>
-        <p>The grid is a 12-column fluid grid with a max width of 960px, that shrinks with
-          the browser/device at smaller sizes. Here is the formular for the grid. What it does is it let's you devide the page in a number of colums (here currently it is 12)
-          and you could create a nice symmetrical or assymetrical grid.</p>
-          <pre><code>
-            @for $i from 1 through 12 {
-              .col-#{$i} {
-                @media screen and (min-width: 600px){
-                  width: (100% / 12) * $i;
-                }
-              }
+      <h3>Got grid?</h3>
+      <p>The grid is a 12-column fluid grid with a max width of 960px, that shrinks with
+        the browser/device at smaller sizes. Here is the code:</p>
+      <pre><code>
+        [class^="col-"] {
+          width: 100%;
+          float: left;
+          min-height: 1px;
+          padding: 0 1em;
+        }
+
+        @for $i from 1 through 12 {
+          .col-#{$i} {
+            @media screen
+              and (min-width: 600px){
+              width: (100% / 12) * $i;
             }
-          </code></pre>
+          }
+        }
+      </code></pre>
+      <section class="grid-ex">
         <div class="row">
   		        <div class="col-1">1</div>
   		        <div class="col-11">11</div>
@@ -49,24 +56,24 @@
               <div class="col-6">6</div>
           </div>
           <div class="row">
-              <div class="col-7">7</div>
-              <div class="col-5">5</div>
+            <div class="col-7">7</div>
+            <div class="col-5">5</div>
           </div>
           <div class="row">
-              <div class="col-8">8</div>
-              <div class="col-4">4</div>
+            <div class="col-8">8</div>
+            <div class="col-4">4</div>
           </div>
           <div class="row">
-              <div class="col-9">9</div>
-              <div class="col-3">3</div>
+            <div class="col-9">9</div>
+            <div class="col-3">3</div>
           </div>
           <div class="row">
-  		        <div class="col-10">10</div>
-              <div class="col-2">2</div>
+            <div class="col-10">10</div>
+  		      <div class="col-2">2</div>
   		    </div>
           <div class="row">
-    		        <div class="col-11">11</div>
-                <div class="col-1">1</div>
+              <div class="col-11">11</div>
+    		      <div class="col-1">1</div>
     		    </div>
         </section>
         <section class="text-ex">
@@ -78,77 +85,35 @@
           <h6>Heading 6</h6>
         </section>
         <section class="form-ex">
-			<h2>Got Forms?</h2>
-			<p> Simple forms with some simple design. For inspiration <em>HUGE</em> thanks to  Chris Sevilleja on CODEPEN.</p>
-      <a href="http://codepen.io/sevilayha/pen/IdGKH?editors=110">Check out Chris Sevilleja</a>
-
-      </article>
+			<h3>Got Forms?</h3>
+			<p> Simple forms with some simple design.</p>
 			<form>
-        <div class="group">
-          <input type="text" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>Text</label>
-        </div>
-        <div class="group">
-  			  <input type="number" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-  			  <label>Number</label>
-        </div>
-        <div class="group">
-          <input type="tel" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-  			  <label>Tel</label>
-        </div>
-        <div class="group">
-          <input type="url" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-  			  <label>URL</label>
-        </div>
-        <div class="group">
-          <input type="email" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-  			  <label>Email</label>
-        </div>
-        <div class="group">
-          <input type="search" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-  			  <label>Search</label>
-        </div>
-        <div class="group">
-          <input type="password" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-  			  <label>Password</label>
-        </div>
-        <div class="group">
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <textarea required></textarea>
-  			  <label>Textarea</label>
-        </div>
-        <div class="group">
-        <label>Checkbox</label>
+			  <input type="text" / placeholder="name" />
+			  <input type="number" / placeholder="number" />
+			  <input type="tel" / placeholder="tel" />
+			  <input type="url" / placeholder="url" />
+			  <input type="email" / placeholder="email" />
+			  <input type="search" / placeholder="search" />
+			  <input type="password" / placeholder="password" />
+			  <label>Checkbox</label>
 			  <input type="checkbox" />
-      </div>
-			  <label>Radio</label>
-			  <input type="radio" name="radio" />
-			  <input type="radio" name="radio" />
-			  <input type="radio" name="radio" />
-        <div class="group">
-  			  <label>Select<label>
-  			  <select>
-  				    <option value="1">One</option>
-  				    <option value="2">Two</option>
-  				    <option value="3">Three</option>
-  				    <option value="4">Four</option>
-			     </select>
+        <div class="radio-ex">
+          <label>Radio</label>
+  			  <input type="radio" name="radio" />
+  			  <input type="radio" name="radio" />
+  			  <input type="radio" name="radio" />
         </div>
+			  <textarea placeholder="Hello ~ " /></textarea>
+			  <label>Select<label>
+          <div class="styled-select">
+    			  <select>
+    				<option value="1">One Banana</option>
+    				<option value="2">Two Banana</option>
+    				<option value="3">Three Banana</option>
+    				<option value="4">Four Banana</option>
+            <option value="5">Five Bsnanas</option>
+    			  </select>
+          </div>
 			</form>
 		</section>
     <section class="button-ex">
@@ -159,10 +124,7 @@
       <input type="reset" value="Reset">
     </section>
     <h2>Got Links?</h2>
-      <div class="wrapper">
-      <span class="square">
-        <a class="before after" href="#0">Link</a></span>
-      </div>
+    <a href="#0" class="link">Link</a>
     <section class="utilities-ex">
     </section>
 

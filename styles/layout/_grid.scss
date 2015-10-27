@@ -21,6 +21,7 @@
   .col-#{$i} {
     @media screen and (min-width: 600px){
       width: (100% / 12) * $i;
+
     }
   }
 }
