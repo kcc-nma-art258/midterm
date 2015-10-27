@@ -1,4 +1,39 @@
 .section06 {
   height: auto;
 
+  .sec6-form{
+  text-align: left;
+  }
+.form-form {
+  padding-bottom: 30px;
+}
+
+.button2 {
+  font-size: 11px;
+  font-weight: 300;
+  color: rgb(51, 51, 51);
+  padding: 4.5px 1.8em;;
+  background-color: rgba(76, 130, 246, 0.0);
+  border: 1px solid #D9EDFF;
+  text-decoration: none;
+
+  &:hover {
+    background-color: rgba(76, 130, 246, 0.0);
+
+    text-decoration: none;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+    appearance: none;
+
+  }
+  }
+
+.row-last {
+  padding-top: 8em;
+  text-align: center;
+
+}
 }

@@ -13,7 +13,7 @@
   <div class="container-1200">
 
   <!-- Header Section -->
-  <header class="main-header cf">
+  <header id="top">
 
   </header>
 
@@ -22,7 +22,7 @@
       <h5 class="hero-h5">Framework, the final frontier</h5>
       <h2 class="hero-h2">Hyela's Framework Enterprise</h2>
 
-      <h5>Download</h5>
+      <h6>Download</h6>
       <h6>{ It's for everyone! }</h6>
     </section> <!-- Section01 end -->
 
@@ -39,7 +39,7 @@
           <a href="#"><img src="images/sass.svg" alt="sass logo" class="svg-sass"></a>
           <h4>Sass</h4>
           <h6>It’s bulid in Sass that give you power of semantic code, faster styling, and tons of awesome programmatic features. But even you don’t know about Sass, don’t worry. I have simple Css code for you</h6>
-          <h5>Download CSS Only</h5>
+          <h6 class="button-top-pad">Download CSS Only</h6>
         </div>
         <div class="col-4">
           <a href="#"><img src="images/settings.svg" alt="setting logo" class="svg-custom"></a>
@@ -127,7 +127,7 @@
   		<section class="section05">
         <h2 class="sans-mont">3<h2>
         <h3 class="sans-mont">Buttons</h3>
-          <div class="row">
+          <div class="row form-form">
   			<a href="#0" class="button">Link</a>
   			<button>Primary Button</button>
   			<input type="button" value="Secondary Button">
@@ -140,59 +140,80 @@
   		<section class="section06">
         <h2 class="sans-mont">4<h2>
         <h3 class="sans-mont">The Form</h3>
-        <div class="row">
-          <div class="col-6"><div><h6>Your Name
+        <div class="row form-form">
+          <div class="col-6">
             <form>
+              <div><h6 class="sec6-form">Your Name</h6></div>
               <input type="text" placeholder="Hyela Lee" />
-            </form>
-          </h6></div></div>
 
-          <div class="col-6"><div><h6>Phone Number
+            </form>
+          </div>
+
+          <div class="col-6"><div><h6 class="sec6-form">Phone Number</h6></div>
             <form>
               <input type="number" placeholder="8083931548" />
             </form>
-          </h6></div></div>
-        <form>
+          </div>
 
-  			  <label>Text</label>
-  			  <input type="text" />
-  			  <label>Number</label>
-  			  <input type="number" />
-  			  <label>Tel</label>
-  			  <input type="tel" />
-  			  <label>URL</label>
-  			  <input type="url" />
-  			  <label>Email</label>
-  			  <input type="email" />
-  			  <label>Search</label>
-  			  <input type="search" />
-  			  <label>Password</label>
-  			  <input type="password" />
-  			  <label>Checkbox</label>
-  			  <input type="checkbox" />
-  			  <label>Radio</label>
-  			  <input type="radio" name="radio" />
-  			  <input type="radio" name="radio" />
-  			  <input type="radio" name="radio" />
-  			  <label>Textarea</label>
-  			  <textarea></textarea>
-  			  <label>Select<label>
-  			  <select>
-  				<option value="1">One</option>
-  				<option value="2">Two</option>
-  				<option value="3">Three</option>
-  				<option value="4">Four</option>
-  			  </select>
-  			</form>
+        </div>
+
+<div class="row">
+  <div class="col-6">
+    <div><h6 class="sec6-form">Where would you like to go?</h6></div>
+      <form>
+
+          <select>
+          <option value="1">Klingon</option>
+          <option value="2">Vulcan</option>
+          <option value="3">Section 31</option>
+          <option value="4">Nibiru</option>
+          </select>
+        </form>
+  </div>
+
+    <div class="col-6">
+  <form>
+    <label><h6 class="sec6-form">What kind of species are you?</h6></label>
+    <input type="radio" name="radio" />
+    <input type="radio" name="radio" />
+    <input type="radio" name="radio" />
+
+    </form>
+        </div>
+</div>
+
+<div class="row">
+  <div class="col-6">
+  <form>
+    <label><h6 class="sec6-form">Check as much as you had before</h6></label>
+    <input type="checkbox" />
+    <input type="checkbox" />
+    <input type="checkbox" />
+    </form>
+    </div>
+
+    <div class="col-6">
+    <form>
+      <label><h6 class="sec6-form">Comments</label>
+        <textarea input type="text" placeholder="To boldly go where no man has gone before" /></textarea>
+      </form>
       </div>
+    </div>
+
+    <div class="row-last">
+
+<a href="#top" class="button2">Beam me Up</a>
+</div>
   		</section>
 
 
 
   <!-- Footer Section -->
-  <footer class="main-footer">Live long and prospect
+  <footer class="main-footer">
+    <a href="www.hyelalee.com"><img src="images/logo.png" alt="mylogo" class="my-logo"></a>
+    <h6 class="footer-h6"><small>Live Long and Prosper &copy; Hyela Lee 2015 All Rights Reserved</small></h6>
 
-      <div class="logo"><a href="www.hyelalee.com">logo</a></div>
+
   </footer>
 
   </div> <!-- container end -->
