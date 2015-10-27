@@ -350,14 +350,13 @@ input[type="button"]:active {
 
 /* Header */
 .header h3 {
-  padding: 3em 0 10px 0;
+  padding: 3em 0 5px 0;
   color: #333;
 }
 
 .header h5 {
   font-family: "Lato", sans-serif;
-  text-transform: uppercase;
-  color: #ccc;
+  color: #333;
 }
 
 /* Typography */
@@ -373,6 +372,13 @@ input[type="button"]:active {
 .stuff {
   padding-top: 2em;
   text-align: center;
+}
+
+/* Footer */
+.footer-example {
+  background-color: #DC9BD9;
+  color: #f8f8f8;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=styles.css.map */
