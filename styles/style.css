@@ -53,7 +53,7 @@ body {
   font-weight: 300;
   font-size: 1em;
   line-height: 1.5;
-  font-family: "Source Sans Pro", helvetica, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   color: #333;
 }
 
@@ -63,6 +63,28 @@ body {
   }
 }
 
+
+.heading{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.grid-example{
+  padding: 2em 0 2em 0;
+}
+
+.type-example {
+  padding-top: 2em;
+}
+
+.form-example {
+  padding-top: 2em;
+}
+
+.button-example {
+  padding-top: 2em;
+}
+
 /**
  * @section Headings
  */
@@ -70,7 +92,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Baskerville", Georgia, Palatino, serif;
+  font-family: "Josefin Slab", Georgia, Palatino, serif;
   font-weight: 400;
 }
 
@@ -353,5 +375,3 @@ input[type="button"]:active {
 .form-example form textarea {
   margin: 0 0 0.5em;
 }
-
-/*# sourceMappingURL=style.css.map */
