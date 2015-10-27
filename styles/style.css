@@ -454,6 +454,7 @@ input[type="reset"]:hover::before {
 }
 
 .button-3 {
+  display: block;
   margin-top: 30px;
   border: 1px solid #56B1F5;
   padding: 5px 20px;
@@ -493,7 +494,7 @@ input[type="reset"]:hover::before {
 }
 
 .svg-custom {
-  display: block;
+  display: inline;
   width: 150px;
   height: 150px;
   margin: 0 auto 10px auto;
@@ -502,10 +503,26 @@ input[type="reset"]:hover::before {
   border-radius: 50%;
 }
 
+.button-center {
+  text-align: center;
+  margin-top: 40px;
+}
+
 .button-top-pad {
-  margin-top: 30px;
+  display: inline;
   border: 1px solid #56B1F5;
-  padding: 5px 5px;
+  padding: 5px 20px;
+}
+
+.button-3 {
+  display: inline;
+  margin: 30px auto;
+  border: 1px solid #56B1F5;
+  padding: 3px 25px;
+}
+
+.button-top {
+  margin-top: 100px;
 }
 
 .section03 {
