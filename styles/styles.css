@@ -220,7 +220,7 @@ input[type="checkbox"]:checked::after {
 
 [class^='col-'] > div {
   text-align: center;
-  background-color: #ccc;
+  background-color: #F8F8F8;
   min-height: 50px;
 }
 
@@ -346,6 +346,10 @@ input[type="button"]:active {
 .header {
   padding: 5em 0;
   color: #000;
+}
+
+.typography-example h2, .typography-example h3, .typography-example h4, .typography-example h5, .typography-example h6 {
+  color: #CFCFCF;
 }
 
 /*# sourceMappingURL=styles.css.map */
