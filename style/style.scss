@@ -1,17 +1,17 @@
 // BASE
+@import "base/form";
 @import "base/reset";
 @import "base/utilities";
 @import "base/typography";
 
 // LAYOUT
-@import "layout/footer";
+
 @import "layout/grid";
-@import "layout/header";
+
 
 // MODULES
-@import "modules/hero";
-@import "modules/search-bar";
-@import "modules/site-info";
+@import "modules/buttons";
 
 //PAGES
-@import "modules/home";
+@import "pages/home";
+ 

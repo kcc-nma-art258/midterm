@@ -1,9 +1,10 @@
 /* Variables */
 
-$base-font: 16px;
+$base-font: 8px;
 $line-height: 1.5;
-$serif: 'Baskerville', Georgia, Palatino, serif;
-$sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$serif: 'Palatino', Georgia, serif;
+$sans-serif: 'Tahoma', Helvetica, Arial, sans-serif;
+
 
 
 /*
@@ -11,15 +12,15 @@ $sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
  */
 
 @mixin cf {
-	&:before,
-	&:after {
-		content: "";
-		display: table;
-	}
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
 
-	&:after {
-		clear: both;
-	}
+  &:after {
+    clear: both;
+  }
 }
 
 /**
