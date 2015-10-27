@@ -13,9 +13,9 @@ body{
   font-variant: normal;
   font-weight: 300;
   font-size: type-scale(0);
-  line-height: $line-height;
+  line-height: 1.2;
   font-family: $sans-serif;
-  color: #333;
+  color: #775050;
 
   @media screen and (min-width: 600px){
     font-size: type-scale(1);
@@ -53,6 +53,6 @@ h4 {
  * @section Inline
  */
 p {
-  margin-bottom: 0 0 em-calc($base-font);
-  text-align: justify;
+  margin-bottom: 1em;
+  
 }

@@ -10,6 +10,10 @@
   background-color: #FFCC00;
 }
 
+body header {
+  padding: 3em 0;
+}
+
 /*
  * Variables
  */
@@ -53,9 +57,9 @@ body {
   font-variant: normal;
   font-weight: 300;
   font-size: 1em;
-  line-height: 1.5;
+  line-height: 1.2;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+  color: #775050;
 }
 
 @media screen and (min-width: 600px) {
@@ -95,8 +99,7 @@ h4 {
  * @section Inline
  */
 p {
-  margin-bottom: 0 0 1em;
-  text-align: justify;
+  margin-bottom: 1em;
 }
 
 form {
@@ -106,7 +109,8 @@ form {
 form input,
 form textarea {
   display: block;
-  width: 100%;
+  width: 70%;
+  height: 2em;
 }
 
 input[type="email"],
@@ -152,8 +156,7 @@ select:active {
 
 input[type="checkbox"],
 input[type="radio"] {
-  border: 1px solid green;
-  display: inline-block;
+  border: 1px solid #775050;
   width: 1em;
   height: 1em;
   border-radius: 100%;
@@ -161,7 +164,7 @@ input[type="radio"] {
 
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
-  background: green;
+  background: #775050;
 }
 
 input[type="checkbox"] {
@@ -178,7 +181,7 @@ input[type="checkbox"]:checked::after {
   padding: 0;
   content: '\2713';
   display: block;
-  color: green;
+  color: #775050;
   position: absolute;
   top: -1px;
   left: 1px;
@@ -191,11 +194,6 @@ input[type="checkbox"]:checked::after {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-}
-
-.row {
-  margin-left: -1em;
-  margin-right: -1em;
 }
 
 .row:before,
@@ -213,7 +211,6 @@ input[type="checkbox"]:checked::after {
   float: left;
   min-height: 1px;
   padding: 0 1em;
-  border-radius: 12px;
 }
 
 @media screen and (min-width: 600px) {
@@ -288,6 +285,68 @@ input[type="checkbox"]:checked::after {
   }
 }
 
+.grid-example {
+  margin-bottom: 50px;
+}
+
+.grid-example p {
+  margin-bottom: 1em;
+}
+
+.column, .columns {
+  border-radius: 6px;
+  margin-left: 4%;
+  float: left;
+}
+
+.column:first-child, .columns:first-child {
+  margin-left: 0;
+}
+
+.col-1 {
+  width: 4.66666666667%;
+}
+
+.col-2 {
+  width: 13.3333333333%;
+}
+
+.col-3 {
+  width: 22%;
+}
+
+.col-4 {
+  width: 30.6666666667%;
+}
+
+.col-5 {
+  width: 39.3333333333%;
+}
+
+.col-6 {
+  width: 48%;
+}
+
+.col-7 {
+  width: 56.6666666667%;
+}
+
+.col-8 {
+  width: 65.3333333333%;
+}
+
+.col-9 {
+  width: 74%;
+}
+
+.col-10 {
+  width: 82.6666666667%;
+}
+
+.col-11 {
+  width: 91.3333333333%;
+}
+
 /*
  * Modules
  */
@@ -344,6 +403,14 @@ input[type="button"]:active {
   text-align: center;
   background-color: #EFEFEF;
   padding: 0.75em 0;
+}
+
+.type-example {
+  padding: 2em 0;
+}
+
+.form-example {
+  padding: 2em 0;
 }
 
 .form-example form {

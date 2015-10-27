@@ -3,6 +3,7 @@
 		margin-bottom: 1em;
 	}
 
+
 	[class^='col-'] {
 		min-height: 3em;
 		text-align: center;
@@ -11,7 +12,14 @@
 	}
 }
 
+.type-example {
+	padding: 2em 0;
+}
+
 .form-example {
+
+		padding: 2em 0;
+
 	form {
 	  margin: 2em auto 0;
 	  padding: 0 1em;

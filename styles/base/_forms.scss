@@ -4,7 +4,8 @@ form {
   input,
   textarea{
     display: block;
-    width: 100%;
+    width: 70%;
+    height: 2em;
   }
 }
 
@@ -31,14 +32,14 @@ select {
 input[type="checkbox"],
 input[type="radio"] {
 
-  border: 1px solid green;
-  display: inline-block;
+  border: 1px solid #775050;
+
   width: 1em;
   height: 1em;
   border-radius: 100%;
 
   &:checked {
-    background: green;
+    background: #775050;
   }
 }
 
@@ -54,7 +55,7 @@ input[type="checkbox"] {
       padding: 0;
       content: '\2713';
       display: block;
-      color: green;
+      color: #775050;
       position: absolute;
       top: -1px;
       left: 1px;
