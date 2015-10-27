@@ -43,7 +43,7 @@ body {
   font-weight: 300;
   font-size: 1em;
   line-height: 1.5;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
   color: #333;
 }
 
@@ -88,11 +88,12 @@ h4 {
 /*** @section Inline */
 p {
   margin-bottom: 0 0 1em;
-  text-align: justify;
+  text-align: center;
 }
 
 form {
   width: 100%;
+  color: #CACACA;
 }
 
 form input,
@@ -115,6 +116,8 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
+  height: 3em;
+  border-radius: 1em;
 }
 
 input[type="email"]:focus,
@@ -144,7 +147,7 @@ select:active {
 
 input[type="checkbox"],
 input[type="radio"] {
-  border: 1px solid green;
+  border: 1px solid #000;
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -153,7 +156,7 @@ input[type="radio"] {
 
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
-  background: green;
+  background: #DC9BD9;
 }
 
 input[type="checkbox"] {
@@ -170,7 +173,7 @@ input[type="checkbox"]:checked::after {
   padding: 0;
   content: '\2713';
   display: block;
-  color: green;
+  color: #DC9BD9;
   position: absolute;
   top: -1px;
   left: 1px;
@@ -203,6 +206,10 @@ input[type="checkbox"]:checked::after {
 
 .row:after {
   clear: both;
+}
+
+.row > div {
+  font-size: 16px;
 }
 
 [class^='col-'] {
@@ -288,7 +295,7 @@ input[type="button"] {
   color: inherit;
   padding: 0.5em 1em;
   margin-bottom: 0.5em;
-  background-color: #D7D7F6;
+  background-color: #9E9E9E;
   border-radius: 2px;
 }
 
@@ -334,6 +341,11 @@ input[type="button"]:active {
 .form-example form input,
 .form-example form textarea {
   margin: 0 0 0.5em;
+}
+
+.header {
+  padding: 5em 0;
+  color: #000;
 }
 
 /*# sourceMappingURL=styles.css.map */

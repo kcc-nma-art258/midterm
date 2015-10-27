@@ -15,6 +15,9 @@ $gutter: 1em;
   @include cf;
   margin-left: -$gutter;
   margin-right: -$gutter;
+  > div {
+    font-size: 16px;
+  }
 }
 
 [class^='col-'] {
