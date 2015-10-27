@@ -1,14 +1,24 @@
-//base
+/*
+ * Base
+ */
+
 @import "base/reset";
 @import "base/utilities";
+@import "base/typography";
+@import "base/forms";
 
-//layout
-@import "layout/body";
-@import "layout/footer";
-@import "layout/grid";
-@import "layout/header";
 
-//modules
-@import "modules/hero";
-@import "modules/search-bar";
-@import "modules/site-info";
+/*
+ * Layouts
+ */
+@import "layouts/grid";
+
+/*
+ * Modules
+ */
+@import "modules/buttons";
+
+/*
+ * Pages
+ */
+@import "pages/home";
