@@ -176,7 +176,7 @@ input[type="radio"] {
   border: 1px solid green;
   display: inline-block;
   width: 1em;
-  height: 1em;
+  min-height: 1em;
   border-radius: 100%;
 }
 
