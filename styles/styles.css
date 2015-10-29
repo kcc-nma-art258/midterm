@@ -289,10 +289,6 @@ input[type="checkbox"]:checked::after {
   margin-bottom: 50px;
 }
 
-.grid-example p {
-  margin-bottom: 1em;
-}
-
 .column, .columns {
   border-radius: 6px;
   margin-left: 4%;
