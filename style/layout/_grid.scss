@@ -11,10 +11,6 @@ $gutter: 1em;
   }
 }
 
-.grid {
-  padding: $section-padding;
-}
-
 .row {
   @include cf;
   margin-left: -$gutter;
