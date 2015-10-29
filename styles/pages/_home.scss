@@ -13,12 +13,19 @@
 	  margin: 2em auto 0;
 	  padding: 0 1em;
 
+		label {
+			font-size: 1.5em;
+		}
+
 	  input,
-	  textarea{
-		margin: 0 0 0.5em;
+	  textarea {
+		margin: 1em 0 1em 0;
+		}
+
+
 	  }
 	}
-}
+
 
 /* Header */
 
