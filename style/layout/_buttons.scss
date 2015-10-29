@@ -1,7 +1,3 @@
-.button {
-  padding: $section-padding;
-}
-
 .button-center {
   text-align: center;
 }
@@ -18,7 +14,7 @@ input[type="button"] {
   display: inline-block; // Make display properties consistent across the board
   text-decoration: none; // Remove underline for anchor buttons
   color: inherit;        // Inherit the default color (ie. black)
-  padding: 0.5em 1em;
+  padding: 1.5em;
   margin-bottom: 0.5em;
   background-color: #006699;
   border-radius: 3px;

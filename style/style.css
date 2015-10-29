@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-.button {
-  padding: 6em 0;
-}
-
 .button-center {
   text-align: center;
 }
@@ -24,7 +20,7 @@ input[type="button"] {
   display: inline-block;
   text-decoration: none;
   color: inherit;
-  padding: 0.5em 1em;
+  padding: 1.5em;
   margin-bottom: 0.5em;
   background-color: #006699;
   border-radius: 3px;
