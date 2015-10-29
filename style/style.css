@@ -20,7 +20,8 @@ input[type="button"] {
   display: inline-block;
   text-decoration: none;
   color: inherit;
-  padding: 1.5em;
+  font: inherit;
+  padding: 1em;
   margin-bottom: 0.5em;
   background-color: #006699;
   border-radius: 3px;
@@ -307,7 +308,7 @@ input[type="radio"] {
 
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
-  background: green;
+  background: #000;
 }
 
 .checkbox {
@@ -328,7 +329,7 @@ input[type="checkbox"]:checked::after {
   padding: 0;
   content: '\2713';
   display: block;
-  color: green;
+  color: #000;
   position: absolute;
   top: -1px;
   left: 1px;
