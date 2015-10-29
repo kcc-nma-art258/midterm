@@ -1,8 +1,13 @@
 /* Base */
+// 順序重要
 @import "base/reset";
 @import "base/utilities";
+@import "base/variables";
+
 @import "base/typography";
 @import "base/forms";
+@import "base/media-queries";
+@import "base/mixins";
 
 /* Layout */
 @import "layout/button";
