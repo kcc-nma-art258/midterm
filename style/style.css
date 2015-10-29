@@ -3,6 +3,34 @@
   padding: 0;
 }
 
+/**
+ * Utilities
+ */
+/**
+ * @section Functions
+ */
+/**
+ * rem/em Calculator
+ *
+ * target / context = result
+ * @param {$target}  Target size in pixels (ie. 32px)
+ * @param {$context} Font size providing context for proportion, defaults to $base-font)
+ * @param {$unit} unit for rem/em output, defaults to 'em'
+ */
+/**
+ * Exponent Calculator
+ *
+ * https://gist.github.com/scottkellum/1160816
+ * @param {$base} base number
+ * @param {$exponent} exponent/power number
+ */
+/**
+ * Type Scale Calculator
+ *
+ * Create typographic scales
+ * @param {$i} increment of scale; 0 is base
+ * @param {$scale} scale ratio; defaults to 1.25
+ */
 .button-center {
   text-align: center;
 }
@@ -150,7 +178,7 @@ body {
   font-style: normal;
   font-variant: normal;
   font-weight: 300;
-  font-size: type-scale(0);
+  font-size: 1em;
   line-height: 1.5;
   font-family: "Raleway", sans-serif;
   color: #333;
@@ -163,7 +191,7 @@ body header {
 
 @media screen and (min-width: 600px) {
   body {
-    font-size: type-scale(1);
+    font-size: 1.25em;
   }
 }
 
@@ -196,28 +224,28 @@ h6 {
 }
 
 h1 {
-  font-size: type-scale(4);
+  font-size: 2.44141em;
   text-align: center;
   text-transform: uppercase;
   color: #339999;
 }
 
 h2 {
-  font-size: type-scale(3);
+  font-size: 1.95312em;
   text-transform: uppercase;
   text-align: center;
 }
 
 h3 {
-  font-size: type-scale(2);
+  font-size: 1.5625em;
 }
 
 h4 {
-  font-size: type-scale(1);
+  font-size: 1.25em;
 }
 
 p {
-  margin-bottom: 0 0 em-calc(16px);
+  margin-bottom: 0 0 1em;
   text-align: center;
   padding: 0 6.5em 2em 6.5em;
 }
