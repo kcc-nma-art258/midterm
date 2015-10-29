@@ -4,7 +4,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   appearance: none;
-  background-color:#B5DEA0;
+  background-color:#5d5c58;
   border: 0 none;
 
   display: inline-block; // Make display properties consistent across the board
@@ -12,11 +12,11 @@ input[type="button"] {
   color: inherit;        // Inherit the default color (ie. black)
   padding: 0.5em 1em;
   margin-bottom: 0.5em;
-  background-color: #B5DEA0;
+  background-color: #5d5c58;
   border-radius: 4px;
 
   &:hover {
-    background-color: #B5DEA0;
+    background-color: #5d5c58;
   }
 
   &:focus,
