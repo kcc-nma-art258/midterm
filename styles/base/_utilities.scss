@@ -4,6 +4,8 @@
 
 
 /* @section FUNCTIONS */
+// function: 自作関数
+// @mixinと比べてかなり限定的な使い方をする
 
 /**
  * rem/em Calculator
@@ -20,6 +22,7 @@
 /**
  * Exponent Calculator
  *
+ * exponent: 指数（掛け算を繰り返す回数）
  * https://gist.github.com/scottkellum/1160816
  * @param {$base} base number
  * @param {$exponent} exponent/power number
