@@ -10,7 +10,6 @@ body {
 
 .container-1200 {
   width: 100%;
-  max-width: 960px;
   margin: 0 auto;
   height: $header-height;
   background-color: fff;
@@ -20,6 +19,7 @@ body {
 .row {
   margin-left: -1em;
   margin-right: -1em;
+  width: 100%;
   @include cf;
 }
 
