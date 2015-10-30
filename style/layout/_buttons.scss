@@ -1,0 +1,39 @@
+.button-center {
+  text-align: center;
+}
+
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  appearance: none;
+  background-color: transparent;
+  border: 0 none;
+
+  display: inline-block; // Make display properties consistent across the board
+  text-decoration: none; // Remove underline for anchor buttons
+  color: inherit;        // Inherit the default color (ie. black)
+  font: inherit;
+  padding: 1em;
+  margin-bottom: 0.5em;
+  background-color: #006699;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  background-color: #339999;
+  color: #000;
+}
+
+.form-button {
+  padding: 1em;
+  font-size: .75em;
+  width: 100%;
+}

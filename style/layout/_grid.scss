@@ -1,0 +1,51 @@
+// Variables
+$gutter: 1em;
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.row {
+  @include cf;
+  margin-left: -$gutter;
+  margin-right: -$gutter;
+}
+
+[class^='col-'] {
+  float: left;
+  min-height: 80px;
+  padding: 1em;
+  > div {
+  text-align: center;
+  background-color: #339999;
+  min-height: 50px;
+  border-radius: .35em;
+  }
+
+}
+
+[class^='col-']>div {
+  text-align:center;
+  background-color:#339999;
+  min-height:50px;
+  color: #fff;
+  padding-top: 1em;
+  border-radius: .35em;
+
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: $i / 12 * 100%;
+  }
+}
+
+body {
+  background-color: #fff;
+}
