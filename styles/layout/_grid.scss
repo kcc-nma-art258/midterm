@@ -10,7 +10,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   background-color: fff;
-  border: 1px solid red;
 
   @media #{$medium-screen}{
   width: 20%;
@@ -40,7 +39,6 @@ body {
   float: left;
   min-height: 1px;
   padding: 0 1em .5em 1em;
-  border: 1px solid
 
 }
 [class^="col-"] {

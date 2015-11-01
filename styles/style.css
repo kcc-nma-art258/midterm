@@ -41,7 +41,7 @@ html {
 body {
   font-style: normal;
   font-variant: normal;
-  font-weight: lighter;
+  font-weight: normal;
   font-size: 1em;
   line-height: 1.5;
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
@@ -231,7 +231,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   background-color: fff;
-  border: 1px solid red;
 }
 
 @media only screen and (min-width: em-calc(640px, 16px)) {
@@ -276,7 +275,6 @@ body {
   float: left;
   min-height: 1px;
   padding: 0 1em 0.5em 1em;
-  border: 1px solid;
 }
 
 [class^="col-"] > div {
@@ -476,11 +474,7 @@ input[type="reset"]:hover::before {
   box-shadow: inset 0 0 0 10em #ee3769;
 }
 
-.section02 [class^="col-"] {
-  padding: 0 1em;
-}
-
-.svg-screen {
+.section02 .svg-screen {
   display: block;
   width: 150px;
   height: 150px;
@@ -490,7 +484,7 @@ input[type="reset"]:hover::before {
   border-radius: 50%;
 }
 
-.svg-sass {
+.section02 .svg-sass {
   display: block;
   width: 150px;
   height: 150px;
@@ -500,7 +494,7 @@ input[type="reset"]:hover::before {
   border-radius: 50%;
 }
 
-.svg-custom {
+.section02 .svg-custom {
   display: block;
   width: 150px;
   height: 150px;
@@ -510,33 +504,33 @@ input[type="reset"]:hover::before {
   border-radius: 50%;
 }
 
-.button-center {
+.section02 .button-center {
   text-align: center;
   margin-top: 20px;
 }
 
-.button-top-pad {
+.section02 .button-top-pad {
   display: inline;
   border: 1px solid #56B1F5;
   padding: 5px 20px;
 }
 
-.button-3 {
+.section02 .button-3 {
   display: inline;
   margin: 30px auto;
   border: 1px solid #56B1F5;
   padding: 3px 25px;
 }
 
-.button-top {
+.section02 .button-top {
   margin-top: 10px;
 }
 
-h3.sans-mont {
+.section03 h3.sans-mont {
   padding-bottom: 0em;
 }
 
-h6 {
+.section03 h6 {
   text-transform: uppercase;
   padding-top: 14px;
   letter-spacing: 3px;
@@ -545,16 +539,124 @@ h6 {
   font-size: 12px;
 }
 
-.sub3-padding {
+.section03 .sub3-padding {
   padding-bottom: 7em;
 }
 
-.first-h6 {
+.section04 .first-h6 {
   padding-top: 60px;
 }
 
 .section05 .row {
   text-align: center;
+}
+
+.section06 {
+  height: auto;
+}
+
+.section06 .sec6-form {
+  text-align: left;
+}
+
+.section06 .form-form {
+  padding-bottom: 30px;
+}
+
+.section06 .button2 {
+  font-size: 11px;
+  font-weight: 300;
+  color: #333333;
+  padding: 4.5px 1.8em;
+  background-color: rgba(76, 130, 246, 0);
+  border: 1px solid #D9EDFF;
+  text-decoration: none;
+}
+
+.section06 .button2:hover {
+  background-color: rgba(76, 130, 246, 0);
+  text-decoration: none;
+}
+
+.section06 .button2:focus,
+.section06 .button2:active {
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.section06 {
+  height: auto;
+}
+
+.sec6-form {
+  text-align: left;
+}
+
+.form-form {
+  padding-bottom: 30px;
+}
+
+.button2 {
+  font-size: 11px;
+  font-weight: 300;
+  color: #333333;
+  padding: 4.5px 1.8em;
+  background-color: rgba(76, 130, 246, 0);
+  border: 1px solid #D9EDFF;
+  text-decoration: none;
+}
+
+.button2:hover {
+  background-color: rgba(76, 130, 246, 0);
+  text-decoration: none;
+}
+
+.button2:focus,
+.button2:active {
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.cd-top {
+  display: inline-block;
+  color: #000;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 10px 0 0 6px;
+  background-color: rgba(243, 13, 84, 0.4);
+  height: 40px;
+  width: 80px;
+  position: fixed;
+  bottom: 60px;
+  right: 80px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
 }
 
 .section06 {
