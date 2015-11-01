@@ -1,44 +1,54 @@
 
 html,
 body {
-  height: $header-height;
+  height: $full-height;
   width: $full-width;
 }
 
-body {
-}
-
 .container-1200 {
-  width: 100%;
+  width: $full-width;
   max-width: 1200px;
   margin: 0 auto;
-  height: $header-height;
   background-color: fff;
-  @media screen and (min-width: 640px){
+  border: 1px solid red;
 
-    width: 20%;
+  @media #{$medium-screen}{
+  width: 20%;
+  border: 1px solid red;
   }
-  @media screen and (min-width: 10240px){
-    width: 70%;
 
+  @media #{$large-screen}{
+    border: 1px solid blue;
+  width: 60%;
   }
-  @media screen and (min-width: 1440px){
-    width: 100%;
+
+  @media #{$xlarge-screen}{
+      border: 1px solid green;
+  width: 100%;
   }
 }
 
 .row {
-  margin-left: -1em;
-  margin-right: -1em;
   width: 100%;
   @include cf;
+
 }
 
 [class^="col-"] {
   width: 100%;
   float: left;
   min-height: 1px;
-  padding: 0 1em;
+  padding: 0 1em .5em 1em;
+  border: 1px solid
+
+}
+[class^="col-"] {
+
+  >div {
+text-align: center;
+background-color: #F0F0F0;
+height: 50px;
+}
 }
 
 @for $i from 1 through 12 {

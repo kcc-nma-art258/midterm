@@ -17,9 +17,7 @@ body{
   font-family: $sans-serif;
   color: #333;
 
-  @media screen and (min-width: 600px){
-    font-size: type-scale(1);
-  }
+
 }
 
 /**
