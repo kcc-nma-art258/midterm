@@ -54,167 +54,130 @@
 
   <section class="section03">
   <div class="row row-flex">
-    <div class="col-3">
-          <h1 class="sans-mont left">01<h1>
-  		    <h2 class="sans-mont left">The Grid</h2>
+    <div class="col-3 flex-column">
+          <h1 class="sans-mont left">01</h1>
+  		    <h3 class="sans-mont left">The Grid</h3>
     </div>
     <div class="col-9 flex-column">
           <h5 class="sub3-padding"> The grid is a 12-column fluid grid with a max width of 1200px, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser.</h5>
-        </div>
+    </div>
 </div>
 
+    <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+    <pre class="prettyprint">
+    <code class="code-example-body"><!-- .container is main centered wrapper -->
 
-<div class="row row-flex">
-  <div class="col-3">
+    &lt;class="container"&gt;
 
-  </div>
-  <div class="col-9 flex-column">
+      &lt;div class="row"&gt;
+        &lt;div class="col-1"&gt;1&lt;/div&gt;
+        &lt;div class="col-11"&gt;11&lt;/div&gt;
+      &lt;/div&gt;
 
+      &lt;div class="row"&gt;
+        &lt;div class="col-2"&gt;2&lt;/div&gt;
+        &lt;div class="col-10"&gt;10&lt;/div&gt;
+      &lt;/div&gt;
 
+      &lt;div class="row"&gt;
+        &lt;div class="col-3"&gt;3&lt;/div&gt;
+        &lt;div class="col-9"&gt;9&lt;/div&gt;
+      &lt;/div&gt;
 
-        </div>
-</div>
+      &lt;div class="row"&gt;
+        &lt;div class="col-4"&gt;4&lt;/div&gt;
+        &lt;div class="col-8"&gt;8&lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class="row"&gt;
+        &lt;div class="col-5"&gt;5&lt;/div&gt;
+        &lt;div class="col-7"&gt;7&lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class="row"&gt;
+        &lt;div class="col-6"&gt;6&lt;/div&gt;
+        &lt;div class="col-6"&gt;6&lt;/div&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+
+    </code>
+    </pre>
+
   		    <div class="row">
-
-  		        <div class="col-1"><div class="columnstyle"><h6>1</h6></div></div>
-  		        <div class="col-11"><div class="columnstyle"><h6>11 Column</h6></div></div>
+  		        <div class="col-1"><div class="columnstyle"><h6 class="sub-h6">1</h6></div></div>
+  		        <div class="col-11"><div class="columnstyle"><h6 class="sub-h6">11 Column</h6></div></div>
   		    </div>
 
   		    <div class="row">
-  		        <div class="col-2"><div class="columnstyle"><h6>2 Column</h6></div></div>
-  		        <div class="col-10"><div class="columnstyle"><h6>10 Column</h6></div></div>
+  		        <div class="col-2"><div class="columnstyle"><h6 class="sub-h6">2 Column</h6></div></div>
+  		        <div class="col-10"><div class="columnstyle"><h6 class="sub-h6">10 Column</h6></div></div>
   		    </div>
 
   		    <div class="row">
-  		        <div class="col-3"><div class="columnstyle"><h6>3 Column</h6></div></div>
-  		        <div class="col-9"><div class="columnstyle"><h6>9 Column</h6></div></div>
+  		        <div class="col-3"><div class="columnstyle"><h6 class="sub-h6">3 Column</h6></div></div>
+  		        <div class="col-9"><div class="columnstyle"><h6 class="sub-h6">9 Column</h6></div></div>
   		    </div>
 
   		    <div class="row">
-  		        <div class="col-4"><div class="columnstyle"><h6>4 Column</h6></div></div>
-  		        <div class="col-8"><div class="columnstyle"><h6>8 Column</h6></div></div>
+  		        <div class="col-4"><div class="columnstyle"><h6 class="sub-h6">4 Column</h6></div></div>
+  		        <div class="col-8"><div class="columnstyle"><h6 class="sub-h6">8 Column</h6></div></div>
             </div>
 
   		    <div class="row">
-  		        <div class="col-5"><div class="columnstyle"><h6>5 Column</h6></div></div>
-  		        <div class="col-7"><div class="columnstyle"><h6>7 Column</h6></div></div>
+  		        <div class="col-5"><div class="columnstyle"><h6 class="sub-h6">5 Column</h6></div></div>
+  		        <div class="col-7"><div class="columnstyle"><h6 class="sub-h6">7 Column</h6></div></div>
   		    </div>
 
   		    <div class="row">
-  		        <div class="col-6"><div class="columnstyle"><h6>6 Column</h6></div></div>
-  		        <div class="col-6"><div class="columnstyle"><h6>6 Column</h6></div></div>
+  		        <div class="col-6"><div class="columnstyle"><h6 class="sub-h6">6 Column</h6></div></div>
+  		        <div class="col-6"><div class="columnstyle"><h6 class="sub-h6">6 Column</h6></div></div>
   		    </div>
 
   		    <div class="row">
-              <div class="col-7"><div class="columnstyle"><h6>7 Column</h6></div></div>
-  		        <div class="col-5"><div class="columnstyle"><h6>5 Column</h6></div></div>
+              <div class="col-7"><div class="columnstyle"><h6 class="sub-h6">7 Column</h6></div></div>
+  		        <div class="col-5"><div class="columnstyle"><h6 class="sub-h6">5 Column</h6></div></div>
   		    </div>
 
   		    <div class="row">
-              <div class="col-8"><div class="columnstyle"><h6>8 Column</h6></div></div>
-  		        <div class="col-4"><div class="columnstyle"><h6>4 Column</h6></div></div>
+              <div class="col-8"><div class="columnstyle"><h6 class="sub-h6">8 Column</h6></div></div>
+  		        <div class="col-4"><div class="columnstyle"><h6 class="sub-h6">4 Column</h6></div></div>
   		    </div>
 
   		    <div class="row">
-            <div class="col-9"><div class="columnstyle"><h6>9 Column</h6></div></div>
-  		        <div class="col-3"><div class="columnstyle"><h6>3 Column</h6></div></div>
+            <div class="col-9"><div class="columnstyle"><h6 class="sub-h6">9 Column</h6></div></div>
+  		        <div class="col-3"><div class="columnstyle"><h6 class="sub-h6">3 Column</h6></div></div>
   		    </div>
 
   		    <div class="row">
-            <div class="col-10"><div class="columnstyle"><h6>10 Column</h6></div></div>
-  		        <div class="col-2"><div class="columnstyle"><h6>2 Column</h6></div></div>
+            <div class="col-10"><div class="columnstyle"><h6 class="sub-h6">10 Column</h6></div></div>
+  		        <div class="col-2"><div class="columnstyle"><h6 class="sub-h6">2 Column</h6></div></div>
   		    </div>
 
   		    <div class="row">
-            <div class="col-11"><div class="columnstyle"><h6>11 Column</h6></div></div>
-  		        <div class="col-1"><div class="columnstyle"><h6>1</h6></div></div>
+            <div class="col-11"><div class="columnstyle"><h6 class="sub-h6">11 Column</h6></div></div>
+  		        <div class="col-1"><div class="columnstyle"><h6 class="sub-h6">1</h6></div></div>
   		    </div>
-          <!-- CODE EXAMPLE ———————————————————————————————————————— -->
-          <pre class="prettyprint">
-          <code class="code-example-body"><!-- .container is main centered wrapper -->
 
-          &lt;class="container"&gt;
-
-            &lt;div class="row"&gt;
-              &lt;div class="col-1"&gt;1&lt;/div&gt;
-              &lt;div class="col-11"&gt;11&lt;/div&gt;
-            &lt;/div&gt;
-
-            &lt;div class="row"&gt;
-              &lt;div class="col-2"&gt;1&lt;/div&gt;
-              &lt;div class="col-10"&gt;11&lt;/div&gt;
-            &lt;/div&gt;
-
-            &lt;div class="row"&gt;
-              &lt;div class="col-3"&gt;1&lt;/div&gt;
-              &lt;div class="col-9"&gt;11&lt;/div&gt;
-            &lt;/div&gt;
-
-            &lt;div class="row"&gt;
-              &lt;div class="col-1"&gt;1&lt;/div&gt;
-              &lt;div class="col-11"&gt;11&lt;/div&gt;
-            &lt;/div&gt;
-
-            &lt;div class="row"&gt;
-              &lt;div class="col-1"&gt;1&lt;/div&gt;
-              &lt;div class="col-11"&gt;11&lt;/div&gt;
-            &lt;/div&gt;
-
-            &lt;div class="row"&gt;
-              &lt;div class="col-1"&gt;1&lt;/div&gt;
-              &lt;div class="col-11"&gt;11&lt;/div&gt;
-            &lt;/div&gt;
-
-            &lt;div class="row"&gt;
-              &lt;div class="col-1"&gt;1&lt;/div&gt;
-              &lt;div class="col-11"&gt;11&lt;/div&gt;
-            &lt;/div&gt;
-
-            &lt;div class="row"&gt;
-              &lt;div class="col-1"&gt;1&lt;/div&gt;
-              &lt;div class="col-11"&gt;11&lt;/div&gt;
-            &lt;/div&gt;
-
-            &lt;div class="row"&gt;
-              &lt;div class="col-1"&gt;1&lt;/div&gt;
-              &lt;div class="col-11"&gt;11&lt;/div&gt;
-            &lt;/div&gt;
-
-            &lt;div class="row"&gt;
-              &lt;div class="col-1"&gt;1&lt;/div&gt;
-              &lt;div class="col-11"&gt;11&lt;/div&gt;
-            &lt;/div&gt;
-
-            &lt;div class="row"&gt;
-              &lt;div class="col-1"&gt;1&lt;/div&gt;
-              &lt;div class="col-11"&gt;11&lt;/div&gt;
-            &lt;/div&gt;
-
-            &lt;div class="row"&gt;
-              &lt;div class="col-1"&gt;1&lt;/div&gt;
-              &lt;div class="col-11"&gt;11&lt;/div&gt;
-            &lt;/div&gt;
-
-
-
-
-
-          &lt;/div&gt;
-
-            <div class="col-1"><div class="columnstyle"><h6>1</h6></div></div>
-            <div class="col-11"><div class="columnstyle"><h6>11 Column</h6></div></div>
-            </div>
-
-            </div>
-          </code>
-          </pre>
   		</section>
 
-  		<section class="section04">
-        <h2 class="sans-mont">2<h2>
-  			<h3 class="sans-mont">The typography</h3>
-        <h5 class="first-h6">The primary typography base is Source Sans served by Google, set at 1em(16px) and it scales by 1.500 ratio. If you are using Sass, you can easly change using by typography-scale system. (I am also using 'Montserrat' as a secondary typeface.)
+
+
+
+
+<section class="section04">
+<div class="row">
+    <div class="col-3">
+          <h1 class="sans-mont left">02</h1>
+  			  <h3 class="sans-mont left">The typography</h3>
+    </div>
+
+      <div class="col-9">
+            <h5 class="sub3-padding">The primary typography base is Source Sans served by Google, set at 1em(16px) and it scales by 1.500 ratio. If you are using Sass, you can easly change using by typography-scale system. (I am also using 'Montserrat' as a secondary typeface.)
         </h5>
+        </div>
+
+</div>
         <div class="row">
 
           <div class="col-6">
@@ -238,6 +201,7 @@
       </div>
 
         </div>
+
   		</section>
 
   		<section class="section05">

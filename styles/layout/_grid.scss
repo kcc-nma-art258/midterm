@@ -10,7 +10,8 @@ body {
   width: $full-width;
   max-width: 960px;
   margin: 0 auto;
-  background-color: fff;
+  background-color: #fff;
+
 
 /*
   @media #{$medium-screen}{
@@ -44,9 +45,9 @@ body {
 
 .columnstyle {
 text-align: center;
-border: 1px solid #9BF8CD;
-height: 50px;
-  }
+border: 1px solid #009BFF;
+height: 40px;
+}
 
 @for $i from 1 through 12 {
   .col-#{$i} {
