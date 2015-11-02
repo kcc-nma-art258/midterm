@@ -1,6 +1,6 @@
 /* Variables */
 
-$base-font: 8px;
+$base-font: 16px;
 $line-height: 1.5;
 $serif: 'Palatino', Georgia, serif;
 $sans-serif: 'Tahoma', Helvetica, Arial, sans-serif;
@@ -76,6 +76,6 @@ $sans-serif: 'Tahoma', Helvetica, Arial, sans-serif;
  * @param {$i} increment of scale; 0 is base
  * @param {$scale} scale ratio; defaults to 1.25
  */
-@function type-scale($i, $scale: 1.618){
+@function type-scale($i, $scale: 1.6){
   @return exponent($scale, $i) * 1em;
 }

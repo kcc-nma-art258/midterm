@@ -8,7 +8,10 @@
 	}
 
 	.paragraph{
-		margin-bottom: 2em;
+		margin: auto;
+		padding: 1em 0 2em 0;
+		border: 1px solid red;
+
 	}
 
 	.title{
@@ -27,24 +30,23 @@
 		}
 	}
 }
-
+/*
 .grid-sec {
 	.row {
 		margin-bottom: 0;
 	}
 
-	
+
 
 	[class^='col-'] {
 		min-height: 3em;
 		text-align: center;
 		background-color: #D0D0D0;
 		padding: 0.75em 0;
-		margin: .5em 0;
+
 	}
-
 }
-
+*/
 .form-sec {
 	form {
 	  margin: 2em auto 0;
@@ -56,5 +58,3 @@
 	  }
 	}
 }
-
-

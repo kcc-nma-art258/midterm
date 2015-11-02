@@ -2,34 +2,51 @@
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
+  border: 1px solid red;
+  overflow: hidden;
 }
 
 .row {
   margin-left: -1em;
   margin-right: -1em;
-  
-  :before,
-  :after {
-    content:"";
-    display: table;
-  }
+  @include cf;
 
-  :after{
-    clear:both;
-  }
-} 
+}
+
+/*[class^="col-"] {
+  width: 100%;
+  float: left;
+  min-height: 1px;
+  height: 3em;
+  padding
+  text-align: center;
+  border: 1px solid red;
+  border-radius: 5px;
+}*/
 
 [class^="col-"] {
   width: 100%;
   float: left;
   min-height: 1px;
-  padding: 0 1em;
+  padding: 0 1em 1em 1em;
+  font-size: $base-font;
 }
+
+[class^="col-"] {
+  div {
+    text-align: center;
+    height: 50px;
+    background-color: #F0F0F0;
+    padding: .75em 0;
+  }
+}
+
 
 @for $i from 1 through 12 {
   .col-#{$i} {
     @media screen and (min-width: 600px){
       width: (100% / 12) * $i;
     }
+
   }
 }

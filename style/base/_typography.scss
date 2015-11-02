@@ -35,35 +35,31 @@ h6 {
 }
 
 h1 {
-  font-size: type-scale(5);
-}
-
-h2 {
-  font-size: type-scale(4);
-}
-
-h3 {
   font-size: type-scale(3);
 }
 
-h4 {
+h2 {
   font-size: type-scale(2);
 }
 
-h5 {
+h3 {
   font-size: type-scale(1);
+}
+
+h4 {
+  font-size: type-scale(0);
+}
+
+h5 {
+  font-size: type-scale(0);
 }
 
 h6 {
   font-size: type-scale(0);
 }
 
-
-
-/**
- * @section Inline
- */
 p {
-  font-size: 16px;
+  font-size: $base-font;
   text-align: justify;
+  margin: 0 auto;
 }
