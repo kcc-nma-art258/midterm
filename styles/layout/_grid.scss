@@ -35,6 +35,9 @@ $gutter: 1em;
 @for $i from 1 through 12 {
   .col-#{$i} {
     width: $i / 12 * 100%;
+    @media screen and (min-width: 600px){
+      width: (100% / 12) * $i;
+    }
   }
 }
 
@@ -44,4 +47,8 @@ body {
 
 .grid-example {
   padding: $section-padding;
+
+  .row {
+    padding: 0 1em 0 1em;
+  }
 }

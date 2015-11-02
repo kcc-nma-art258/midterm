@@ -231,48 +231,120 @@ input[type="checkbox"]:checked::after {
   width: 8.33333%;
 }
 
+@media screen and (min-width: 600px) {
+  .col-1 {
+    width: 8.33333%;
+  }
+}
+
 .col-2 {
   width: 16.66667%;
+}
+
+@media screen and (min-width: 600px) {
+  .col-2 {
+    width: 16.66667%;
+  }
 }
 
 .col-3 {
   width: 25%;
 }
 
+@media screen and (min-width: 600px) {
+  .col-3 {
+    width: 25%;
+  }
+}
+
 .col-4 {
   width: 33.33333%;
+}
+
+@media screen and (min-width: 600px) {
+  .col-4 {
+    width: 33.33333%;
+  }
 }
 
 .col-5 {
   width: 41.66667%;
 }
 
+@media screen and (min-width: 600px) {
+  .col-5 {
+    width: 41.66667%;
+  }
+}
+
 .col-6 {
   width: 50%;
+}
+
+@media screen and (min-width: 600px) {
+  .col-6 {
+    width: 50%;
+  }
 }
 
 .col-7 {
   width: 58.33333%;
 }
 
+@media screen and (min-width: 600px) {
+  .col-7 {
+    width: 58.33333%;
+  }
+}
+
 .col-8 {
   width: 66.66667%;
+}
+
+@media screen and (min-width: 600px) {
+  .col-8 {
+    width: 66.66667%;
+  }
 }
 
 .col-9 {
   width: 75%;
 }
 
+@media screen and (min-width: 600px) {
+  .col-9 {
+    width: 75%;
+  }
+}
+
 .col-10 {
   width: 83.33333%;
+}
+
+@media screen and (min-width: 600px) {
+  .col-10 {
+    width: 83.33333%;
+  }
 }
 
 .col-11 {
   width: 91.66667%;
 }
 
+@media screen and (min-width: 600px) {
+  .col-11 {
+    width: 91.66667%;
+  }
+}
+
 .col-12 {
   width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .col-12 {
+    width: 100%;
+  }
 }
 
 body {
@@ -281,6 +353,10 @@ body {
 
 .grid-example {
   padding: 5em 0;
+}
+
+.grid-example .row {
+  padding: 0 1em 0 1em;
 }
 
 .button,
@@ -331,12 +407,31 @@ input[type="button"]:active {
   padding: 5em 0;
 }
 
+/* Grid */
 .grid-example .allrows {
   padding-top: 2em;
 }
 
 .grid-example .row {
   margin-bottom: 10px;
+}
+
+/* Typography */
+.typography-example h1, .typography-example h2, .typography-example h3, .typography-example h4, .typography-example h5, .typography-example h6 {
+  color: #ECECEC;
+}
+
+.typography-example .type-title h3 {
+  color: #333;
+}
+
+.typography-example p {
+  margin: 0 2em 0 2em;
+}
+
+/* Form */
+.form-example p {
+  margin: 0 1.75em 0 1.75em;
 }
 
 .form-example form {
@@ -353,6 +448,21 @@ input[type="button"]:active {
   margin: 1em 0 1em 0;
 }
 
+/* Buttons */
+.button-example p {
+  margin: 0 3em 0 3em;
+}
+
+.stuff {
+  padding-top: 2em;
+  text-align: center;
+}
+
+/* Utilities */
+.util-example p {
+  margin: 0 3em 0 3em;
+}
+
 /* Header */
 .header h3 {
   padding: 3em 0 5px 0;
@@ -362,21 +472,6 @@ input[type="button"]:active {
 .header h5 {
   font-family: "Lato", sans-serif;
   color: #333;
-}
-
-/* Typography */
-.typography-example h1, .typography-example h2, .typography-example h3, .typography-example h4, .typography-example h5, .typography-example h6 {
-  color: #ECECEC;
-}
-
-.typography-example .type-title h3 {
-  color: #333;
-}
-
-/* Buttons */
-.stuff {
-  padding-top: 2em;
-  text-align: center;
 }
 
 /* Footer */
