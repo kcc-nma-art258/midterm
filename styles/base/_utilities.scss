@@ -1,21 +1,17 @@
-
-
-
-
-
 /* @section FUNCTIONS */
 // function: 自作関数
 // @mixinと比べてかなり限定的な使い方をする
 
 /**
- * rem/em Calculator
+ * rem/em Calculator (ie. em-calc(32px, 16px, 'rem')
  *
  * target / context = result
  * @param {$target}  Target size in pixels (ie. 32px)
  * @param {$context} Font size providing context for proportion, defaults to $base-font)
  * @param {$unit} unit for rem/em output, defaults to 'em'
  */
-@function em-calc($target, $context: $base-font, $unit: 'em'){
+@function em-calc($target, $context: $base-font, $unit: 'rem'){
+  // target / context = result (defaults to rem's)
   @return #{$target/$context} + $unit;
 }
 
@@ -27,7 +23,7 @@
  * @param {$base} base number
  * @param {$exponent} exponent/power number
  */
-@function exponent($base, $exponent){
+@function exponent($base, $exponent) {
   // reset value
   $value: $base;
 
@@ -57,6 +53,6 @@
  * @param {$i} increment of scale; 0 is base
  * @param {$scale} scale ratio; defaults to 1.25
  */
-@function type-scale($i, $scale: 1.618){
-  @return exponent($scale, $i) * 1em;
-}
+//@function type-scale($i, $scale: 1.618){
+//  @return exponent($scale, $i) * 1em;
+//}
