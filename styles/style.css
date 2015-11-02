@@ -228,34 +228,27 @@ body {
 
 .container-1200 {
   width: 100%;
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
   background-color: fff;
-}
-
-@media only screen and (min-width: em-calc(640px, 16px)) {
-  .container-1200 {
-    width: 20%;
-    border: 1px solid red;
+  /*
+  @media only screen and (min-width: em-calc(640px, 16px)){
+  width: 20%;
   }
-}
 
-@media only screen and (min-width: em-calc(1024px, 16px)) {
-  .container-1200 {
+  @media only screen and (min-width: em-calc(1024px, 16px)){
     border: 1px solid blue;
-    width: 60%;
+  width: 60%;
   }
-}
 
-@media only screen and (min-width: em-calc(1440px, 16px)) {
-  .container-1200 {
-    border: 1px solid green;
-    width: 100%;
+  @media only screen and (min-width: em-calc(1440px, 16px)){
+      border: 1px solid green;
+  width: 100%;
   }
+  */
 }
 
 .row {
-  width: 100%;
   margin-left: -1em;
   margin-right: -1em;
 }
@@ -274,12 +267,12 @@ body {
   width: 100%;
   float: left;
   min-height: 1px;
-  padding: 0 1em 0.5em 1em;
+  padding: 0 1em 1em 1em;
 }
 
-[class^="col-"] > div {
+.columnstyle {
   text-align: center;
-  background-color: #F0F0F0;
+  border: 1px solid #9BF8CD;
   height: 50px;
 }
 
@@ -474,264 +467,6 @@ input[type="reset"]:hover::before {
   box-shadow: inset 0 0 0 10em #ee3769;
 }
 
-.section02 .svg-screen {
-  display: block;
-  width: 150px;
-  height: 150px;
-  margin: 0 auto 10px auto;
-  border: 1px solid #E0E0E0;
-  padding: 35px;
-  border-radius: 50%;
-}
-
-.section02 .svg-sass {
-  display: block;
-  width: 150px;
-  height: 150px;
-  margin: 0 auto 10px auto;
-  border: 1px solid #E0E0E0;
-  padding: 40px;
-  border-radius: 50%;
-}
-
-.section02 .svg-custom {
-  display: block;
-  width: 150px;
-  height: 150px;
-  margin: 0 auto 10px auto;
-  border: 1px solid #E0E0E0;
-  padding: 40px;
-  border-radius: 50%;
-}
-
-.section02 .button-center {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.section02 .button-top-pad {
-  display: inline;
-  border: 1px solid #56B1F5;
-  padding: 5px 20px;
-}
-
-.section02 .button-3 {
-  display: inline;
-  margin: 30px auto;
-  border: 1px solid #56B1F5;
-  padding: 3px 25px;
-}
-
-.section02 .button-top {
-  margin-top: 10px;
-}
-
-.section03 h3.sans-mont {
-  padding-bottom: 0em;
-}
-
-.section03 h6 {
-  text-transform: uppercase;
-  padding-top: 14px;
-  letter-spacing: 3px;
-  color: #9E9E9E;
-  font-weight: 600;
-  font-size: 12px;
-}
-
-.section03 .sub3-padding {
-  padding-bottom: 7em;
-}
-
-.section04 .first-h6 {
-  padding-top: 60px;
-}
-
-.section05 .row {
-  text-align: center;
-}
-
-.section06 {
-  height: auto;
-}
-
-.section06 .sec6-form {
-  text-align: left;
-}
-
-.section06 .form-form {
-  padding-bottom: 30px;
-}
-
-.section06 .button2 {
-  font-size: 11px;
-  font-weight: 300;
-  color: #333333;
-  padding: 4.5px 1.8em;
-  background-color: rgba(76, 130, 246, 0);
-  border: 1px solid #D9EDFF;
-  text-decoration: none;
-}
-
-.section06 .button2:hover {
-  background-color: rgba(76, 130, 246, 0);
-  text-decoration: none;
-}
-
-.section06 .button2:focus,
-.section06 .button2:active {
-  outline: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-
-.section06 {
-  height: auto;
-}
-
-.sec6-form {
-  text-align: left;
-}
-
-.form-form {
-  padding-bottom: 30px;
-}
-
-.button2 {
-  font-size: 11px;
-  font-weight: 300;
-  color: #333333;
-  padding: 4.5px 1.8em;
-  background-color: rgba(76, 130, 246, 0);
-  border: 1px solid #D9EDFF;
-  text-decoration: none;
-}
-
-.button2:hover {
-  background-color: rgba(76, 130, 246, 0);
-  text-decoration: none;
-}
-
-.button2:focus,
-.button2:active {
-  outline: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-
-.cd-top {
-  display: inline-block;
-  color: #000;
-  font-size: 12px;
-  font-weight: 300;
-  padding: 10px 0 0 6px;
-  background-color: rgba(243, 13, 84, 0.4);
-  height: 40px;
-  width: 80px;
-  position: fixed;
-  bottom: 60px;
-  right: 80px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
-  transition: opacity 0.3s 0s, visibility 0s 0.3s;
-}
-
-.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
-  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
-  transition: opacity 0.3s 0s, visibility 0s 0s;
-}
-
-.cd-top.cd-is-visible {
-  /* the button becomes visible */
-  visibility: visible;
-  opacity: 1;
-}
-
-.cd-top.cd-fade-out {
-  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
-  opacity: .5;
-}
-
-.no-touch .cd-top:hover {
-  background-color: #e86256;
-  opacity: 1;
-}
-
-.section06 {
-  height: auto;
-}
-
-.sec6-form {
-  text-align: left;
-}
-
-.form-form {
-  padding-bottom: 30px;
-}
-
-.button2 {
-  font-size: 11px;
-  font-weight: 300;
-  color: #333333;
-  padding: 4.5px 1.8em;
-  background-color: rgba(76, 130, 246, 0);
-  border: 1px solid #D9EDFF;
-  text-decoration: none;
-}
-
-.button2:hover {
-  background-color: rgba(76, 130, 246, 0);
-  text-decoration: none;
-}
-
-.button2:focus,
-.button2:active {
-  outline: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-
-.cd-top {
-  display: inline-block;
-  color: #000;
-  font-size: 12px;
-  font-weight: 300;
-  padding: 10px 0 0 6px;
-  background-color: rgba(243, 13, 84, 0.4);
-  height: 40px;
-  width: 80px;
-  position: fixed;
-  bottom: 60px;
-  right: 80px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
-  transition: opacity 0.3s 0s, visibility 0s 0.3s;
-}
-
-.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
-  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
-  transition: opacity 0.3s 0s, visibility 0s 0s;
-}
-
-.cd-top.cd-is-visible {
-  /* the button becomes visible */
-  visibility: visible;
-  opacity: 1;
-}
-
-.cd-top.cd-fade-out {
-  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
-  opacity: .5;
-}
-
-.no-touch .cd-top:hover {
-  background-color: #e86256;
-  opacity: 1;
-}
-
 /* BASE CSS from Chris Gargiulo*/
 /* -------------------- */
 /* TABLE OF CONTENTS
@@ -790,15 +525,6 @@ h {
   text-align: center;
 }
 
-.hero-h5 {
-  padding-top: 8em;
-}
-
-.hero-h2 {
-  font-weight: 200;
-  padding-bottom: 1em;
-}
-
 .section01,
 .section02,
 .section03,
@@ -810,24 +536,217 @@ h {
   margin-bottom: 8em;
 }
 
+.section03,
+.section04,
+.section05,
+.section06,
+.section07,
+.section08 {
+  border-top: 1px solid #094F9B;
+  padding-top: 50px;
+}
+
 .section08 {
   margin-bottom: 3em;
 }
 
 .prettyprint {
   background: #ccc;
-  font-size: 1rem;
+  font-size: 14px;
   padding: 0.2rem 0.5rem;
   margin: 0 0.2rem;
   white-space: nowrap;
   background: #F7F7F7;
   border: 1px solid #CECECE;
   border-radius: 4px;
+  text-align: left;
 }
 
 .code-example-body {
   white-space: pre;
   word-wrap: break-word;
+}
+
+.row-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+h1.left,
+h2.left {
+  text-align: left;
+}
+
+.hero-h5 {
+  padding-top: 8em;
+}
+
+.hero-h2 {
+  font-weight: 200;
+  padding-bottom: 1em;
+}
+
+.svg-screen {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 10px auto;
+  border: 1px solid #E0E0E0;
+  padding: 35px;
+  border-radius: 50%;
+}
+
+.svg-sass {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 10px auto;
+  border: 1px solid #E0E0E0;
+  padding: 40px;
+  border-radius: 50%;
+}
+
+.svg-custom {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 10px auto;
+  border: 1px solid #E0E0E0;
+  padding: 40px;
+  border-radius: 50%;
+}
+
+.button-center {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-top-pad {
+  display: inline;
+  border: 1px solid #56B1F5;
+  padding: 5px 20px;
+}
+
+.button-3 {
+  display: inline;
+  margin: 30px auto;
+  border: 1px solid #56B1F5;
+  padding: 3px 25px;
+}
+
+.button-top {
+  margin-top: 10px;
+}
+
+h3.sans-mont {
+  padding-bottom: 0em;
+}
+
+h6 {
+  text-transform: uppercase;
+  padding-top: 14px;
+  letter-spacing: 3px;
+  color: #9E9E9E;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.flex-column {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  padding-bottom: 0;
+}
+
+.sub3-padding {
+  text-align: left;
+}
+
+.section04 .first-h6 {
+  padding-top: 60px;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.section04 .serif2 h1, .section04 .serif2 h2, .section04 .serif2 h3, .section04 .serif2 h4, .section04 .serif2 h5, .section04 .serif2 h6 {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+.row {
+  text-align: center;
+}
+
+.sec6-form {
+  text-align: left;
+}
+
+.form-form {
+  padding-bottom: 30px;
+}
+
+.button2 {
+  font-size: 11px;
+  font-weight: 300;
+  color: #333333;
+  padding: 4.5px 1.8em;
+  background-color: rgba(76, 130, 246, 0);
+  border: 1px solid #D9EDFF;
+  text-decoration: none;
+}
+
+.button2:hover {
+  background-color: rgba(76, 130, 246, 0);
+  text-decoration: none;
+}
+
+.button2:focus,
+.button2:active {
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.cd-top {
+  display: inline-block;
+  color: #000;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 10px 0 0 6px;
+  background-color: rgba(243, 13, 84, 0.4);
+  height: 40px;
+  width: 80px;
+  position: fixed;
+  bottom: 60px;
+  right: 80px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

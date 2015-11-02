@@ -5,15 +5,16 @@ body {
   width: $full-width;
 }
 
+
 .container-1200 {
   width: $full-width;
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
   background-color: fff;
 
+/*
   @media #{$medium-screen}{
   width: 20%;
-  border: 1px solid red;
   }
 
   @media #{$large-screen}{
@@ -25,10 +26,10 @@ body {
       border: 1px solid green;
   width: 100%;
   }
+  */
 }
 
 .row {
-  width: 100%;
   @include cf;
   margin-left: -1em;
   margin-right: -1em;
@@ -38,17 +39,14 @@ body {
   width: 100%;
   float: left;
   min-height: 1px;
-  padding: 0 1em .5em 1em;
-
+  padding: 0 1em 1em 1em;
 }
-[class^="col-"] {
 
-  >div {
+.columnstyle {
 text-align: center;
-background-color: #F0F0F0;
+border: 1px solid #9BF8CD;
 height: 50px;
-}
-}
+  }
 
 @for $i from 1 through 12 {
   .col-#{$i} {
