@@ -3,14 +3,16 @@
 <head>
 	<meta charset="UTF-8" />
 	<link rel="stylesheet" href="styles/style.css" />
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,700,300,300italic,400italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="container">
-	<h1 class="tiltle">MIDTERM FRAMEWORK</h1>
+	<h3 class="tiltle">MIDTERM FRAMEWORK</h3>
 
 	<section class="grid">
 
-		    <h2>MY GRID</h2>
+		    <h2>GRID</h2>
+				<p>The grid is a 16-column fluid grid with a max width of 960px, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier.</p>
 				<div class="row">
 			    <div class="col-1">1</div>
 			  </div>
@@ -42,9 +44,8 @@
 		</section>
 
 		<section class="type">
-				<h2 class="sub-heading">MY TYPE</h2>
-				<p class="quote">“Don't let sickness, depression, and disease THUG YOU OUT.<br> Eat healthier, think healthier, speak healthier, and more positively over your life.<br> When you do so, you will soon begin to conquer your life and your health through new found empowerment- mind, body, and spirit.”<br>
-	 <small>- SupaNova Slom</small><br></p>
+				<h2 class="sub-heading">TYPE</h2>
+				<p>The typography base is Lato served by Google, set at 15rem (15px) over a 1.6 line height (24px).</p>
 
 			<div class="type-scale">
 				<h1>Heading 1</h1>
@@ -53,47 +54,128 @@
 				<h4>Heading 4</h4>
 				<h5>Heading 5</h5>
 				<h6>Heading 6</h6>
-		</div>
+			</div>
+
+			<p>“Don't let sickness, depression, and disease THUG YOU OUT.<br> Eat healthier, think healthier, speak healthier, and more positively over your life.<br> When you do so, you will soon begin to conquer your life and your health through new found empowerment- mind, body, and spirit.”<br>
+ <small>- SupaNova Slom</small><br></p>
+
 
 		</section>
 
 		<section class="form">
-			<h2>MY FORM</h2>
+			<h2>FORM</h2>
 
 			 <div class="row">
 				 <div class="form-left">
 					 <div class="form1">
-						  <label for="contact_name"></label>
-						  <input class="text" type="text" placeholder="Your Name*"/>
+						  <label for="contact_name">Your Name</label>
+						  <input class="text" type="text"/>
 						</div>
 						<div class="form2">
-							<label for="contact_email"></label>
-	      			<input class="text" type="text" placeholder="Your e-mail address">
+							<label for="contact_email">Your E-mail</label>
+	      			<input class="text" type="text">
 						</div>
-					</div>
+					</div> <!-- End form-left -->
 					<div class="form-right">
 						<div class="form3">
-							<label for="message"></label>
-							<input class="text" type="text" placeholder="Hi! Jae....">
+							<div class="form3">
+							  <label>Message</label>
+							  <textarea></textarea>
+							</div>
 						</div>
+					</div> <!-- End form-right -->
+			</div> <!-- End Row -->
+
+			<div class="row">
+				<div class="form-left">
+					<div class="form1">
+					  <label>Text</label>
+					  <input type="text" />
+					</div>
+					<div class="form2">
+					  <label>Number</label>
+					  <input type="number" />
+					</div>
+				</div><!-- End form-left -->
+				<div class="form-right2">
+					<div class="form1">
+					  <label>Tel</label>
+					  <input type="tel" />
+					</div>
+					<div class="form2">
+					  <label>URL</label>
+					  <input type="url" />
+					</div>
+				</div><!--End form-right -->
+			</div> <!-- End Row -->
+
+			<div class="row">
+				<div class="form-left">
+					<div class=" form1">
+					  <label>Email</label>
+					  <input type="email" />
+					</div>
+					<div class="form2">
+					  <label>Search</label>
+					  <input type="search" />
+					</div>
+				</div> <!-- End form-left -->
+
+			<div class="row">
+				<div class="form-left">
+					<div class=" form1">
+					  <label>Password</label>
+				  	<input type="password" />
+					</div>
+					<div class="form2">
+					  <label>Checkbox</label>
+					  <input type="checkbox" />
+					</div>
+					</div> <!-- End form-left -->
+				<div class="form-right">
+
+				</div>
+
+			<div class="row">
+				<div class="form-left">
+					<div class=" form1">
+					  <label>Radio</label>
+					  <input type="radio" name="radio" />
+					  <input type="radio" name="radio" />
+					  <input type="radio" name="radio" />
 					</div>
 				</div>
+
+
+
+				<div class="form-right2">
+					<div class=" form1">
+					  <label>Select<label>
+					  <select>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+						<option value="4">Four</option>
+					  </select>
+				</div>
+			</div>
+
 
 			</section>
 
 		<section class="buttons">
-			<h2>MY BUTTONS</h2>
+			<h2>BUTTONS</h2>
 			<div class="link">
-				<a href="http://www.grsites.com/generate/group/2000/" class="button">Learn More</a>
+				<a href="http://www.grsites.com/generate/group/2000/" class="button">Link</a>
 			</div>
 			<button>Button</button>
 			<input type="button" value="Button">
-			<input type="submit" value="SEND">
+			<input type="submit" value="Submit">
 			<input type="reset" value="Reset">
 		</section>
 
 		<section class="footer">
-		
+
 		</section>
 	</div>
 </body>

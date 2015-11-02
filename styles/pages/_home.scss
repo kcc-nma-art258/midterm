@@ -5,13 +5,19 @@
 
 .grid {
 	margin-top: 3em;
-		h2 {
+		h2, p {
 			text-align: center;
 			color: #417505;
 			font-size: 1.5em;
 			font-weight: 300;
 			padding-bottom: 1em;
 		}
+		p {
+			font-size: .8em;
+			color: #2d2d2d;
+		}
+
+
 
 		.row {
 			margin-bottom: 1em;
@@ -29,6 +35,9 @@
 	.type {
 		p {
 			font-size: .8em;
+			text-align: center;
+			line-height: normal;
+			margin-bottom: 3em;
 		}
 		small {
 			font-style: italic;
@@ -42,11 +51,6 @@
 			padding-bottom: 1em;
 			margin-top: 5em;
 	}
-		.quote {
-			text-align: center;
-			line-height: normal;
-			margin-bottom: 3em;
-		}
 
 		.type-scale {
 			text-align: center;
@@ -68,7 +72,7 @@
 	}
 
 
-		.form-left, .form-right {
+		.form-left, .form-right1, .form-right2 {
 			display: inline-block;
 		}
 		.form-left {
@@ -78,6 +82,7 @@
 
 				.form1, .form2 {
 					margin-bottom: 1em;
+
 				}
 			input,
 		  textarea{
@@ -102,7 +107,7 @@
 				text-align: left;
 				padding-left:.5em;
 				background-color: #dcdcdc;
-				min-height: 12.3em;
+				min-height: 15em;
 			}
 	 	}
 	}
