@@ -10,8 +10,6 @@
 	.paragraph{
 		margin: auto;
 		padding: 1em 0 2em 0;
-		border: 1px solid red;
-
 	}
 
 	.title{
@@ -24,9 +22,8 @@
 
 		h4{
 			letter-spacing: 25px;
-			font-family: $sans-serif;
+			font-family: $serif;
 			font-weight: 200;
-			line-height: 0;
 		}
 	}
 }

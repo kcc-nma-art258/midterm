@@ -62,4 +62,7 @@ p {
   font-size: $base-font;
   text-align: justify;
   margin: 0 auto;
+  @media screen and (max-width: 600px){
+    margin: 2em 4em;
+  }
 }
