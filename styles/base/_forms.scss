@@ -6,7 +6,13 @@ form {
     display: block;
     width: 70%;
     height: 2em;
+    background-color: #DEDEDE;
+    border-radius: .5em;
+    border: 1px solid #775050;
   }
+  textarea {
+    min-height: 5em;
+}
 }
 
 input[type="email"],

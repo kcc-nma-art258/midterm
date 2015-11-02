@@ -111,6 +111,13 @@ form textarea {
   display: block;
   width: 70%;
   height: 2em;
+  background-color: #DEDEDE;
+  border-radius: .5em;
+  border: 1px solid #775050;
+}
+
+form textarea {
+  min-height: 5em;
 }
 
 input[type="email"],
@@ -187,6 +194,14 @@ input[type="checkbox"]:checked::after {
   left: 1px;
 }
 
+/**
+ * Media Queries
+ *
+ * NOTE: "Relative units in media queries are based
+ * on the initial value, which means that units are
+ * never based on results of declarations"
+ * http://www.w3.org/TR/css3-mediaqueries/#units
+ */
 /*
  * Layouts
  */
@@ -290,7 +305,7 @@ input[type="checkbox"]:checked::after {
 }
 
 .column, .columns {
-  border-radius: 6px;
+  border-radius: .5em;
   margin-left: 4%;
   float: left;
 }
@@ -359,10 +374,11 @@ input[type="button"] {
   display: inline-block;
   text-decoration: none;
   color: inherit;
+  font: inherit;
   padding: 0.5em 1em;
   margin-bottom: 0.5em;
   background-color: #DEDEDE;
-  border-radius: 2px;
+  border-radius: .5em;
 }
 
 .button:hover,
@@ -401,6 +417,9 @@ input[type="button"]:active {
   padding: 0.75em 0;
 }
 
+.utilities-example,
+.mediaqueries-example,
+.button-example,
 .type-example {
   padding: 2em 0;
 }
@@ -411,7 +430,7 @@ input[type="button"]:active {
 
 .form-example form {
   margin: 2em auto 0;
-  padding: 0 1em;
+  padding: 0 0em;
 }
 
 .form-example form input,
