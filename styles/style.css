@@ -11,6 +11,13 @@
 
 /* @section FUNCTIONS */
 /**
+ * Type Scale Calculator
+ *
+ * Create typographic scales
+ * @param {$i} increment of scale; 0 is base
+ * @param {$scale} scale ratio; defaults to 1.25
+ */
+/**
  * rem/em Calculator (ie. em-calc(32px, 16px, 'rem')
  *
  * target / context = result
@@ -26,13 +33,6 @@
  * @param {$base} base number
  * @param {$exponent} exponent/power number
  */
-/**
- * Type Scale Calculator
- *
- * Create typographic scales
- * @param {$i} increment of scale; 0 is base
- * @param {$scale} scale ratio; defaults to 1.25
- */
 /* VARIABLES */
 html {
   font-size: 16px;
@@ -42,7 +42,7 @@ body {
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
-  font-size: type-scale(0);
+  font-size: 1em;
   line-height: 1.5;
   font-family: "Raleway", Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #333333;
@@ -50,7 +50,7 @@ body {
 
 @media screen and (min-width: 600px) {
   body {
-    font-size: type-scale(0);
+    font-size: 1em;
   }
 }
 
@@ -61,27 +61,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: type-scale(5);
+  font-size: 11.08901em;
 }
 
 h2 {
-  font-size: type-scale(4);
+  font-size: 6.85353em;
 }
 
 h3 {
-  font-size: type-scale(3);
+  font-size: 4.2358em;
 }
 
 h4 {
-  font-size: type-scale(2);
+  font-size: 2.61792em;
 }
 
 h5 {
-  font-size: type-scale(1);
+  font-size: 1.618em;
 }
 
 h6 {
-  font-size: type-scale(0);
+  font-size: 1em;
 }
 
 .info-intro h5, .info-grid h5, .info-button h5, .info-form h5 {
