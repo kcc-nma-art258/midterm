@@ -181,12 +181,12 @@ margin-bottom: 40px;
 .row-flex {
   display: flex;
   padding-bottom: 50px;
-  align-self: flex-end;
   text-align:left;
 }
 .flex-column {
   align-self: baseline;
   padding-bottom: 0;
+
 
 }
 
@@ -195,7 +195,7 @@ h3.left
  {
   text-align: left;
 }
-h1.left {
+h1.sans-mont.left {
   font-size: 30px;
 }
 
@@ -203,6 +203,8 @@ h1.left {
   h3.sans-mont {
     padding-bottom: 0em;
     font-weight: 700;
+
+
 }
 
   .sub-h6 {
@@ -218,6 +220,7 @@ h1.left {
 
 .sub3-padding {
   text-align: left;
+  border-left: 1px solid;
 }
 
 
@@ -225,7 +228,10 @@ h1.left {
 //section04
 
 
-
+.row-box {
+  border: 1px solid #009BFF;
+  padding: 30px;
+}
   .first-h6{
     padding-top: 60px;
     width: 960px;
@@ -240,15 +246,19 @@ h1.left {
 
 //section05
 
-.row {
+.row-box {
 text-align: center;
+margin: 0 .1em;
 }
+
 //section06
 
 .sec6-form{
 text-align: left;
 }
 
+
+/*
 .form-form {
 padding-bottom: 30px;
 }
@@ -275,6 +285,7 @@ text-decoration: none;
 
 }
 }
+*/
 //section07
 //section08
 //back to top

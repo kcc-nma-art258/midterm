@@ -56,7 +56,7 @@
   <div class="row row-flex">
     <div class="col-3 flex-column">
           <h1 class="sans-mont left">01</h1>
-  		    <h3 class="sans-mont left">The Grid</h3>
+  		    <h3 class="sans-mont left">Grid</h3>
     </div>
     <div class="col-9 flex-column">
           <h5 class="sub3-padding"> The grid is a 12-column fluid grid with a max width of 1200px, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser.</h5>
@@ -163,64 +163,152 @@
 
 
 
-
-
 <section class="section04">
-<div class="row">
-    <div class="col-3">
+  <div class="row row-flex">
+    <div class="col-3 flex-column">
           <h1 class="sans-mont left">02</h1>
-  			  <h3 class="sans-mont left">The typography</h3>
+  			  <h3 class="sans-mont left">Typography</h3>
     </div>
 
-      <div class="col-9">
+
+      <div class="col-9 flex-column">
             <h5 class="sub3-padding">The primary typography base is Source Sans served by Google, set at 1em(16px) and it scales by 1.500 ratio. If you are using Sass, you can easly change using by typography-scale system. (I am also using 'Montserrat' as a secondary typeface.)
         </h5>
         </div>
-
 </div>
-        <div class="row">
 
-          <div class="col-6">
-  			<h1>Heading 1</h1>
-  			<h2>Heading 2</h2>
-  			<h3>Heading 3</h3>
-  			<h4>Heading 4</h4>
-  			<h5>Heading 5</h5>
-  			<h6>Heading 6</h6>
-        </div>
+<!-- CODE EXAMPLE ———————————————————————————————————————— -->
+<pre class="prettyprint">
+<code class="code-example-body"><!-- .container is main centered wrapper -->
 
-          <div class="col-6">
-            <div class="serif2">
-          <h1>Heading 1</h1>
-          <h2>Heading 2</h2>
-          <h3>Heading 3</h3>
-          <h4>Heading 4</h4>
-          <h5>Heading 5</h5>
-          <h6>Heading 6</h6>
-        </div>
+    <em>&lt;!-- Standard Headings --&gt;</em>
+    &lt;h1&gt;Heading&lt;/h1&gt;
+    &lt;h2&gt;Heading&lt;/h2&gt;
+    &lt;h3&gt;Heading&lt;/h3&gt;
+    &lt;h4&gt;Heading&lt;/h4&gt;
+    &lt;h5&gt;Heading&lt;/h5&gt;
+    &lt;h6&gt;Heading&lt;/h6&gt;
+
+    <em>&lt;!-- Base type size --&gt;</em>
+    &lt;p&gt;The base type is 15px over 1.6 line height (24px)&lt;/p&gt;
+
+    <em>&lt;!-- Other styled text tags --&gt;</em>
+    &lt;strong&gt;Bolded&lt;/strong&gt;
+    &lt;em&gt;Italicized&lt;/em&gt;
+    &lt;a&gt;Colored&lt;/a&gt;
+    &lt;u&gt;Underlined&lt;/u&gt;
+
+</code>
+</pre>
+
+        <div class="row row-box">
+          <div class="col-row-box">
+            <h5 class="sans-mont">{  Standard Heading  }</h5>
+          <h1 class=>Heading 1</h1>
+          <h2 class>Heading 2</h2>
+          <h3 class>Heading 3</h3>
+          <h4 class>Heading 4</h4>
+          <h5 class>Heading 5</h5>
+          <h6 class>Heading 6</h6>
       </div>
-
-        </div>
+</div>
 
   		</section>
+
 
   		<section class="section05">
-          <h2 class="sans-mont">3<h2>
-          <h3 class="sans-mont">The Buttons</h3>
-            <div class="row form-form">
-            			<a href="#0" class="button">Link</a>
-            			<button>Primary Button</button>
-            			<input type="button" value="Secondary Button">
-            			<input type="submit" value="Round Button">
-            			<input type="reset" value="Fancy Button">
-                  <input type="reset" value="Tim Burton">
+        <div class="row row-flex">
+          <div class="col-3 flex-column">
+                <h1 class="sans-mont left">03<h2>
+                <h3 class="sans-mont left">Buttons</h3>
+          </div>
+
+          <div class="col-9 flex-column">
+                <h5 class="sub3-padding">The primary typography base is Source Sans served by Google, set at 1em(16px) and it scales by 1.500 ratio. If you are using Sass, you can easly change using by typography-scale system. (I am also using 'Montserrat' as a secondary typeface.)
+            </h5>
+            </div>
+
+        </div>
+
+        <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+        <pre class="prettyprint">
+        <code class="code-example-body"><!-- .container is main centered wrapper -->
+
+            <em>&lt;!-- Standard Headings --&gt;</em>
+            &lt;h1&gt;Heading&lt;/h1&gt;
+            &lt;h2&gt;Heading&lt;/h2&gt;
+            &lt;h3&gt;Heading&lt;/h3&gt;
+            &lt;h4&gt;Heading&lt;/h4&gt;
+            &lt;h5&gt;Heading&lt;/h5&gt;
+            &lt;h6&gt;Heading&lt;/h6&gt;
+
+            <em>&lt;!-- Base type size --&gt;</em>
+            &lt;p&gt;The base type is 15px over 1.6 line height (24px)&lt;/p&gt;
+
+            <em>&lt;!-- Other styled text tags --&gt;</em>
+            &lt;strong&gt;Bolded&lt;/strong&gt;
+            &lt;em&gt;Italicized&lt;/em&gt;
+            &lt;a&gt;Colored&lt;/a&gt;
+            &lt;u&gt;Underlined&lt;/u&gt;
+
+        </code>
+        </pre>
+
+
+            <div class="row row-box">
+            			<a href="#0" class="button">Primary Button</a>
+            			<button>Secondary Button</button>
+            			<input type="button" value="Round Button">
+            			<input type="submit" value="Fancy Button">
+            			<input type="reset" value="Tim Burton">
+
               </div>
+
+
   		</section>
 
+
   		<section class="section06">
-        <h2 class="sans-mont">4<h2>
-        <h3 class="sans-mont">The Form</h3>
+        <div class="row row-flex">
+          <div class="col-3 flex-column">
+                <h1 class="sans-mont left">04<h2>
+                <h3 class="sans-mont left">The Form</h3>
+          </div>
+
+        <div class="col-9 flex-column">
+              <h5 class="sub3-padding">The primary typography base is Source Sans served by Google, set at 1em(16px) and it scales by 1.500 ratio. If you are using Sass, you can easly change using by typography-scale system. (I am also using 'Montserrat' as a secondary typeface.)
+          </h5>
+          </div>
+
+        </div>
+
+        <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+        <pre class="prettyprint">
+        <code class="code-example-body"><!-- .container is main centered wrapper -->
+
+            <em>&lt;!-- Standard Headings --&gt;</em>
+            &lt;h1&gt;Heading&lt;/h1&gt;
+            &lt;h2&gt;Heading&lt;/h2&gt;
+            &lt;h3&gt;Heading&lt;/h3&gt;
+            &lt;h4&gt;Heading&lt;/h4&gt;
+            &lt;h5&gt;Heading&lt;/h5&gt;
+            &lt;h6&gt;Heading&lt;/h6&gt;
+
+            <em>&lt;!-- Base type size --&gt;</em>
+            &lt;p&gt;The base type is 15px over 1.6 line height (24px)&lt;/p&gt;
+
+            <em>&lt;!-- Other styled text tags --&gt;</em>
+            &lt;strong&gt;Bolded&lt;/strong&gt;
+            &lt;em&gt;Italicized&lt;/em&gt;
+            &lt;a&gt;Colored&lt;/a&gt;
+            &lt;u&gt;Underlined&lt;/u&gt;
+
+        </code>
+        </pre>
+
         <div class="row form-form">
+
+
           <div class="col-6">
             <form>
               <div><h6 class="sec6-form">Your Name</h6></div>
@@ -282,80 +370,82 @@
 	</section>
 
   <section class="section07">
-    <h2 class="sans-mont">5<h2>
-    <h3 class="sans-mont">The Media Queries</h3>
+    <div class="row row-flex">
+      <div class="col-3 flex-column">
+            <h1 class="sans-mont left">06<h2>
+            <h3 class="sans-mont left">Media
+              Queries</h3>
+      </div>
 
-    <h6>Skeleton uses media queries to serve its scalable grid, but also has a list of queries for convenience of styling your site across devices. The queries are mobile-first, meaning they target min-width. Mobile-first queries are how Skeleton's grid is built and is the preferrable method of organizing CSS. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. The sizes for the queries are:
+    <div class="col-9 flex-column">
+          <h5 class="sub3-padding">The primary typography base is Source Sans served by Google, set at 1em(16px) and it scales by 1.500 ratio. If you are using Sass, you can easly change using by typography-scale system. (I am also using 'Montserrat' as a secondary typeface.)
+      </h5>
+      </div>
 
-Desktop HD: 1200px
-Desktop: 1000px
-Tablet: 750px</h6>
+    </div>
 
-<!-- CODE EXAMPLE ———————————————————————————————————————— -->
-<pre class="code-example">
-<code class="code-example-body prettyprint"><!-- .container is main centered wrapper -->
-<div class="container">
+    <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+    <pre class="prettyprint">
+    <code class="code-example-body"><!-- .container is main centered wrapper -->
 
-  <!-- columns should be the immediate child of a .row -->
-  <div class="row">
-    <div class="one column">One</div>
-    <div class="eleven columns">Eleven</div>
-  </div>
+        <em>&lt;!-- Standard Headings --&gt;</em>
+        &lt;h1&gt;Heading&lt;/h1&gt;
+        &lt;h2&gt;Heading&lt;/h2&gt;
+        &lt;h3&gt;Heading&lt;/h3&gt;
+        &lt;h4&gt;Heading&lt;/h4&gt;
+        &lt;h5&gt;Heading&lt;/h5&gt;
+        &lt;h6&gt;Heading&lt;/h6&gt;
 
-  <!-- just use a number and class 'column' or 'columns' -->
-  <div class="row">
-    <div class="two columns">Two</div>
-    <div class="ten columns">Ten</div>
-  </div>
+        <em>&lt;!-- Base type size --&gt;</em>
+        &lt;p&gt;The base type is 15px over 1.6 line height (24px)&lt;/p&gt;
 
-  <!-- there are a few shorthand columns widths as well -->
-  <div class="row">
-    <div class="one-third column">1/3</div>
-    <div class="two-thirds column">2/3</div>
-  </div>
-  <div class="row">
-    <div class="one-half column">1/2</div>
-    <div class="one-half column">1/2</div>
-  </div>
+        <em>&lt;!-- Other styled text tags --&gt;</em>
+        &lt;strong&gt;Bolded&lt;/strong&gt;
+        &lt;em&gt;Italicized&lt;/em&gt;
+        &lt;a&gt;Colored&lt;/a&gt;
+        &lt;u&gt;Underlined&lt;/u&gt;
 
-</div>
+    </code>
+    </pre>
+</section>
 
-<!-- Note: columns can be nested, but it's not recommended since Skeleton's grid has %-based gutters, meaning a nested grid results in variable with gutters (which can end up being *really* small on certain browser/device sizes) -->
-</code>
-</pre>
+    <section class="section08">
+      <div class="row row-flex">
+        <div class="col-3 flex-column">
+              <h1 class="sans-mont left">05<h2>
+              <h3 class="sans-mont left">Utilities</h3>
+        </div>
 
-<!-- CODE EXAMPLE ———————————————————————————————————————— -->
-<pre class="prettyprint">
-<code class="code-example-body"><!-- .container is main centered wrapper -->
-  <div class="container">
+      <div class="col-9 flex-column">
+            <h5 class="sub3-padding">The primary typography base is Source Sans served by Google, set at 1em(16px) and it scales by 1.500 ratio. If you are using Sass, you can easly change using by typography-scale system. (I am also using 'Montserrat' as a secondary typeface.)
+        </h5>
+        </div>
 
-    .container-1200 {
-      width: 100%;
-      margin: 0 auto;
-      height: 100%;
-      background-color: fff;
-      overflow-x: hidden;
-    }
+      </div>
 
-    .row {
-      margin-left: -1em;
-      margin-right: -1em;
-    }
+      <!-- CODE EXAMPLE ———————————————————————————————————————— -->
+      <pre class="prettyprint">
+      <code class="code-example-body"><!-- .container is main centered wrapper -->
 
-    .row:before,
-    .row:after {
-      content: "";
-      display: table;
-    }
+          <em>&lt;!-- Standard Headings --&gt;</em>
+          &lt;h1&gt;Heading&lt;/h1&gt;
+          &lt;h2&gt;Heading&lt;/h2&gt;
+          &lt;h3&gt;Heading&lt;/h3&gt;
+          &lt;h4&gt;Heading&lt;/h4&gt;
+          &lt;h5&gt;Heading&lt;/h5&gt;
+          &lt;h6&gt;Heading&lt;/h6&gt;
 
-    .row:after {
-      clear: both;
-    }
+          <em>&lt;!-- Base type size --&gt;</em>
+          &lt;p&gt;The base type is 15px over 1.6 line height (24px)&lt;/p&gt;
 
-  </div>
-</code>
-</pre>
+          <em>&lt;!-- Other styled text tags --&gt;</em>
+          &lt;strong&gt;Bolded&lt;/strong&gt;
+          &lt;em&gt;Italicized&lt;/em&gt;
+          &lt;a&gt;Colored&lt;/a&gt;
+          &lt;u&gt;Underlined&lt;/u&gt;
 
+      </code>
+      </pre>
   <div class="row-last">
 
 <a href="#top" class="cd-top button">Beam me Up</a>
