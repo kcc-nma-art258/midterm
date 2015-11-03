@@ -8,6 +8,10 @@
 		margin-bottom: 10px;
 	}
 
+	h3 {
+		padding: 1em 0;
+	}
+
 }
 
 /* Typography */
@@ -16,25 +20,27 @@
 	h1,h2,h3,h4,h5,h6 {
 		color: $color;
 	}
-	.type-title h3{
+
+	.type-title h3 {
 		color: #333;
-	}
+		padding: 1em 0;
+		}
+		}
 
 	p {
-		margin: 0 2em 0 2em;
+		margin: 0 3em 0 3em;
 	}
-}
 
 /* Form */
 .form-example {
 
 	p {
-		margin: 0 1.75em 0 1.75em;
+		margin: 2em 1.75em;
 	}
 
 	form {
-	  margin: 2em auto 0;
-	  padding: 0 1em;
+		width: 50%;
+	  margin: 0 auto;
 
 		label {
 			font-size: 1.5em;
@@ -52,7 +58,7 @@
 	.button-example {
 
 		p {
-			margin: 0 3em 0 3em;
+			margin: 2em 3em;
 		}
 	}
 
@@ -75,8 +81,9 @@
 
 .header {
 	h3 {
-	padding: 3em 0 5px 0;
+	padding: 1em 0;
 	color: #333;
+	font-size: 7em;
 	}
 
 	h5 {

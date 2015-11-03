@@ -1,5 +1,3 @@
-// Variables
-$gutter: 1em;
 
 .container {
   width: 100%;
@@ -26,7 +24,7 @@ $gutter: 1em;
   padding: 0 $gutter;
   > div {
     text-align: center;
-  background-color: #F8F8F8;
+  background-color: $color;
   min-height: 50px;
   }
 

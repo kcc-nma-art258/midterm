@@ -22,7 +22,7 @@ input[type="password"],
 input[type="checkbox"],
 input[type="radio"],
 textarea,
-select {
+{
   -webkit-appearance: none;
   appearance: none;
   height: 3em;
@@ -31,6 +31,11 @@ select {
   &:focus,
   &:active {
     outline: 0;
+  }
+
+  select {
+    height: 3em;
+    width: 5em;
   }
 }
 
