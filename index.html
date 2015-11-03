@@ -132,7 +132,6 @@
             <label>Still deciding?</label>
             <input type="radio" value="yes" name="radio" /><label for="yes">yes</label>
             <input type="radio" value="no" name="radio" /><label for="no">no</label>
-            <input type="radio" value="everything" name="radio" /><label for "everything">everything</label>
           </div>
 			</form>
 		</section>
@@ -171,24 +170,6 @@
             // Create a mixin that overrides that global variable.
             @mixin global-variable-overriding {
               $variable: 'mixin value' !global;
-            }
-
-            .local-scope::before {
-              // Create a local variable that shadows the global one.
-              $variable: 'local value';
-
-              // Include the mixin: it overrides the global variable.
-              @include global-variable-overriding;
-
-              // Print the variable’s value.
-              // It is the **local** one, since it shadows the global one.
-              content: $variable;
-            }
-
-            // Print the variable in another selector that does no shadowing.
-            // It is the **global** one, as expected.
-            .other-local-scope::before {
-              content: $variable;
             }
           </code>
 
