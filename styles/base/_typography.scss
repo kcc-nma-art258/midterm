@@ -24,9 +24,13 @@ h4 {
 }
 h1 {
   font-size: type-scale(4);
+  .fat {
+    font-weight: 400;
+  }
 }
 h2 {
   font-size: type-scale(3);
+
 }
 
 h3 {

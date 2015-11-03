@@ -69,6 +69,10 @@ h1 {
   font-size: 5.0625em;
 }
 
+h1 .fat {
+  font-weight: 400;
+}
+
 h2 {
   font-size: 3.375em;
 }
