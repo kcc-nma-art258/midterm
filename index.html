@@ -257,26 +257,26 @@
 
 			<pre class="code-container">
 				<code class="code-example">
-/* Variables */
+	/* Variables */
 
-$base-font: 16px;
-$line-height: 1.4;
-$serif: Georgia, Times New Roman, serif;
-$sans-serif: 'Work Sans', Helvetica, Arial, sans-serif;
-$center: center;
+	$base-font: 16px;
+	$line-height: 1.4;
+	$serif: Georgia, Times New Roman, serif;
+	$sans-serif: 'Work Sans', Helvetica, Arial, sans-serif;
+	$center: center;
 
-/* Mixins */
-@mixin cf {
-&:before,
-&:after {
-content: "";
-display: table;
-}
+	/* Mixins */
+	@mixin cf {
+		&:before,
+		&:after {
+			content: "";
+			display: table;
+		}
 
-&:after {
-clear: both;
-}
-}
+		&:after {
+			clear: both;
+		}
+	}
 				</code>
 			</pre>
 		</section>
@@ -293,7 +293,33 @@ clear: both;
 					<p>For this frame work, two styles of buttons are used to show how both a plain and a stylized button can be implemented into any design while still respecting the over-all flow of the frame work. It is also handy to have two styles of buttons when designing a webpage in-case there are buttons that play a more important role than others.</p>
 				</div>
 		    	<div class="col-1"></div>
-		    </div>
+		  </div>
+
+			<pre class="code-container">
+				<code class="code-example">
+	@for $i from 1 through 12 {
+	.col-#{$i} {
+	@media screen and (min-width: 780px){
+	width: (100% / 12) * $i;
+	}
+	}
+	}
+
+	p {
+	@media screen and (max-width: 779px) {
+	margin: 0 7em;
+	}
+
+	@media screen and (max-width: 600px){
+	margin: 0 4em;
+	}
+	
+	@media screen and (max-width: 450px){
+	margin: 0 1em;
+	}
+	}
+				</code>
+			</pre>
 		</section>
 
 	</div>
