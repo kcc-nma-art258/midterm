@@ -95,6 +95,10 @@ h6 {
   text-align: center;
 }
 
+p.baskerville {
+  font-family: "Baskerville", Georgia, Palatino, serif;
+}
+
 .title {
   font-family: "Baskerville", Georgia, Palatino, serif;
   font-weight: 600;
@@ -222,6 +226,7 @@ input[type="checkbox"]:checked::after {
   height: 700px;
   display: table-cell;
   vertical-align: middle;
+  text-align: center;
 }
 
 .info-intro {
@@ -406,11 +411,7 @@ input[type="checkbox"]:checked::after {
   margin-bottom: 50px;
 }
 
-.info-form p {
-  margin-bottom: 1em;
-}
-
-.info-mediaqurie {
+.info-mediaqueries {
   margin-bottom: 50px;
 }
 
