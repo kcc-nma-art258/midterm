@@ -6,12 +6,7 @@ $serif: Georgia, Times New Roman, serif;
 $sans-serif: 'Work Sans', Helvetica, Arial, sans-serif;
 $center: center;
 
-
-
-/*
- * Mixins
- */
-
+/* Mixins */
 @mixin cf {
   &:before,
   &:after {

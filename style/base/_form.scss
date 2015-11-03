@@ -50,6 +50,8 @@ input[type="radio"] {
   height: 1em;
   border-radius: 100%;
   vertical-align: text-bottom;
+  margin: 0 1em;
+
 
   &:checked {
     background: #44CCCC;
