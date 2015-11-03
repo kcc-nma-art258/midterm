@@ -24,11 +24,13 @@
   padding: 0 $gutter;
   > div {
     text-align: center;
-  background-color: $color;
-  min-height: 50px;
+    background-color: $color;
+    min-height: 50px;
+    color: #fff;
+    padding-top: 10px;
+    }
   }
 
-}
 
 @for $i from 1 through 12 {
   .col-#{$i} {
