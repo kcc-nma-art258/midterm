@@ -42,9 +42,6 @@ textarea {
   color: white;
   font-family: $serif;
   background: #786f6f;
-  @media #{$medium-screen} {
-   color: blue;
- }
 
 }
 input[type="checkbox"],

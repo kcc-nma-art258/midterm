@@ -159,19 +159,6 @@ textarea {
   background: #786f6f;
 }
 
-@media only screen and (min-width: 768px) {
-  input[type="email"],
-  input[type="number"],
-  input[type="search"],
-  input[type="text"],
-  input[type="tel"],
-  input[type="url"],
-  input[type="password"],
-  textarea {
-    color: blue;
-  }
-}
-
 input[type="checkbox"],
 input[type="radio"] {
   width: 1.5em;
@@ -384,7 +371,17 @@ input[type="reset"]:active,
 input[type="button"]:focus,
 input[type="button"]:active {
   outline: none;
-  box-shadow: 0 0 1px 3px rgba(76, 130, 246, 0.5);
+  box-shadow: 0 0 1px 3px rgba(31, 93, 86, 0.5);
+}
+
+@media only screen and (min-width: 568px) {
+  .button,
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    float: none;
+  }
 }
 
 .download {
