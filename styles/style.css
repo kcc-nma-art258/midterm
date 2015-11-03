@@ -389,6 +389,18 @@ input[type="checkbox"]:checked::after {
   margin: 100px auto;
 }
 
+.info-typeface div {
+  margin-top: 30px;
+}
+
+.info-button div {
+  margin-top: 30px;
+}
+
+.info-form div {
+  margin-top: 30px;
+}
+
 .footer {
   padding: 30px;
   text-align: center;
