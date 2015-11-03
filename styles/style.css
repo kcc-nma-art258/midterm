@@ -216,7 +216,7 @@ input[type="checkbox"]:checked::after {
 /* MIXINS */
 /* Layout */
 .header {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   width: 100%;
   padding: 250px 0;
   text-align: center;
@@ -228,7 +228,7 @@ input[type="checkbox"]:checked::after {
 }
 
 .info-intro {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .container {
@@ -327,7 +327,7 @@ input[type="checkbox"]:checked::after {
 }
 
 .info-grid {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .info-grid p {
@@ -390,15 +390,15 @@ input[type="checkbox"]:checked::after {
 }
 
 .info-typography {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .info-typeface {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .info-button {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .info-button p {
@@ -406,19 +406,18 @@ input[type="checkbox"]:checked::after {
 }
 
 .info-form {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .info-mediaqueries {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .info-clearfix {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .footer {
-  height: 150px;
   padding: 30px;
   text-align: center;
 }
