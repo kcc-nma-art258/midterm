@@ -247,10 +247,10 @@
 			<div class="row">
 				<div class="col-1"></div>
 				<div class="col-5">
-					<p>The purpose of a button is to guide a user through a website, therefore they should be easily distinguishable from other elements while not drawing to much attention to themselves. Just like an image or type, buttons can either help or hurt a website's overall design, so when in doubt just remember “less is more”.</p>
+					<p>Thanks to Sass, developers are now able minimize the amount of lines generated when building a website, and use programs that generate compiled CSS files. One of the main reasons for this is the utilities file that is used as storage site for variables, mixins, and calculators that are used in other sections of Sass file. This ability to reference code from other locations within a  document is what makes Sass one of the most powerful scripting languages today.</p>
 				</div>
 				<div class="col-5">
-					<p>For this frame work, two styles of buttons are used to show how both a plain and a stylized button can be implemented into any design while still respecting the over-all flow of the frame work. It is also handy to have two styles of buttons when designing a webpage in-case there are buttons that play a more important role than others.</p>
+					<p>Frame Yo Work uses its utilities file to generate variables that are repeated extensively through out the document minimizing the need to remember specific values when styling your document. Because the 12 column grid is such a critical part of how this document functions, a clear-fix must be applied in order to allow columns to float left, rather than stacking as block elements,  a clear float mixin is used to compress ten lines of code into just one.</p>
 				</div>
 		    	<div class="col-1"></div>
 		  </div>
@@ -287,10 +287,10 @@
 			<div class="row">
 				<div class="col-1"></div>
 				<div class="col-5">
-					<p>The purpose of a button is to guide a user through a website, therefore they should be easily distinguishable from other elements while not drawing to much attention to themselves. Just like an image or type, buttons can either help or hurt a website's overall design, so when in doubt just remember “less is more”.</p>
+					<p>Media queries are used in responsive web design to target specific device sizes and to make adjustments to elements that may not be rendering ideally when a browser size is changed. They can be used to target entire files or specific sections and elements. Common practice today is to have at least 3 media queries that target desktop, tablet, and mobile device sizes.</p>
 				</div>
 				<div class="col-5">
-					<p>For this frame work, two styles of buttons are used to show how both a plain and a stylized button can be implemented into any design while still respecting the over-all flow of the frame work. It is also handy to have two styles of buttons when designing a webpage in-case there are buttons that play a more important role than others.</p>
+					<p>Within Frame Yo Work, there are three media sizes that target the three common device sizes. The entire document is affected by one main query that is rendered when screen sizes are smaller than 600px, while two additional queries are used to target the line length of paragraphs so that character counts stay within the recommended 45-75 character range.</p>
 				</div>
 		    	<div class="col-1"></div>
 		  </div>
@@ -313,7 +313,7 @@
 	@media screen and (max-width: 600px){
 	margin: 0 4em;
 	}
-	
+
 	@media screen and (max-width: 450px){
 	margin: 0 1em;
 	}
