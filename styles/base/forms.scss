@@ -1,6 +1,7 @@
 form {
   width: 100%;
 
+
   input,
   textarea{
     display: block;
@@ -25,6 +26,8 @@ textarea,
 select {
   -webkit-appearance: none;
   appearance: none;
+
+
 
   &:focus,
   &:active {
@@ -64,8 +67,4 @@ input[type="checkbox"] {
       left: 1px;
     }
   }
-}
-
-.input-postion{
-  padding-bottom: 0;
 }

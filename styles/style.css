@@ -196,10 +196,6 @@ input[type="checkbox"]:checked::after {
   left: 1px;
 }
 
-.input-postion {
-  padding-bottom: 0;
-}
-
 /*
  * Layouts
  */
@@ -226,6 +222,8 @@ input[type="checkbox"]:checked::after {
 
 .title {
   padding: 1em 0 0 0;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .heading {
@@ -387,6 +385,7 @@ input[type="button"]:active {
 
 .form-example form input,
 .form-example form textarea {
+  margin: 1em 0;
 }
 
 /*# sourceMappingURL=style.css.map */
