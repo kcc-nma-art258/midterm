@@ -1,12 +1,11 @@
 .header {
-  background: #333333;
   margin-bottom: 50px;
+  width: 100%;
+  padding: 250px 0;
+  text-align: center;
 }
 
-.header .header-text {
-  width: 100%;
-  height: 700px;
-  display: table-cell;
-  vertical-align: middle;
+.header p {
+  margin-top: 30px;
   text-align: center;
 }
