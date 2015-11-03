@@ -114,11 +114,11 @@ form {
 form input,
 form textarea {
   display: block;
-  width: 60%;
+  width: 100%;
 }
 
 .form-position {
-  margin-left: 1em;
+  padding-bottom: 1em;
 }
 
 input[type="email"],
@@ -188,12 +188,16 @@ input[type="checkbox"]:checked {
 input[type="checkbox"]:checked::after {
   margin: 0;
   padding: 0;
-  content: '2713';
+  content: '\2713';
   display: block;
   color: green;
   position: absolute;
   top: -1px;
   left: 1px;
+}
+
+.input-postion {
+  padding-bottom: 0;
 }
 
 /*
@@ -383,7 +387,6 @@ input[type="button"]:active {
 
 .form-example form input,
 .form-example form textarea {
-  margin: 1em 0;
 }
 
 /*# sourceMappingURL=style.css.map */
