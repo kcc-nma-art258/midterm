@@ -10,6 +10,28 @@
   @include cf;
 }
 
+.title{
+  padding: 1em 0 0 0;
+}
+
+.heading{
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1em 0 0.5em 0;
+}
+
+.utilities{
+  margin-bottom: 5em;
+}
+
+.button-position{
+  padding-left: 6em;
+}
+
+
+
+
+
 [class^="col-"] {
   width: 100%;
   float: left;

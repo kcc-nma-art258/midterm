@@ -28,9 +28,7 @@ body{
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4,{
   font-family: $serif;
   font-weight: 400;
 }
@@ -55,6 +53,7 @@ h4 {
  * @section Inline
  */
 p {
-  margin-bottom: 0 0 em-calc($base-font);
-  text-align: justify;
+  font-size: em-calc($base-font);
+  margin-bottom: 1em;
+  text-align: center;
 }
