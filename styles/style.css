@@ -84,16 +84,26 @@ h6 {
   font-size: 1em;
 }
 
-.info-intro h5, .info-grid h5, .info-typography h5, .info-typeface h5, .info-button h5, .info-form h5, .info-mediaqueries h5, .info-clearfix h5 {
-  font-family: "Raleway", Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-weight: 400;
+.info-intro h5, .info-grid h5, .info-typeface h5, .info-button h5, .info-form h5, .info-mediaqueries h5, .info-clearfix h5 {
+  font-family: "Baskerville", Georgia, Palatino, serif;
+  font-weight: 600;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.info-intro p, .info-grid p, .info-typeface p, .info-button p, .info-form p, .info-mediaqueries p, .info-clearfix p {
+  text-align: center;
 }
 
 .title {
-  font-family: "Raleway", Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: "Baskerville", Georgia, Palatino, serif;
+  font-weight: 600;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.info-typography, .info-typography p {
+  text-align: center;
 }
 
 .header h4, .header h5, .footer h4, .footer h5 {
@@ -204,9 +214,14 @@ input[type="checkbox"]:checked::after {
 /* Layout */
 .header {
   background: #333333;
-  height: 600px;
   margin-bottom: 50px;
-  padding: 30px;
+}
+
+.header .header-text {
+  width: 100%;
+  height: 700px;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .info-intro {
