@@ -156,9 +156,47 @@
 			<input type="reset" value="Reset">
 		</section>
 
-		<section class="footer">
+		<section class="media-queries">
+			<h2 class="sub-heading">MEDIA QUERIES</h2>
+			<p>Media queries are simple filters that can be applied to CSS styles. They make it easy to change styles based on the characteristics of the device rendering the content, including the display type, width, height, orientation and even resolution.</p>
+			<h5>Contents</h5>
+				<ul class="list">
+					<li>Apply media queries based on viewport size</li>
+					<li>A note on min-device-width</li>
+					<li>Use any-pointer and any-hover for flexible interactions</li>
+					<li>Use relative units</li>
+				</ul>
+			<h5>TL;DR</h5>
+				<ul class="list">
+					<li>Media queries can be used to apply styles based on device characteristics.
+					<li>Use min-width over min-device-width to ensure the broadest experience.
+					<li>Use relative sizes for elements to avoid breaking layout.
+				</ul>
+			<h5>Example</h5>
+				<p class="explain"> Here we define the breakpoints which will become the upper border for each media size.<br>
+ 						The function em-calc() calculates the em-value from a px-value.</p>
+					<ul class="list">
+						<li>$small-breakpoint:  em-calc(640)  !default;</li>
+						<li>$medium-breakpoint: em-calc(1024) !default;</li>
+						<li>$large-breakpoint:  em-calc(1440) !default;</li>
+					</ul>
+				<p class="explain"> Here we define the lower and upper bounds for each media size</P>
+					<ul class="list">
+						<li>$small-range:   (0, $small-breakpoint) !default; /* 0, 640px */</li>
+						<li>$medium-range:  ($small-breakpoint  + em-calc(1),<br> $medium-breakpoint) !default; /* 641px, 1024px */</li>
+						<li>$large-range:   ($medium-breakpoint + em-calc(1),<br> $large-breakpoint)  !default; /* 1025px, 1440px */<li>
+					</ul>
+		</section>
+
+		<section class="utilities">
+			<h2 class="sub-heading">UTILITIES</h2>
+			<p>Foundation includes a handful of helpful utility classes to add certain behaviors to your elements.</p>
 
 		</section>
+
+		<section class="footer">
+		</section>
+
 	</div>
 </body>
 </html>

@@ -296,6 +296,8 @@ input[type="button"]:active {
 .container .type,
 .container .forms,
 .container .buttons,
+.container .media-queries,
+.container .utilities,
 .container p {
   text-align: center;
   color: #337;
@@ -311,6 +313,10 @@ input[type="button"]:active {
 .container .forms p,
 .container .buttons .sub-heading,
 .container .buttons p,
+.container .media-queries .sub-heading,
+.container .media-queries p,
+.container .utilities .sub-heading,
+.container .utilities p,
 .container p .sub-heading, .container p p {
   color: #417505;
   font-size: 1.5em;
@@ -324,6 +330,8 @@ input[type="button"]:active {
 .container .type p,
 .container .forms p,
 .container .buttons p,
+.container .media-queries p,
+.container .utilities p,
 .container p p {
   font-size: .8em;
   color: #2d2d2d;
@@ -667,8 +675,40 @@ input[type="button"]:active {
   margin-top: 3em;
 }
 
-.container .footer {
+.container .media-queries {
   margin-bottom: 5em;
+}
+
+.container .media-queries h5,
+.container .media-queries .explain,
+.container .media-queries ul {
+  text-align: left;
+  color: #2D2D2D;
+  margin-bottom: .5em;
+  margin-left: 2em;
+}
+
+.container .media-queries h5 h5,
+.container .media-queries .explain h5,
+.container .media-queries ul h5 {
+  margin-bottom: 0;
+}
+
+.container .media-queries h5 li,
+.container .media-queries .explain li,
+.container .media-queries ul li {
+  padding-left: 6em;
+  font-size: .8em;
+  list-style: none;
+  color: #417505;
+}
+
+.container .media-queries p {
+  margin-bottom: 2em;
+}
+
+.container .footer {
+  margin-top: 5em;
 }
 
 /*# sourceMappingURL=style.css.map */

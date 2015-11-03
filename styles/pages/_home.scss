@@ -4,6 +4,8 @@
 		.type,
 		.forms,
 		.buttons,
+		.media-queries,
+		.utilities,
 		p {
 		text-align: center;
 		color: #337;
@@ -169,10 +171,36 @@
 	.buttons {
 		margin-top: 3em;
 
-		
+
 }
 
-	.footer {
+	.media-queries {
 		margin-bottom: 5em;
+		h5,
+		.explain,
+		ul {
+			text-align: left;
+			color: #2D2D2D;
+			margin-bottom: .5em;
+			margin-left: 2em;
+			h5 {
+				margin-bottom: 0;
+			}
+
+			li {
+				padding-left: 6em;
+				font-size: .8em;
+				list-style: none;
+				color: #417505;
+
+
+			}
+		}
+		p {
+			margin-bottom: 2em;
+		}
+	}
+	.footer {
+		margin-top: 5em;
 	}
 }
