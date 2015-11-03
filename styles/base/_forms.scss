@@ -42,22 +42,23 @@ textarea {
   color: white;
   font-family: $serif;
   background: #786f6f;
+  @media #{$medium-screen} {
+   color: blue;
+ }
+
 }
 input[type="checkbox"],
 input[type="radio"] {
   width: 1.5em;
   height: 1.5em;
+  margin: 0 .5em 0 2em;
   border-radius: 100%;
   border: 1px solid white;
   display: inline-block;
-    &lavel {
-    color: red;
-
-  &:checked {
-    background: white;
-  }
-}
-}
+    &:checked {
+     background: white;
+      }
+    }
 input[type="checkbox"] {
   border-radius: 0;
 
@@ -83,17 +84,14 @@ input[type="checkbox"] {
 .styled-select {
   overflow: hidden;
     select {
-    margin: 1em;
+    margin: 1em 0;
     color: white;
-    background: transparent;
     width: 300px;
     padding: 5px;
-    font-size: .75em;
-    line-height: 1;
+    font-size: .8em;
+    line-height: 2.5;
     border-radius: 0;
+    font-family: $sans-serif4;
+    background: transparent;
   }
-}
-
-@media screen and (min-width: 600px){
-
 }

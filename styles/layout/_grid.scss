@@ -16,20 +16,13 @@
   min-height: 80px;
   padding: 1em;
   > div {
-  text-align: center;
-  background-color: #339999;
-  min-height: 50px;
-  border-radius: .35em;
+    text-align: center;
+    min-height: 50px;
+    text-align:center;
+    min-height:50px;
+    color: #fff;
+    padding-top: 1em;
   }
-}
-[class^='col-']>div {
-  text-align:center;
-  background-color:#339999;
-  min-height:50px;
-  color: #fff;
-  padding-top: 1em;
-  border-radius: .35em;
-
 }
 
 @for $i from 1 through 12 {

@@ -7,4 +7,8 @@
   border: 0 none;
   color: red;
   margin: 2em 0;
+
+  &:hover {
+    cursor: crosshair;
+  }
 }

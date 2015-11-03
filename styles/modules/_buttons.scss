@@ -12,9 +12,9 @@ input[type="button"] {
   padding: 2em 4em;
   margin-bottom: 0.5em;
   background-color: #1f5d56;
-
   &:hover {
     background-color: #133632;
+    cursor: crosshair;
   }
 
   &:focus,
@@ -46,6 +46,7 @@ a,a:visited,a:hover,a:active{
   transition:0.5s color ease;
 	text-decoration:none;
 	color: #1f5d56;
+  cursor: crosshair;
 
 }
 
@@ -55,6 +56,7 @@ a.before:before,a.after:after{
   -webkit-backface-visibility:hidden;
           backface-visibility:hidden;
   position:absolute;
+
 }
 a.before:before{
   top:-0.25em;
