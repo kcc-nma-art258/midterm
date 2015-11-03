@@ -1,7 +1,6 @@
 /*
  * Base
  */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,300italic);
 @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:600,300);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
 *,
@@ -45,12 +44,14 @@ html {
 }
 
 body {
+  margin-top: 10em;
   font-style: normal;
   font-variant: normal;
-  font-weight: 300;
+  font-weight: 200;
+  font-stretch: extra-expanded;
   font-size: 1em;
   line-height: 1.5;
-  font-family: "Roboto", Helvetica, sans-serif;
+  font-family: "Oxygen", sans-serif;
   color: #bcd8cd;
   background-color: #343232;
 }
@@ -61,23 +62,25 @@ h2,
 h3,
 h4 {
   font-family: "Roboto Condensed", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
+  text-align: center;
 }
 
 h1 {
-  font-size: 6.85353em;
+  font-size: 5.0625em;
 }
 
 h2 {
-  font-size: 4.2358em;
+  font-size: 3.375em;
 }
 
 h3 {
-  font-size: 2.61792em;
+  font-size: 2.25em;
 }
 
 h4 {
-  font-size: 1.618em;
+  font-size: 1.5em;
+  font-weight: 300;
 }
 
 /**
@@ -89,7 +92,7 @@ p {
 }
 
 form {
-  width: 60%;
+  width: 100%;
 }
 
 form input,
@@ -150,7 +153,6 @@ textarea {
   margin: 5px 0;
   padding: 10px;
   border: none;
-  border-radius: 3px;
   font-size: 1.2em;
   color: white;
   font-family: "Josefin Slab", serif;
@@ -159,8 +161,8 @@ textarea {
 
 input[type="checkbox"],
 input[type="radio"] {
-  width: 1em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;
   border-radius: 100%;
   border: 1px solid white;
   display: inline-block;
@@ -237,8 +239,24 @@ input[type="checkbox"]:checked::after {
 [class^="col-"] {
   width: 100%;
   float: left;
-  min-height: 1px;
-  padding: 0 1em;
+  min-height: 80px;
+  padding: 1em;
+}
+
+[class^="col-"] > div {
+  text-align: center;
+  background-color: #339999;
+  min-height: 50px;
+  border-radius: .35em;
+}
+
+[class^='col-'] > div {
+  text-align: center;
+  background-color: #339999;
+  min-height: 50px;
+  color: #fff;
+  padding-top: 1em;
+  border-radius: .35em;
 }
 
 @media screen and (min-width: 600px) {
@@ -313,6 +331,10 @@ input[type="checkbox"]:checked::after {
   }
 }
 
+section {
+  margin: 5em auto;
+}
+
 /*
  * Modules
  */
@@ -332,7 +354,6 @@ input[type="button"] {
   padding: 2em 4em;
   margin-bottom: 0.5em;
   background-color: #1f5d56;
-  border-radius: 2px;
 }
 
 .button:hover,
@@ -340,7 +361,6 @@ button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
-  font-weight: 600;
   background-color: #133632;
 }
 
@@ -358,11 +378,119 @@ input[type="button"]:active {
   box-shadow: 0 0 1px 3px rgba(76, 130, 246, 0.5);
 }
 
+.download {
+  margin: 2em 0 15em 0;
+  background: none;
+  border: 2px solid #01B2EA;
+}
+
+.download:hover {
+  background: rgba(1, 179, 233, 0.5);
+}
+
+.wrapper {
+  margin: 2em 0;
+  padding: 2em 0;
+}
+
+.square {
+  padding: 2em;
+}
+
+a, a:visited, a:hover, a:active {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  -webkit-transition: 0.5s color ease;
+          transition: 0.5s color ease;
+  text-decoration: none;
+  color: #1f5d56;
+}
+
+a.before:before, a.after:after {
+  content: "";
+  -webkit-transition: 0.5s all ease;
+          transition: 0.5s all ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+a.before:before {
+  top: -0.25em;
+}
+
+a.after:after {
+  bottom: -0.25em;
+}
+
+a.before:before, a.after:after {
+  height: 1px;
+  width: 0;
+  background: #9acc0b;
+}
+
+.square {
+  margin-left: -0.4em;
+  position: relative;
+  overflow: hidden;
+}
+
+.square a {
+  position: static;
+  padding: 0.2em 0.4em;
+}
+
+.square:before, .square:after {
+  content: "";
+  box-sizing: border-box;
+  -webkit-transition: 0.25s all ease;
+          transition: 0.25s all ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  width: 1px;
+  width: 0.35rem;
+  height: 0;
+  background: #9acc0b;
+}
+
+.square:before {
+  left: 0;
+  bottom: -0.2em;
+}
+
+.square:after {
+  right: 0;
+  top: -0.2em;
+}
+
+.square a:before {
+  left: 0;
+  -webkit-transition: 0.25s all ease;
+          transition: 0.25s all ease;
+}
+
+.square a:after {
+  right: 0;
+  -webkit-transition: 0.25s all ease;
+          transition: 0.25s all ease;
+}
+
+.square:hover:before, .square:hover:after {
+  height: -webkit-calc(100% + 0.4em);
+  height: calc(100% + 0.4em);
+}
+
+.square:hover a:before, .square:hover a:after {
+  width: 100%;
+}
+
 pre {
   max-width: 960px;
-  margin: 2em 0;
-  border-radius: 5px;
-  background: #444444;
+  margin: 3em 0;
+  background: black;
+  white-space: pre-wrap;
 }
 
 .link {
@@ -374,8 +502,12 @@ pre {
   color: inherit;
   background-color: transparent;
   border: 0 none;
-  border: 0 none;
-  color: #abe552;
+  color: red;
+  margin: 2em 0;
+}
+
+ul li {
+  list-style: none;
 }
 
 /*
@@ -389,8 +521,7 @@ pre {
   min-height: 3em;
   text-align: center;
   background-color: #786e6e;
-  padding: 0.75em 0;
-  border-radius: 5px;
+  padding: 0 1em 0.75em 0;
 }
 
 .form-example form {
@@ -401,6 +532,20 @@ pre {
 .form-example form input,
 .form-example form textarea {
   margin: 0 0 0.5em;
+}
+
+.text-ex p {
+  margin-top: 2em;
+}
+
+ul {
+  margin: 2em auto;
+}
+
+h2.topic {
+  margin: 3em 0 2em 0;
+  color: white;
+  letter-spacing: 0.0625em;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,8 +13,23 @@
 [class^="col-"] {
   width: 100%;
   float: left;
-  min-height: 1px;
-  padding: 0 1em;
+  min-height: 80px;
+  padding: 1em;
+  > div {
+  text-align: center;
+  background-color: #339999;
+  min-height: 50px;
+  border-radius: .35em;
+  }
+}
+[class^='col-']>div {
+  text-align:center;
+  background-color:#339999;
+  min-height:50px;
+  color: #fff;
+  padding-top: 1em;
+  border-radius: .35em;
+
 }
 
 @for $i from 1 through 12 {
@@ -24,4 +39,8 @@
 
     }
   }
+}
+
+section {
+  margin: 5em auto;
 }

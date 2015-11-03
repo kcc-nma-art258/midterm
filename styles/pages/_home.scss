@@ -7,8 +7,7 @@
 		min-height: 3em;
 		text-align: center;
 		background-color: #786e6e;
-		padding: 0.75em 0;
-    border-radius: 5px;
+		padding: 0 1em 0.75em 0;
 	}
 }
 
@@ -23,3 +22,14 @@
 	  }
 	}
 }
+.text-ex p {
+	margin-top: 2em;
+}
+ul {
+	margin: 2em auto;
+}
+
+h2.topic {
+	margin: 3em 0 2em 0;
+	color: white;
+	letter-spacing: 0.0625em; }

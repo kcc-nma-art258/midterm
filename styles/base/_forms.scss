@@ -1,5 +1,5 @@
 form {
-  width: 60%;
+  width: 100%;
 
   input,
   textarea{
@@ -38,7 +38,6 @@ textarea {
   margin: 5px 0;
   padding: 10px;
   border: none;
-  border-radius: 3px;
   font-size: 1.2em;
   color: white;
   font-family: $serif;
@@ -46,15 +45,18 @@ textarea {
 }
 input[type="checkbox"],
 input[type="radio"] {
-  width: 1em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;
   border-radius: 100%;
   border: 1px solid white;
   display: inline-block;
+    &lavel {
+    color: red;
 
   &:checked {
     background: white;
   }
+}
 }
 input[type="checkbox"] {
   border-radius: 0;
