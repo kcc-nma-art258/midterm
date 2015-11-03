@@ -25,10 +25,6 @@
   }
 }
 
-.info-grid {
-  margin-bottom: 100px;
-}
-
 .info-grid p {margin-bottom: 1em;}
 
 .column, .columns {
@@ -84,4 +80,12 @@
 
 .col-11 {
   width: 91.3333333333%;
+}
+
+.header {
+  border-bottom: 1px solid #333333;
+}
+
+.info-grid, .info-typography, .info-typeface, .info-button, .info-form, .info-mediaqueries, .info-clearfix {
+  margin: 100px auto;
 }

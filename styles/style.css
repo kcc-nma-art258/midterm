@@ -227,10 +227,6 @@ input[type="checkbox"]:checked::after {
   text-align: center;
 }
 
-.info-intro {
-  margin-bottom: 100px;
-}
-
 .container {
   width: 100%;
   max-width: 960px;
@@ -326,10 +322,6 @@ input[type="checkbox"]:checked::after {
   }
 }
 
-.info-grid {
-  margin-bottom: 100px;
-}
-
 .info-grid p {
   margin-bottom: 1em;
 }
@@ -389,32 +381,12 @@ input[type="checkbox"]:checked::after {
   width: 91.3333333333%;
 }
 
-.info-typography {
-  margin-bottom: 100px;
+.header {
+  border-bottom: 1px solid #333333;
 }
 
-.info-typeface {
-  margin-bottom: 100px;
-}
-
-.info-button {
-  margin-bottom: 100px;
-}
-
-.info-button p {
-  margin-bottom: 1em;
-}
-
-.info-form {
-  margin-bottom: 100px;
-}
-
-.info-mediaqueries {
-  margin-bottom: 100px;
-}
-
-.info-clearfix {
-  margin-bottom: 100px;
+.info-grid, .info-typography, .info-typeface, .info-button, .info-form, .info-mediaqueries, .info-clearfix {
+  margin: 100px auto;
 }
 
 .footer {
