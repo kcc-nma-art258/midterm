@@ -1,12 +1,19 @@
 form {
-  width: 100%;
+  width: 60%;
 
   input,
   textarea{
     display: block;
-    width: 100%;
+    width: 60%;
   }
 }
+
+.form-position{
+  margin-left: 1em;
+
+}
+
+
 
 input[type="email"],
 input[type="number"],

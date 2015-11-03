@@ -9,6 +9,14 @@
   box-sizing: border-box;
 }
 
+/**
+ * Media Queries
+ *
+ * NOTE: "Relative units in media queries are based
+ * on the initial value, which means that units are
+ * never based on results of declarations"
+ * http://www.w3.org/TR/css3-mediaqueries/#units
+ */
 /*
  * Variables
  */
@@ -106,7 +114,11 @@ form {
 form input,
 form textarea {
   display: block;
-  width: 100%;
+  width: 60%;
+}
+
+.form-position {
+  margin-left: 1em;
 }
 
 input[type="email"],
