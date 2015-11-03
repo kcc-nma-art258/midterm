@@ -84,14 +84,14 @@ h6 {
   font-size: 1em;
 }
 
-.info-intro h5, .info-grid h5, .info-typeface h5, .info-button h5, .info-form h5, .info-mediaqueries h5, .info-clearfix h5 {
+.info-intro h5, .info-grid h5, .info-typeface h5, .info-button h5, .info-form h5, .info-utility h5, .info-mediaqueries h5, .info-clearfix h5 {
   font-family: "Baskerville", Georgia, Palatino, serif;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
 }
 
-.info-intro p, .info-grid p, .info-typeface p, .info-button p, .info-form p, .info-mediaqueries p, .info-clearfix p {
+.info-intro p, .info-grid p, .info-typeface p, .info-button p, .info-form p, .info-utility p, .info-mediaqueries p, .info-clearfix p {
   text-align: center;
 }
 
@@ -124,12 +124,19 @@ p {
 
 form {
   width: 100%;
+  height: 460px;
+}
+
+form input,
+form textarea,
+form select {
+  display: block;
 }
 
 form input,
 form textarea {
   display: block;
-  width: 60%;
+  width: 100%;
 }
 
 input[type="name"],
@@ -144,7 +151,7 @@ textarea {
   -moz-appearance: none;
        appearance: none;
   border-radius: 6px;
-  height: 35px;
+  height: 3em;
   padding: 6px;
 }
 
@@ -168,7 +175,7 @@ textarea:active {
 }
 
 textarea {
-  min-height: 90px;
+  min-height: 150px;
 }
 
 input[type="checkbox"],
@@ -177,6 +184,7 @@ input[type="radio"] {
   width: 1em;
   height: 1em;
   border-radius: 100%;
+  background: #ffffff;
 }
 
 input[type="checkbox"]:checked,
@@ -397,8 +405,9 @@ input[type="checkbox"]:checked::after {
   margin-top: 30px;
 }
 
-.info-form div {
+.info-form form {
   margin-top: 30px;
+  background: #ffcccc;
 }
 
 .footer {
@@ -422,7 +431,7 @@ input[type="button"] {
   color: inherit;
   padding: 0.5em 1em;
   margin-bottom: 0.5em;
-  background-color: #ccccff;
+  background-color: #cccccc;
   border-radius: 2px;
 }
 
@@ -431,7 +440,8 @@ button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
-  background-color: #9999ff;
+  background-color: #333333;
+  color: #ffffff;
 }
 
 .button:focus,
