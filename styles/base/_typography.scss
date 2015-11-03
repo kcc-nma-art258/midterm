@@ -1,0 +1,89 @@
+///*** TYPOGRAPHY ***///
+
+html {
+  font-size: $base-font;
+}
+
+body {
+  // Shorthand
+  // font: normal normal 300 #{type-scale(0)} $sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  font-size: type-scale(0);
+  line-height: $line-height;
+  font-family: $sans-serif;
+  color: #333333;
+
+  @media screen and (min-width: 600px){
+    font-size: type-scale(0);
+  }
+}
+
+/* @SECTION HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: type-scale(5);
+}
+
+h2 {
+  font-size: type-scale(4);
+}
+
+h3 {
+  font-size: type-scale(3);
+}
+
+h4 {
+  font-size: type-scale(2);
+}
+
+h5 {
+  font-size: type-scale(1);
+}
+
+h6 {
+  font-size: type-scale(0);
+}
+
+.info-intro, .info-grid, .info-typeface, .info-button, .info-form, .info-utility, .info-mediaqueries, .info-clearfix {
+  h5 {
+    font-family: $serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+p.baskerville { font-family: $serif; }
+
+.title {
+  font-family: $serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.info-typography, .info-typography p { text-align: center; }
+
+.header, .footer {
+h4, h5 {
+    font-family: $sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+/* @SECTION INLINE */
+p {
+  margin-bottom: 0 0 em-calc($base-font);
+  text-align: justify;
+}

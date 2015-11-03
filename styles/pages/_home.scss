@@ -1,0 +1,24 @@
+///*** HOME ***///
+
+.info-grid {
+	.row {
+		margin-bottom: 1em;
+	}
+
+	[class^='col-'] {
+		min-height: 3em;
+		text-align: center;
+		background-color: #ffcccc;
+		padding: 0.75em auto;
+	}
+}
+
+.info-form {
+	form {
+
+	  input,
+	  textarea{
+		margin: 0 0 0.5em;
+	  }
+	}
+}
