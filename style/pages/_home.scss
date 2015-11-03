@@ -1,57 +1,78 @@
-.container{
-
+.container {
 	.grid-sec,
 	.type-sec,
 	.form-sec,
-	.button-sec{
-		padding: 3em 0;
+	.button-sec, 
+	.utilities-sec,
+	.mediaqueries-sec{
+		padding: 2em 0;
 	}
 
-	.paragraph{
-		margin: auto;
-		padding: 1em 0 2em 0;
-	}
 
-	.title{
-		padding: .5em 0 3em 0;
-		text-align: center;
 
-		h1{
+	.title {
+		padding: 2em 0 3em 0;
+		
+
+		h1 {
 			font-family: $sans-serif;
+			font-weight: 700;
+
+			span1,
+			span2 {
+				letter-spacing: 20px;
+				font-family: $serif;
+				font-weight: 100;
+				padding-left: 1em;
+				font-size: 24px;
+				vertical-align: middle;
+				@media screen and (max-width: 600px){
+    				font-size: 12px;
+    				letter-spacing: 10px;
+  				}
+			}
+
+			span1 {
+				margin-right: -.25em;
+
+			}
 		}
 
-		h4{
-			letter-spacing: 25px;
-			font-family: $serif;
-			font-weight: 200;
+		p.credits {
+			text-align: $center;
+			font-size: 12px;
+			margin-top: 1em;
+			padding-left: 1em;
+
+		}
+
+		p.welcome {
+			text-align: $center;
+			font-size: $base-font;
+			max-width: 700px;
+			margin-top: 3em;
+
 		}
 	}
 }
-/*
-.grid-sec {
-	.row {
-		margin-bottom: 0;
-	}
 
 
 
-	[class^='col-'] {
-		min-height: 3em;
-		text-align: center;
-		background-color: #D0D0D0;
-		padding: 0.75em 0;
 
-	}
-}
-*/
 .form-sec {
 	form {
 	  margin: 2em auto 0;
 	  padding: 0 1em;
+	}
 
 	  input,
-	  textarea{
+	  textarea {
 		margin: 0 0 0.5em;
 	  }
-	}
+}
+
+.type-sec,
+.form-sec,
+.utilities-sec{
+	background-color: #F0F0F0;
 }

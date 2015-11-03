@@ -22,8 +22,8 @@
 
 [class^="col-"] {
   div {
-    text-align: center;
-    height: 50px;
+    text-align: $center;
+    height: 3.125em;
     background-color: #F0F0F0;
     padding: .75em 0;
   }
@@ -32,7 +32,7 @@
 
 @for $i from 1 through 12 {
   .col-#{$i} {
-    @media screen and (min-width: 600px){
+    @media screen and (min-width: 780px){
       width: (100% / 12) * $i;
     }
 

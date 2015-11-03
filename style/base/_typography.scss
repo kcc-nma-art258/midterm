@@ -9,7 +9,7 @@ body{
   // font: normal normal 300 #{type-scale(0)} $sans-serif;
   font-style: normal;
   font-variant: normal;
-  font-weight: 300;
+  font-weight: 200;
   font-size: type-scale(0);
   line-height: $line-height;
   font-family: $sans-serif;
@@ -31,7 +31,7 @@ h5,
 h6 {
   text-align: center;
   font-family: $serif;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h1 {
@@ -48,21 +48,32 @@ h3 {
 
 h4 {
   font-size: type-scale(0);
+  font-weight: 900;
 }
 
 h5 {
   font-size: type-scale(0);
+  font-weight: 700;
 }
 
 h6 {
   font-size: type-scale(0);
+  font-weight: 400;
 }
 
 p {
   font-size: $base-font;
   text-align: justify;
   margin: 0 auto;
-  @media screen and (max-width: 600px){
-    margin: 2em 4em;
+  padding: 1em 0 2em 0;
+  
+  @media screen and (max-width: 779px) {
+    margin: .5em 7em;
   }
+  @media screen and (max-width: 600px){
+    margin: .5em 4em;
+  }
+  @media screen and (max-width: 450px){
+    margin: .5em 1em;
+  } 
 }
