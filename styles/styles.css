@@ -1,0 +1,520 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/** Variables */
+/** Mixins */
+/*** @section Functions */
+/**
+ * rem/em Calculator
+ *
+ * target / context = result
+ * @param {$target}  Target size in pixels (ie. 32px)
+ * @param {$context} Font size providing context for proportion, defaults to $base-font)
+ * @param {$unit} unit for rem/em output, defaults to 'em'
+ */
+/**
+ * Exponent Calculator
+ *
+ * https://gist.github.com/scottkellum/1160816
+ * @param {$base} base number
+ * @param {$exponent} exponent/power number
+ */
+/**
+ * Type Scale Calculator
+ *
+ * Create typographic scales
+ * @param {$i} increment of scale; 0 is base
+ * @param {$scale} scale ratio; defaults to 1.25
+ */
+.util-example {
+  padding: 5em 0;
+}
+
+/*** Typography */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+  color: #333;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 1.618em;
+  }
+}
+
+.typography-example {
+  padding: 5em 0;
+}
+
+/*** @section Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6.85353em;
+}
+
+h2 {
+  font-size: 4.2358em;
+}
+
+h3 {
+  font-size: 2.61792em;
+}
+
+h4 {
+  font-size: 1.618em;
+}
+
+/*** @section Inline */
+p {
+  margin-bottom: 0 0 1em;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  color: #333;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+input[type="checkbox"],
+input[type="radio"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  height: 3em;
+  border-radius: 1em;
+}
+
+input[type="email"]:focus,
+input[type="email"]:active,
+input[type="number"]:focus,
+input[type="number"]:active,
+input[type="search"]:focus,
+input[type="search"]:active,
+input[type="text"]:focus,
+input[type="text"]:active,
+input[type="tel"]:focus,
+input[type="tel"]:active,
+input[type="url"]:focus,
+input[type="url"]:active,
+input[type="password"]:focus,
+input[type="password"]:active,
+input[type="checkbox"]:focus,
+input[type="checkbox"]:active,
+input[type="radio"]:focus,
+input[type="radio"]:active,
+textarea:focus,
+textarea:active {
+  outline: 0;
+}
+
+input[type="email"] select,
+input[type="number"] select,
+input[type="search"] select,
+input[type="text"] select,
+input[type="tel"] select,
+input[type="url"] select,
+input[type="password"] select,
+input[type="checkbox"] select,
+input[type="radio"] select,
+textarea select {
+  height: 3em;
+  width: 5em;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  border: 1px solid #000;
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background: #DC9BD9;
+}
+
+input[type="checkbox"] {
+  border-radius: 0;
+}
+
+input[type="checkbox"]:checked {
+  position: relative;
+  background: transparent;
+}
+
+input[type="checkbox"]:checked::after {
+  margin: 0;
+  padding: 0;
+  content: '\2713';
+  display: block;
+  color: #DC9BD9;
+  position: absolute;
+  top: -1px;
+  left: 1px;
+}
+
+.form-example {
+  padding: 5em 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container * {
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left: -1em;
+  margin-right: -1em;
+}
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.row > div {
+  font-size: 16px;
+}
+
+[class^='col-'] {
+  float: left;
+  min-height: 80px;
+  padding: 0 1em;
+}
+
+[class^='col-'] > div {
+  text-align: center;
+  background-color: #B7B7B7;
+  min-height: 50px;
+  color: #fff;
+  padding-top: 10px;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+@media screen and (min-width: 600px) {
+  .col-1 {
+    width: 8.33333%;
+  }
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+@media screen and (min-width: 600px) {
+  .col-2 {
+    width: 16.66667%;
+  }
+}
+
+.col-3 {
+  width: 25%;
+}
+
+@media screen and (min-width: 600px) {
+  .col-3 {
+    width: 25%;
+  }
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+@media screen and (min-width: 600px) {
+  .col-4 {
+    width: 33.33333%;
+  }
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+@media screen and (min-width: 600px) {
+  .col-5 {
+    width: 41.66667%;
+  }
+}
+
+.col-6 {
+  width: 50%;
+}
+
+@media screen and (min-width: 600px) {
+  .col-6 {
+    width: 50%;
+  }
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+@media screen and (min-width: 600px) {
+  .col-7 {
+    width: 58.33333%;
+  }
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+@media screen and (min-width: 600px) {
+  .col-8 {
+    width: 66.66667%;
+  }
+}
+
+.col-9 {
+  width: 75%;
+}
+
+@media screen and (min-width: 600px) {
+  .col-9 {
+    width: 75%;
+  }
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+@media screen and (min-width: 600px) {
+  .col-10 {
+    width: 83.33333%;
+  }
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+@media screen and (min-width: 600px) {
+  .col-11 {
+    width: 91.66667%;
+  }
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .col-12 {
+    width: 100%;
+  }
+}
+
+body {
+  background-color: #fff;
+}
+
+.grid-example {
+  padding: 5em 0;
+}
+
+.grid-example .row {
+  padding: 0 1em 0 1em;
+}
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 0 none;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+  padding: 0.5em 1em;
+  margin-bottom: 0.5em;
+  background-color: #B7B7B7;
+  border-radius: 2px;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  background-color: #DC9BD9;
+}
+
+.button:focus,
+.button:active,
+button:focus,
+button:active,
+input[type="submit"]:focus,
+input[type="submit"]:active,
+input[type="reset"]:focus,
+input[type="reset"]:active,
+input[type="button"]:focus,
+input[type="button"]:active {
+  outline: none;
+  box-shadow: 0 0 1px 3px rgba(76, 130, 246, 0.5);
+}
+
+.button-example {
+  padding: 5em 0;
+}
+
+/* Grid */
+.grid-example .allrows {
+  padding-top: 2em;
+}
+
+.grid-example .row {
+  margin-bottom: 10px;
+}
+
+.grid-example h3 {
+  padding: 1em 0;
+}
+
+/* Typography */
+.typography-example h1, .typography-example h2, .typography-example h3, .typography-example h4, .typography-example h5, .typography-example h6 {
+  color: #B7B7B7;
+}
+
+.typography-example .type-title h3 {
+  color: #333;
+  padding: 1em 0;
+}
+
+p {
+  margin: 0 3em 0 3em;
+}
+
+/* Form */
+.form-example h3 {
+  padding: 1em 0;
+}
+
+.form-example p {
+  margin: 0 1.75em 2em 1.75em;
+}
+
+.form-example form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form-example form label {
+  font-size: 1.5em;
+}
+
+.form-example form input,
+.form-example form textarea {
+  margin: 1em 0 1em 0;
+}
+
+/* Buttons */
+.button-example h3 {
+  padding: 1em 0;
+}
+
+.button-example p {
+  margin: 0 3em;
+}
+
+.stuff {
+  padding-top: 2em;
+  text-align: center;
+}
+
+/* Utilities */
+.util-example h3 {
+  padding: 1em 0;
+}
+
+.util-example p {
+  margin: 0 3em 0 3em;
+}
+
+/* Header */
+.header h3 {
+  padding: 1em 0 0 0;
+  color: #333;
+  font-size: 5em;
+  letter-spacing: 2px;
+}
+
+.header h5 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #333;
+  margin: 0;
+}
+
+/* Footer */
+.footer-example {
+  background-color: #DC9BD9;
+  color: #f8f8f8;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=styles.css.map */

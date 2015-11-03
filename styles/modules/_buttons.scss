@@ -1,0 +1,34 @@
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  appearance: none;
+  background-color: transparent;
+  border: 0 none;
+
+  display: inline-block; // Make display properties consistent across the board
+  text-decoration: none; // Remove underline for anchor buttons
+  color: inherit;        // Inherit the default color (ie. black)
+  font: inherit;         // Inherit font properties from <body>
+  padding: 0.5em 1em;
+  margin-bottom: 0.5em;
+  background-color: $color;
+  border-radius: 2px;
+  font-family: $sans-serif;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #DC9BD9;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: 0 0 1px 3px rgba(76, 130, 246, 0.5);
+  }
+}
+
+.button-example {
+  padding: $section-padding;
+}

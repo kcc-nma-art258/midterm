@@ -1,0 +1,54 @@
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.row {
+  @include cf;
+  margin-left: -$gutter;
+  margin-right: -$gutter;
+  > div {
+    font-size: 16px;
+  }
+}
+
+[class^='col-'] {
+  float: left;
+  min-height: 80px;
+  padding: 0 $gutter;
+  > div {
+    text-align: center;
+    background-color: $color;
+    min-height: 50px;
+    color: #fff;
+    padding-top: 10px;
+    }
+  }
+
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: $i / 12 * 100%;
+    @media screen and (min-width: 600px){
+      width: (100% / 12) * $i;
+    }
+  }
+}
+
+body {
+  background-color: #fff;
+}
+
+.grid-example {
+  padding: $section-padding;
+
+  .row {
+    padding: 0 1em 0 1em;
+  }
+}

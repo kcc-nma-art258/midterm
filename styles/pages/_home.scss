@@ -1,0 +1,120 @@
+/* Grid */
+
+.grid-example {
+	.allrows {
+		padding-top: 2em;
+	}
+	.row {
+		margin-bottom: 10px;
+
+	}
+
+	h3 {
+		padding: 1em 0;
+	}
+
+}
+
+/* Typography */
+
+.typography-example {
+	h1,h2,h3,h4,h5,h6 {
+		color: $color;
+	}
+
+	.type-title h3 {
+		color: #333;
+		padding: 1em 0;
+		}
+		}
+
+	p {
+		margin: 0 3em 0 3em;
+	}
+
+/* Form */
+.form-example {
+
+	h3 {
+		padding: 1em 0;
+	}
+
+	p {
+		margin: 0 1.75em 2em 1.75em;
+	}
+
+	form {
+		width: 50%;
+	  margin: 0 auto;
+
+		label {
+			font-size: 1.5em;
+		}
+
+	  input,
+	  textarea {
+		margin: 1em 0 1em 0;
+		}
+
+	  }
+	}
+
+	/* Buttons */
+	.button-example {
+
+		h3 {
+			padding: 1em 0;
+		}
+
+		p {
+			margin: 0 3em;
+		}
+	}
+
+
+		.stuff {
+			padding-top: 2em;
+			text-align: center;
+		}
+
+/* Utilities */
+
+.util-example {
+
+	h3 {
+		padding: 1em 0;
+	}
+
+	p {
+		margin: 0 3em 0 3em;
+	}
+}
+
+/* Header */
+
+.header {
+	h3 {
+	padding: 1em 0 0 0;
+	color: #333;
+	font-size: 5em;
+	letter-spacing: 2px;
+	}
+
+	h5 {
+	font-family: $sans-serif;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	color: #333;
+	margin: 0;
+
+	}
+}
+
+/* Footer */
+
+.footer-example {
+	background-color: #DC9BD9;
+	color: #f8f8f8;
+	font-size: 14px;
+}
