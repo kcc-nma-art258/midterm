@@ -5,11 +5,9 @@ html {
 }
 
 body{
-  // Shorthand
-  // font: normal normal 300 #{type-scale(0)} $sans-serif;
   font-style: normal;
   font-variant: normal;
-  font-weight: 200;
+  font-weight: 300;
   font-size: type-scale(0);
   line-height: $line-height;
   font-family: $sans-serif;
@@ -20,9 +18,6 @@ body{
   }
 }
 
-/**
- * @section Headings
- */
 h1,
 h2,
 h3,
@@ -30,8 +25,8 @@ h4,
 h5,
 h6 {
   text-align: center;
-  font-family: $serif;
-  font-weight: 700;
+  font-family: $sans-serif;
+  font-weight: 600;
 }
 
 h1 {
@@ -48,32 +43,31 @@ h3 {
 
 h4 {
   font-size: type-scale(0);
-  font-weight: 900;
 }
 
 h5 {
   font-size: type-scale(0);
-  font-weight: 700;
+  font-weight: 800;
 }
 
 h6 {
   font-size: type-scale(0);
-  font-weight: 400;
+  font-weight: 900;
 }
 
 p {
   font-size: $base-font;
   text-align: justify;
-  margin: 0 auto;
-  padding: 1em 0 2em 0;
-  
+  margin: 2em 0;
+  padding: 1em 0;
+
   @media screen and (max-width: 779px) {
-    margin: .5em 7em;
+    margin: 0 7em;
   }
   @media screen and (max-width: 600px){
-    margin: .5em 4em;
+    margin: 0 4em;
   }
   @media screen and (max-width: 450px){
-    margin: .5em 1em;
-  } 
+    margin: 0 1em;
+  }
 }

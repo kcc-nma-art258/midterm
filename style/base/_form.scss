@@ -7,6 +7,7 @@ form {
   textarea{
     display: block;
     width: 100%;
+    height: 40px;
   }
 }
 
@@ -33,11 +34,12 @@ select {
 input[type="checkbox"],
 input[type="radio"] {
 
-  border: 1px solid green;
+  border: 1px solid #A0A0A0;
   display: inline-block;
   width: 1em;
   height: 1em;
   border-radius: 100%;
+  vertical-align: text-bottom;
 
   &:checked {
     background: green;
@@ -62,4 +64,17 @@ input[type="checkbox"] {
       left: 1px;
     }
   }
+}
+
+
+.form-sec {
+	form {
+	  margin: 2em auto 0;
+	  padding: 0 1em;
+	}
+
+	  input,
+	  textarea {
+		margin: 0 0 0.5em;
+	  }
 }

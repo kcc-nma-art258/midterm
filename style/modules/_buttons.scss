@@ -1,34 +1,68 @@
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  appearance: none;
-  background-color: transparent;
-  border: 0 none;
+.button-group-1{
+  .button,
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    appearance: none;
+    background-color: transparent;
+    border: 0 none;
 
-  display: inline-block; // Make display properties consistent across the board
-  text-decoration: none; // Remove underline for anchor buttons
-  color: inherit;        // Inherit the default color (ie. black)
-  font:inherit;          // Inherit the default body font
-  padding: 0.5em 1em;
-  margin-bottom: 0.5em;
-  background-color: #DEDEDE;
-  border-radius: 5px;
+    display: inline-block; // Make display properties consistent across the board
+    text-decoration: none; // Remove underline for anchor buttons
+    color: #FFFFFF;        // Inherit the default color (ie. black)
+    font:inherit;          // Inherit the default body font
+    padding: 0.5em 1em;
+    margin-bottom: 0.5em;
+    background-color: #44CCCC;
+    border-radius: 5px;
 
-  &:hover {
-    background-color: #CACACA;
-  }
+    &:hover {
+      background-color: #CACACA;
+    }
 
-  &:focus,
-  &:active {
-    outline: none;
-    box-shadow: 0 0 1px 3px rgba(76, 130, 246, 0.5);
+    &:focus,
+    &:active {
+      outline: none;
+      box-shadow: 0 0 1px 3px rgba(76, 130, 246, 0.5);
+    }
   }
 }
 
-.button-group{
+.button-group-2{
+  .button,
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid #E0E0E0;
+
+    display: inline-block; // Make display properties consistent across the board
+    text-decoration: none; // Remove underline for anchor buttons
+    color: inherit;        // Inherit the default color (ie. black)
+    font:inherit;          // Inherit the default body font
+    padding: 0.5em 1em;
+    margin-bottom: 0.5em;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #CACACA;
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+      box-shadow: 0 0 1px 3px rgba(76, 130, 246, 0.5);
+    }
+  }
+}
+
+.button-group-1,
+.button-group-2 {
   text-align: center;
-  margin-bottom: 5em;
+  margin-bottom: .5em;
   font-size: $base-font;
 }
