@@ -99,6 +99,10 @@ p {
   color: #239ca1;
 }
 
+.screenrez {
+  font-family: "Josefin Slab", serif;
+}
+
 form {
   width: 100%;
 }
