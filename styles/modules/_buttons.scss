@@ -23,7 +23,7 @@ input[type="button"] {
   }
   @media #{$small-screen} {
    float: none;
- 
+
   }
 }
 .download{
@@ -31,16 +31,16 @@ input[type="button"] {
   background: none;
   border: 2px solid #01B2EA;
    &:hover {
-   background: hsla( 194, 99, 46, 0.5);
+   background: #01B2EA;
 }
 }
 // Cool Button //
 .wrapper{
-  margin:2em 0;
-  padding: 2em 0;
+  margin:1em 0;
+  padding: 1em 0;
 }
 .square {
-  padding: 2em;
+  padding: 1em;
 }
 a,a:visited,a:hover,a:active{
   -webkit-backface-visibility:hidden;
@@ -48,8 +48,10 @@ a,a:visited,a:hover,a:active{
 	position:relative;
   transition:0.5s color ease;
 	text-decoration:none;
-	color: #1f5d56;
+	color: white;
   cursor: crosshair;
+  font-size: type-scale(-1);
+  text-transform: uppercase;
 
 }
 

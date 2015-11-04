@@ -1,7 +1,7 @@
 /*
  * Base
  */
-@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:600,300);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:600,300,200);
 *,
 *::before,
 *::after {
@@ -93,6 +93,10 @@ h4 {
 p {
   margin-bottom: 0 0 1em;
   text-align: justify;
+}
+
+.colored {
+  color: #239ca1;
 }
 
 form {
@@ -245,8 +249,8 @@ input[type="checkbox"]:checked::after {
 [class^="col-"] {
   width: 100%;
   float: left;
-  min-height: 80px;
-  padding: 1em;
+  min-height: 60px;
+  padding: 0 1em;
 }
 
 [class^="col-"] > div {
@@ -395,16 +399,16 @@ input[type="button"]:active {
 }
 
 .download:hover {
-  background: rgba(1, 179, 233, 0.5);
+  background: #01B2EA;
 }
 
 .wrapper {
-  margin: 2em 0;
-  padding: 2em 0;
+  margin: 1em 0;
+  padding: 1em 0;
 }
 
 .square {
-  padding: 2em;
+  padding: 1em;
 }
 
 a, a:visited, a:hover, a:active {
@@ -414,8 +418,10 @@ a, a:visited, a:hover, a:active {
   -webkit-transition: 0.5s color ease;
           transition: 0.5s color ease;
   text-decoration: none;
-  color: #1f5d56;
+  color: white;
   cursor: crosshair;
+  font-size: 0.66667em;
+  text-transform: uppercase;
 }
 
 a.before:before, a.after:after {
@@ -522,6 +528,7 @@ pre {
 
 ul li {
   list-style: none;
+  line-height: 2;
 }
 
 /*
@@ -531,7 +538,7 @@ ul li {
   margin-bottom: 1em;
 }
 
-.grid-ex [class^='col-'] {
+.grid-ex [class^='col-'] > div {
   min-height: 3em;
   text-align: center;
   background-color: #786e6e;

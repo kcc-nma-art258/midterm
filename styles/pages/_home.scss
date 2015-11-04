@@ -3,7 +3,7 @@
 		margin-bottom: 1em;
 	}
 
-	[class^='col-'] {
+	[class^='col-'] > div {
 		min-height: 3em;
 		text-align: center;
 		background-color: #786e6e;
