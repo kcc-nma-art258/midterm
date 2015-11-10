@@ -1,0 +1,13 @@
+.link {
+  appearance: none;
+  display: inline-block; // Make display properties consistent across the board
+  text-decoration: none; // Remove underline for anchor buttons
+  color: inherit;        // Inherit the default color (ie. black)
+  background-color: transparent;
+  border: 0 none;
+  margin: 2em 0;
+
+  &:hover {
+    cursor: crosshair;
+  }
+}

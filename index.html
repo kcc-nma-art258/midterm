@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>I <3 GRID </title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <center><h1>Got<span class="fat">Framework?</span></h1>
+    <button class="download">DOWNLOAD</button></center>
+    <div class="container">
+      <h2 class="topic">Grid/</h2>
+      <p>How do I stay on track? Grid. The current grid is a 12-column fluid grid with a max
+        width of 960px, that shrinks with
+        the browser/device at smaller sizes.
+        Its unique formula let's you devide the page in an x number of colums
+        (here currently it is 12, another popular is 16)
+        and you now can create a nice symmetrical or assymetrical grid. Talk about strong finish.
+      </p>
+      <pre><code>
+        [class^="col-"] {
+          width: 100%;
+          float: left;
+          min-height: 1px;
+          padding: 0 1em;
+        }
+        @for $i from 1 through 12 {
+          .col-#{$i} {
+            @media screen and (min-width: 600px){
+              width: (100% / 12) * $i;
+            }
+          }
+        }
+      </code></pre>
+      <section class="grid-ex">
+        <div class="row">
+  		        <div class="col-1"><div>1</div></div>
+  		        <div class="col-11"><div>11</div></div>
+  		    </div>
+  		    <div class="row">
+  		        <div class="col-2"><div>2</div></div>
+  		        <div class="col-10"><div>10</div></div>
+  		    </div>
+          <div class="row">
+              <div class="col-3"><div>3</div></div>
+              <div class="col-9"><div>9</div></div>
+          </div>
+          <div class="row">
+              <div class="col-4"><div>4</div></div>
+              <div class="col-8"><div>8</div></div>
+          </div>
+          <div class="row">
+              <div class="col-5"><div>5</div></div>
+              <div class="col-7"><div>7</div></div>
+          </div>
+          <div class="row">
+              <div class="col-6"><div>6</div></div>
+              <div class="col-6"><div>6</div></div>
+          </div>
+          <div class="row">
+            <div class="col-7"><div>7</div></div>
+            <div class="col-5"><div>5</div></div>
+          </div>
+          <div class="row">
+            <div class="col-8"><div>8</div></div>
+            <div class="col-4"><div>4</div></div>
+          </div>
+          <div class="row">
+            <div class="col-9"><div>9</div></div>
+            <div class="col-3"><div>3</div></div>
+          </div>
+          <div class="row">
+            <div class="col-10"><div>10</div></div>
+  		      <div class="col-2"><div>2</div></div>
+  		    </div>
+          <div class="row">
+              <div class="col-11"><div>11</div></div>
+    		      <div class="col-1"><div>1</div></div>
+    		    </div>
+        </section>
+        <section class="text-ex">
+          <h2 class="topic">Type/</h2>
+            <div class="col-7">
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+              <h3>Heading 3</h3>
+              <h4>Heading 4</h4>
+            </div>
+          <div class="row">
+            <div class="col-5">
+              <p><span class="colored">Oxygen</span> is being used for body.
+              <br /><span class="colored">Josefin Slab</span>  for labels in the forms.
+              <br /><span class="colored"> Roboto</span> is used for Headigns.</p>
+              <p>The typeface base is<span class='colored'> 16px = 1em.</span>
+              <br />The current ratio for type is <span class='colored'> Perfect Fifth : base x 1.500.</span></p>
+            </div>
+          </div>
+        </section>
+        <section class="form-ex">
+			<h2 class="topic">Forms/</h2>
+			<form>
+        <div class="row">
+          <div class="col-6"><input type="text" / placeholder="Name" /></div>
+          <div class="col-6"><input type="search" / placeholder="Search" /></div>
+        </div>
+        <div class="row">
+          <div class="col-6"><input type="tel" / placeholder="Tel" /></div>
+    			  <div class="col-6"><input type="number" / placeholder="Number" /></div>
+        </div>
+        <div class="row">
+          <div class="col-6"><input type="email" / placeholder="E-mail" /></div>
+          <div class="col-6"><input type="password" / placeholder="Password" /></div>
+        </div>
+        <div class="row">
+          <div class="col-12"><input type="url" / placeholder="Url" /></div>
+        </div>
+			  <div class="row"><div class="col-12"><textarea placeholder="Hello ~ " /></textarea></div></div>
+			  <label>Choose a booster :</label>
+          <div class="styled-select">
+    			  <select>
+    				<option value="1">Chocolate chip cookie</option>
+    				<option value="2">Peanut butter cookie</option>
+    				<option value="3">M&M peanut butter cookie </option>
+    				<option value="4">Raisin oatmeal cookie</option>
+    			  </select>
+          </div>
+          <label>Got milk ?</label>
+          <input type="checkbox" />
+          <div class="radio-ex">
+            <label>Still deciding?</label>
+            <input type="radio" value="yes" name="radio" /><label for="yes">yes</label>
+            <input type="radio" value="no" name="radio" /><label for="no">no</label>
+          </div>
+			</form>
+		</section>
+    <section class="button-ex">
+      <h2 class="topic">Buttons/</h2>
+      <button>Button</button>
+      <input type="button" value="Button">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+      <a href="#0" class="link">Link</a>
+        <div class="wrapper">
+        <span class="square">
+          <a class="before after" href="#0">Cool Button</a></span>
+        </div>
+    </section>
+    <section class="utilities-ex">
+      <h2 class="topic">Utilities in your Sass/</h2>
+      <p>Utilities are the essence of any programming language. They allow us to
+        reuse values without having to copy them over and over again. Most importantly,
+        they make updating a value very easy. No more find and replace or manual crawling.
+        My advice would be to only create variables when it makes sense to do so. Do not initiate
+        new variables for the heck of it, it won’t help. A new variable should be created only
+        when all of the following criteria are met:</p>
+        <ul>
+          <li>the value is repeated at least twice;</li>
+          <li>the value is likely to be updated at least once;</li>
+          <li>all occurrences of the value are tied to the variable (i.e. not by coincidence).</li>
+          <p>Basically, there is no point declaring a variable that will never be updated or that is
+          only being used at a single place.</p>
+        </ul>
+        <pre>
+          <code>
+            // Initialize a global variable at root level.
+            $variable: 'initial value';
+
+            // Create a mixin that overrides that global variable.
+            @mixin global-variable-overriding {
+              $variable: 'mixin value' !global;
+            }
+          </code>
+
+        </pre>
+    </section>
+    <section class="media-ex">
+      <h2 class="topic">Queries/</h2>
+      <p>"Got Framework" uses media queries to serve its scalable grid.
+         The queries are mobile-first, meaning they target min-width.
+          It means all styles outside of a query apply to all devices,
+          then larger devices are targeted for enhancement. This prevents small devices
+         from having to parse tons of unused CSS. The sizes for the queries are:</p>
+        <ul>
+          <li>Desktop HD: <span class="screenrez"> 1440 px</span></li>
+          <li>Desktop:<span class="screenrez"> 1024 px</span></li>
+          <li>Tablet: <span class="screenrez"> 768 px</span></li>
+          <li>Phablet: <span class="screenrez"> 568 ppx</span></li>
+          <li>Mobile: <span class="screenrez"> 400 px</span></li>
+        </ul>
+    </section>
+
+  </body>
+  </html>
