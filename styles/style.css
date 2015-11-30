@@ -300,7 +300,7 @@ input[type="button"]:active {
 .container .utilities,
 .container p {
   text-align: center;
-  color: #337;
+  color: red;
 }
 
 .container .title .sub-heading,
