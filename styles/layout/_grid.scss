@@ -27,7 +27,7 @@ body {
       border: 1px solid green;
   width: 100%;
   }
-  */
+*/
 }
 
 .row {
@@ -53,6 +53,7 @@ height: 40px;
   .col-#{$i} {
     @media screen and (min-width: 600px){
       width: (100% / 12) * $i;
+      border: 1px solid red;
     }
   }
 }

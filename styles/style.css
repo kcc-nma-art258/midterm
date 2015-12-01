@@ -66,6 +66,13 @@ h1 {
   font-size: 5.0625em;
 }
 
+@media only screen and (min-width: 40em) {
+  h1 {
+    font-size: 0.66667em;
+    border: 1px solid green;
+  }
+}
+
 h2 {
   font-size: 3.375em;
 }
@@ -232,20 +239,20 @@ body {
   margin: 0 auto;
   background-color: #fff;
   /*
-  @media only screen and (min-width: em-calc(640px, 16px)){
+  @media only screen and (min-width: 40em){
   width: 20%;
   }
 
-  @media only screen and (min-width: em-calc(1024px, 16px)){
+  @media only screen and (min-width: 64em){
     border: 1px solid blue;
   width: 60%;
   }
 
-  @media only screen and (min-width: em-calc(1440px, 16px)){
+  @media only screen and (min-width: 90em){
       border: 1px solid green;
   width: 100%;
   }
-  */
+*/
 }
 
 .row {
@@ -279,72 +286,84 @@ body {
 @media screen and (min-width: 600px) {
   .col-1 {
     width: 8.33333%;
+    border: 1px solid red;
   }
 }
 
 @media screen and (min-width: 600px) {
   .col-2 {
     width: 16.66667%;
+    border: 1px solid red;
   }
 }
 
 @media screen and (min-width: 600px) {
   .col-3 {
     width: 25%;
+    border: 1px solid red;
   }
 }
 
 @media screen and (min-width: 600px) {
   .col-4 {
     width: 33.33333%;
+    border: 1px solid red;
   }
 }
 
 @media screen and (min-width: 600px) {
   .col-5 {
     width: 41.66667%;
+    border: 1px solid red;
   }
 }
 
 @media screen and (min-width: 600px) {
   .col-6 {
     width: 50%;
+    border: 1px solid red;
   }
 }
 
 @media screen and (min-width: 600px) {
   .col-7 {
     width: 58.33333%;
+    border: 1px solid red;
   }
 }
 
 @media screen and (min-width: 600px) {
   .col-8 {
     width: 66.66667%;
+    border: 1px solid red;
   }
 }
 
 @media screen and (min-width: 600px) {
   .col-9 {
     width: 75%;
+    border: 1px solid red;
   }
 }
 
 @media screen and (min-width: 600px) {
   .col-10 {
     width: 83.33333%;
+    border: 1px solid red;
   }
 }
 
 @media screen and (min-width: 600px) {
   .col-11 {
     width: 91.66667%;
+    border: 1px solid red;
   }
 }
 
 @media screen and (min-width: 600px) {
   .col-12 {
     width: 100%;
+    border: 1px solid red;
   }
 }
 
