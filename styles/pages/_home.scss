@@ -1,0 +1,35 @@
+.grid-example {
+	.row {
+		margin-bottom: 1em;
+	}
+
+
+	[class^='col-'] {
+		min-height: 3em;
+		text-align: center;
+		background-color: #EFEFEF;
+		padding: 0.75em 0;
+	}
+}
+
+.utilities-example,
+.mediaqueries-example,
+.button-example,
+.type-example {
+	padding: 2em 0;
+}
+
+.form-example {
+
+		padding: 2em 0;
+
+	form {
+	  margin: 2em auto 0;
+	  padding: 0 0em;
+
+	  input,
+	  textarea{
+		margin: 0 0 0.5em;
+	  }
+	}
+}
