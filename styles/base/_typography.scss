@@ -36,7 +36,7 @@ h1 {
   font-size: type-scale(4);
     @media #{$medium-screen}{
     font-size: type-scale(-1);
-    border: 1px solid green;
+
     }
 }
 
